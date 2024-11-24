@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HKStreamRecorder Actor Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Actor/HKStreamRecorder" class="dashAnchor"></a>
+    <a title="HKStreamRecorder Actor Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">HaishinKit 2.0.1 Docs</a> (92% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">HaishinKit</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Actors.html">Actors</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        HKStreamRecorder Actor Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Actors.html">Actors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Actors/AudioPlayer.html">AudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKIncomingStream.html">HKIncomingStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKStreamRecorder.html">HKStreamRecorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKStreamRecorder/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKStreamVideoAdaptiveBitRateStrategy.html">HKStreamVideoAdaptiveBitRateStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/MediaMixer.html">MediaMixer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/MediaMixer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/NetworkMonitor.html">NetworkMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/NetworkMonitor/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection.html">RTMPConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPSharedObject.html">RTMPSharedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream.html">RTMPStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/HowToPublish.html">– HowToPublish</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTConnection.html">SRTConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTStream.html">SRTStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/ScreenActor.html">ScreenActor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AssetScreenObject.html">AssetScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AudioDeviceUnit.html">AudioDeviceUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HKOutgoingStream.html">HKOutgoingStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageScreenObject.html">ImageScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MTHKView.html">MTHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Screen.html">Screen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject.html">ScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject/HorizontalAlignment.html">– HorizontalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject/VerticalAlignment.html">– VerticalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObjectContainer.html">ScreenObjectContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObjectContainer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StreamScreenObject.html">StreamScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TSReader.html">TSReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TSWriter.html">TSWriter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextScreenObject.html">TextScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoDeviceUnit.html">VideoDeviceUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoRotator.html">VideoRotator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoRotator/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoTrackScreenObject.html">VideoTrackScreenObject</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:10HaishinKit13kAMFUndefinedAA0C0Vvp">kAMFUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:10HaishinKit01kaB10IdentifierSSvp">kHaishinKitIdentifier</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HKStreamReadyState.html">HKStreamReadyState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkMonitorEvent.html">NetworkMonitorEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RTMPObjectEncoding.html">RTMPObjectEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTLogFunctionalArea.html">SRTLogFunctionalArea</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTLogLevel.html">SRTLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTMode.html">SRTMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTSocketOption.html">SRTSocketOption</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/CMSampleBuffer">CMSampleBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@T@CMSampleBufferRef">CMSampleBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CMVideoFormatDescription.html">CMVideoFormatDescription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:13SRTHaishinKit9SRTSocketC">SRTSocket</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AsyncRunner.html">AsyncRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChromaKeyProcessable.html">ChromaKeyProcessable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HKStream.html">HKStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HKStreamBitRateStrategy.html">HKStreamBitRateStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HKStreamOutput.html">HKStreamOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MediaMixerOutput.html">MediaMixerOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkConnection.html">NetworkConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkTransportReporter.html">NetworkTransportReporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Runner.html">Runner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenDelegate.html">ScreenDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenRenderer.html">ScreenRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VideoEffect.html">VideoEffect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AMFArray.html">AMFArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFTypedObject.html">AMFTypedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFUndefined.html">AMFUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFXML.html">AMFXML</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFXMLDocument.html">AMFXMLDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioCodecSettings.html">AudioCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioMixerSettings.html">AudioMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioMixerTrackSettings.html">AudioMixerTrackSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HKAtomic.html">HKAtomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkMonitorReport.html">NetworkMonitorReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkTransportReport.html">NetworkTransportReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPResponse.html">RTMPResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPStatus.html">RTMPStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPStreamInfo.html">RTMPStreamInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SRTLogger.html">SRTLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SRTPerformanceData.html">SRTPerformanceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundTransform.html">SoundTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VTSessionOption.html">VTSessionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings.html">VideoCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings/BitRateMode.html">– BitRateMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings/ScalingMode.html">– ScalingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoMixerSettings.html">VideoMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoMixerSettings/Mode.html">– Mode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit9AMFObjecta">AMFObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit29AudioDeviceConfigurationBlocka">AudioDeviceConfigurationBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit29VideoDeviceConfigurationBlocka">VideoDeviceConfigurationBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HKStreamRecorder</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">actor</span> <span class="kt">HKStreamRecorder</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">HKStreamRecorder</span><span class="p">:</span> <span class="kt"><a href="../Protocols/HKStreamOutput.html">HKStreamOutput</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">HKStreamRecorder</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MediaMixerOutput.html">MediaMixerOutput</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>An actor represents video and audio recorder.</p>
+
+<p>This actor is compatible with both HKStreamOutput and MediaMixerOutput. This means it can record the output from MediaMixer in addition to HKStream.</p>
+<pre class="highlight swift"><code> <span class="c1">// An example of recording MediaMixer.</span>
+ <span class="k">let</span> <span class="nv">recorder</span> <span class="o">=</span> <span class="kt">HKStreamRecorder</span><span class="p">()</span>
+ <span class="k">let</span> <span class="nv">mixer</span> <span class="o">=</span> <span class="kt">MediaMixer</span><span class="p">()</span>
+ <span class="n">mixer</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">recorder</span><span class="p">)</span>
+</code></pre>
+<pre class="highlight swift"><code> <span class="c1">// An example of recording streaming.</span>
+ <span class="k">let</span> <span class="nv">recorder</span> <span class="o">=</span> <span class="kt">HKStreamRecorder</span><span class="p">()</span>
+ <span class="k">let</span> <span class="nv">mixer</span> <span class="o">=</span> <span class="kt">MediaMixer</span><span class="p">()</span>
+ <span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="kt">RTMPStream</span><span class="p">()</span>
+ <span class="n">mixer</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
+ <span class="n">stream</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">recorder</span><span class="p">)</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC5ErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/Error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC5ErrorO">Error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The error domain codes.</p>
+
+                        <a href="../Actors/HKStreamRecorder/Error.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Error</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC15defaultSettingsSDySo11AVMediaTypeaSDySSs8Sendable_pGGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC15defaultSettingsSDySo11AVMediaTypeaSDySSs8Sendable_pGGvpZ">defaultSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default recording settings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultSettings</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVMediaType</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="n">any</span> <span class="kt">Sendable</span><span class="p">]]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC8settingsSDySo11AVMediaTypeaSDySSs8Sendable_pGGvp"></a>
+                    <a name="//apple_ref/swift/Property/settings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC8settingsSDySo11AVMediaTypeaSDySSs8Sendable_pGGvp">settings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The recorder settings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVMediaType</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="n">any</span> <span class="kt">Sendable</span><span class="p">]]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC9outputURL10Foundation0F0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/outputURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC9outputURL10Foundation0F0VSgvp">outputURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The recording output url.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">outputURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC11isRecordingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isRecording" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC11isRecordingSbvp">isRecording</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The recording or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">isRecording</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC21movieFragmentIntervalSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/movieFragmentInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC21movieFragmentIntervalSdSgvp">movieFragmentInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The the movie fragment interval in sec.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">movieFragmentInterval</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP12videoTrackIds5UInt8VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/videoTrackId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP12videoTrackIds5UInt8VSgvp">videoTrackId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">videoTrackId</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP12audioTrackIds5UInt8VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/audioTrackId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP12audioTrackIds5UInt8VSgvp">audioTrackId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">audioTrackId</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC15moviesDirectory10Foundation3URLVvp"></a>
+                    <a name="//apple_ref/swift/Property/moviesDirectory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC15moviesDirectory10Foundation3URLVvp">moviesDirectory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default file save location.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">moviesDirectory</span><span class="p">:</span> <span class="kt">URL</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Property/moviesDirectory" class="dashAnchor"></a>
+                    <a class="token" href="#/">moviesDirectory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default file save location.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new recorder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC24setMovieFragmentInterval05moviegH0ySdSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/setMovieFragmentInterval(movieFragmentInterval:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC24setMovieFragmentInterval05moviegH0ySdSg_tF">setMovieFragmentInterval(movieFragmentInterval:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the movie fragment interval in sec.</p>
+
+<p>This value allows the file to be written continuously, so the file will remain even if the app crashes or is forcefully terminated. A value of 10 seconds or more is recommended.</p>
+<div class="aside aside-seealso">
+    <p class="aside-title">Seealso</p>
+    <a href="https://developer.apple.com/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval">https://developer.apple.com/documentation/avfoundation/avassetwriter/1387469-moviefragmentinterval</a>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setMovieFragmentInterval</span><span class="p">(</span><span class="nv">movieFragmentInterval</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC14startRecording_8settingsy10Foundation3URLVSg_SDySo11AVMediaTypeaSDySSs8Sendable_pGGtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/startRecording(_:settings:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC14startRecording_8settingsy10Foundation3URLVSg_SDySo11AVMediaTypeaSDySSs8Sendable_pGGtYaKF">startRecording(_:<wbr>settings:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts recording.</p>
+
+<p>For iOS, if the URL is unspecified, the file will be saved in .documentDirectory. You can specify a folder of your choice, but please use an absolute path.</p>
+<pre class="highlight swift"><code><span class="k">try</span><span class="p">?</span> <span class="n">await</span> <span class="n">recorder</span><span class="o">.</span><span class="nf">startRecording</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
+<span class="c1">// -&gt; $documentDirectory/B644F60F-0959-4F54-9D14-7F9949E02AD8.mp4</span>
+
+<span class="k">try</span><span class="p">?</span> <span class="n">await</span> <span class="n">recorder</span><span class="o">.</span><span class="nf">startRecording</span><span class="p">(</span><span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"dir/sample.mp4"</span><span class="p">))</span>
+<span class="c1">// -&gt; $documentDirectory/dir/sample.mp4</span>
+
+<span class="k">try</span><span class="p">?</span> <span class="n">await</span> <span class="n">recorder</span><span class="o">.</span><span class="nf">startRecording</span><span class="p">(</span><span class="n">await</span> <span class="n">recorder</span><span class="o">.</span><span class="n">moviesDirectory</span><span class="o">.</span><span class="nf">appendingPathComponent</span><span class="p">(</span><span class="s">"sample.mp4"</span><span class="p">))</span>
+<span class="c1">// -&gt; $documentDirectory/sample.mp4</span>
+
+<span class="k">try</span><span class="p">?</span> <span class="n">await</span> <span class="n">recorder</span><span class="o">.</span><span class="nf">startRecording</span><span class="p">(</span><span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"dir"</span><span class="p">))</span>
+<span class="c1">// -&gt; $documentDirectory/dir/33FA7D32-E0A8-4E2C-9980-B54B60654044.mp4</span>
+</code></pre>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Folders are not created automatically, so it’s expected that the target directory is created in advance.
+
+</div><div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code>Error.fileAlreadyExists</code> when case file already exists.
+
+</div><div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code>Error.notSupportedFileType</code> when case species not supported format.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startRecording</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">settings</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVMediaType</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="n">any</span> <span class="kt">Sendable</span><span class="p">]]</span> <span class="o">=</span> <span class="kt">HKStreamRecorder</span><span class="o">.</span><span class="n"><a href="../Actors/HKStreamRecorder.html#/s:10HaishinKit16HKStreamRecorderC15defaultSettingsSDySo11AVMediaTypeaSDySSs8Sendable_pGGvpZ">defaultSettings</a></span><span class="p">)</span> <span class="n">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The file path for recording. If nil is specified, a unique file path will be returned automatically.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Settings for recording.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16HKStreamRecorderC13stopRecording10Foundation3URLVyYaKF"></a>
+                    <a name="//apple_ref/swift/Method/stopRecording()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16HKStreamRecorderC13stopRecording10Foundation3URLVyYaKF">stopRecording()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops recording.</p>
+<h2 id='example-of-saving-to-the-photos-app' class='heading'>Example of saving to the Photos app.</h2>
+<pre class="highlight swift"><code> <span class="k">do</span> <span class="p">{</span>
+   <span class="k">let</span> <span class="nv">outputURL</span> <span class="o">=</span> <span class="k">try</span> <span class="n">await</span> <span class="n">recorder</span><span class="o">.</span><span class="nf">stopRecording</span><span class="p">()</span>
+   <span class="kt">PHPhotoLibrary</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span><span class="o">.</span><span class="nf">performChanges</span><span class="p">({()</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
+     <span class="kt">PHAssetChangeRequest</span><span class="o">.</span><span class="nf">creationRequestForAssetFromVideo</span><span class="p">(</span><span class="nv">atFileURL</span><span class="p">:</span> <span class="n">outputURL</span><span class="p">)</span>
+   <span class="p">},</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">{</span> <span class="n">_</span><span class="p">,</span> <span class="n">error</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
+     <span class="k">try</span><span class="p">?</span> <span class="kt">FileManager</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">removeItem</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="n">outputURL</span><span class="p">)</span>
+   <span class="p">}</span>
+ <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+ <span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopRecording</span><span class="p">()</span> <span class="n">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">URL</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP11selectTrack_9mediaTypeys5UInt8VSg_So22CMFormatDescriptionRefa04CoreC0E0cI0VtYaF"></a>
+                    <a name="//apple_ref/swift/Method/selectTrack(_:mediaType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP11selectTrack_9mediaTypeys5UInt8VSg_So22CMFormatDescriptionRefa04CoreC0E0cI0VtYaF">selectTrack(_:<wbr>mediaType:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">selectTrack</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">?,</span> <span class="nv">mediaType</span><span class="p">:</span> <span class="kt">CMFormatDescription</span><span class="o">.</span><span class="kt">MediaType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/HKStreamOutput"></a>
+                <a name="//apple_ref/swift/Section/HKStreamOutput" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/HKStreamOutput"></a>
+                  <h3 class="section-name"><span>HKStreamOutput</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14HKStreamOutputP6stream_03didD0yqd___So17CMSampleBufferRefatAA0C0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/stream(_:didOutput:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14HKStreamOutputP6stream_03didD0yqd___So17CMSampleBufferRefatAA0C0Rd__lF">stream(_:<wbr>didOutput:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="n">nonisolated</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">stream</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="n">some</span> <span class="kt"><a href="../Protocols/HKStream.html">HKStream</a></span><span class="p">,</span> <span class="n">didOutput</span> <span class="nv">video</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14HKStreamOutputP6stream_03didD04whenyqd___So13AVAudioBufferCSo0H4TimeCtAA0C0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/stream(_:didOutput:when:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14HKStreamOutputP6stream_03didD04whenyqd___So13AVAudioBufferCSo0H4TimeCtAA0C0Rd__lF">stream(_:<wbr>didOutput:<wbr>when:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="n">nonisolated</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">stream</span><span class="p">(</span><span class="n">_</span> <span class="nv">stream</span><span class="p">:</span> <span class="n">some</span> <span class="kt"><a href="../Protocols/HKStream.html">HKStream</a></span><span class="p">,</span> <span class="n">didOutput</span> <span class="nv">audio</span><span class="p">:</span> <span class="kt">AVAudioBuffer</span><span class="p">,</span> <span class="nv">when</span><span class="p">:</span> <span class="kt">AVAudioTime</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MediaMixerOutput"></a>
+                <a name="//apple_ref/swift/Section/MediaMixerOutput" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/MediaMixerOutput"></a>
+                  <h3 class="section-name"><span>MediaMixerOutput</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP5mixer_03didE0yAA0cD0C_So17CMSampleBufferRefatF"></a>
+                    <a name="//apple_ref/swift/Method/mixer(_:didOutput:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP5mixer_03didE0yAA0cD0C_So17CMSampleBufferRefatF">mixer(_:<wbr>didOutput:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="n">nonisolated</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">mixer</span><span class="p">(</span><span class="n">_</span> <span class="nv">mixer</span><span class="p">:</span> <span class="kt"><a href="../Actors/MediaMixer.html">MediaMixer</a></span><span class="p">,</span> <span class="n">didOutput</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP5mixer_03didE04whenyAA0cD0C_So16AVAudioPCMBufferCSo0I4TimeCtF"></a>
+                    <a name="//apple_ref/swift/Method/mixer(_:didOutput:when:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP5mixer_03didE04whenyAA0cD0C_So16AVAudioPCMBufferCSo0I4TimeCtF">mixer(_:<wbr>didOutput:<wbr>when:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="n">nonisolated</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">mixer</span><span class="p">(</span><span class="n">_</span> <span class="nv">mixer</span><span class="p">:</span> <span class="kt"><a href="../Actors/MediaMixer.html">MediaMixer</a></span><span class="p">,</span> <span class="n">didOutput</span> <span class="nv">buffer</span><span class="p">:</span> <span class="kt">AVAudioPCMBuffer</span><span class="p">,</span> <span class="nv">when</span><span class="p">:</span> <span class="kt">AVAudioTime</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://github.com/shogo4405/HaishinKit.swift" target="_blank" rel="external noopener">shogo4405</a>. All rights reserved. (Last updated: 2024-11-24)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
