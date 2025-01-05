@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HaishinKit  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="HaishinKit  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">HaishinKit 2.0.2 Docs</a> (92% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">HaishinKit</a>
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Actors.html">Actors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Actors/AudioPlayer.html">AudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/HKIncomingStream.html">HKIncomingStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/HKStreamRecorder.html">HKStreamRecorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/HKStreamRecorder/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/HKStreamVideoAdaptiveBitRateStrategy.html">HKStreamVideoAdaptiveBitRateStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/MediaMixer.html">MediaMixer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/MediaMixer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/NetworkMonitor.html">NetworkMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/NetworkMonitor/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPConnection.html">RTMPConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPConnection/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPSharedObject.html">RTMPSharedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPStream.html">RTMPStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPStream/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPStream/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/RTMPStream/HowToPublish.html">– HowToPublish</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/SRTConnection.html">SRTConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/SRTConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/SRTStream.html">SRTStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Actors/ScreenActor.html">ScreenActor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AssetScreenObject.html">AssetScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AudioDeviceUnit.html">AudioDeviceUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HKOutgoingStream.html">HKOutgoingStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ImageScreenObject.html">ImageScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MTHKView.html">MTHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Screen.html">Screen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObject.html">ScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObject/HorizontalAlignment.html">– HorizontalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObject/VerticalAlignment.html">– VerticalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObjectContainer.html">ScreenObjectContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ScreenObjectContainer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StreamScreenObject.html">StreamScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TSReader.html">TSReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TSWriter.html">TSWriter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TextScreenObject.html">TextScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoDeviceUnit.html">VideoDeviceUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoRotator.html">VideoRotator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoRotator/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/VideoTrackScreenObject.html">VideoTrackScreenObject</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:10HaishinKit13kAMFUndefinedAA0C0Vvp">kAMFUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global%20Variables.html#/s:10HaishinKit01kaB10IdentifierSSvp">kHaishinKitIdentifier</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/HKStreamReadyState.html">HKStreamReadyState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NetworkMonitorEvent.html">NetworkMonitorEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RTMPObjectEncoding.html">RTMPObjectEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SRTLogFunctionalArea.html">SRTLogFunctionalArea</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SRTLogLevel.html">SRTLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SRTMode.html">SRTMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SRTSocketOption.html">SRTSocketOption</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions.html#/AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/c:objc(cs)AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/CMSampleBuffer">CMSampleBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/c:@T@CMSampleBufferRef">CMSampleBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/CMVideoFormatDescription.html">CMVideoFormatDescription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/s:13SRTHaishinKit9SRTSocketC">SRTSocket</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/AsyncRunner.html">AsyncRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ChromaKeyProcessable.html">ChromaKeyProcessable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HKStream.html">HKStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HKStreamBitRateStrategy.html">HKStreamBitRateStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HKStreamOutput.html">HKStreamOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/MediaMixerOutput.html">MediaMixerOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/NetworkConnection.html">NetworkConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/NetworkTransportReporter.html">NetworkTransportReporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Runner.html">Runner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ScreenDelegate.html">ScreenDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ScreenRenderer.html">ScreenRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/VideoEffect.html">VideoEffect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/AMFArray.html">AMFArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AMFTypedObject.html">AMFTypedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AMFUndefined.html">AMFUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AMFXML.html">AMFXML</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AMFXMLDocument.html">AMFXMLDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AudioCodecSettings.html">AudioCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AudioMixerSettings.html">AudioMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AudioMixerTrackSettings.html">AudioMixerTrackSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/HKAtomic.html">HKAtomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkMonitorReport.html">NetworkMonitorReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NetworkTransportReport.html">NetworkTransportReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RTMPResponse.html">RTMPResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RTMPStatus.html">RTMPStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/RTMPStreamInfo.html">RTMPStreamInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SRTLogger.html">SRTLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SRTPerformanceData.html">SRTPerformanceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/SoundTransform.html">SoundTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VTSessionOption.html">VTSessionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoCodecSettings.html">VideoCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoCodecSettings/BitRateMode.html">– BitRateMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoCodecSettings/ScalingMode.html">– ScalingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoMixerSettings.html">VideoMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/VideoMixerSettings/Mode.html">– Mode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10HaishinKit9AMFObjecta">AMFObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10HaishinKit29AudioDeviceConfigurationBlocka">AudioDeviceConfigurationBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10HaishinKit29VideoDeviceConfigurationBlocka">VideoDeviceConfigurationBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='haishinkit-for-ios-macos-tvos-visionos-and-a-href-https-github-com-shogo4405-haishinkit-kt-android-a' class='heading'>HaishinKit for iOS, macOS, tvOS, visionOS and <a href="https://github.com/shogo4405/HaishinKit.kt">Android</a>.</h1>
+
+<p><a href="https://github.com/shogo4405/HaishinKit.swift/stargazers"><img src="https://img.shields.io/github/stars/shogo4405/HaishinKit.swift?style=social" alt="GitHub Stars"></a>
+<a href="https://github.com/shogo4405/HaishinKit.swift/releases/latest"><img src="https://img.shields.io/github/v/release/shogo4405/HaishinKit.swift" alt="Release"></a>
+<a href="https://swiftpackageindex.com/shogo4405/HaishinKit.swift"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fshogo4405%2FHaishinKit.swift%2Fbadge%3Ftype%3Dplatforms" alt="Platform Compatibility"></a>
+<a href="https://swiftpackageindex.com/shogo4405/HaishinKit.swift"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fshogo4405%2FHaishinKit.swift%2Fbadge%3Ftype%3Dswift-versions" alt="Swift Compatibility"></a>
+<a href="https://raw.githubusercontent.com/shogo4405/HaishinKit.swift/master/LICENSE.md"><img src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" alt="GitHub license"></a>
+<a href="https://github.com/sponsors/shogo4405"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=ff69b4" alt="GitHub Sponsor"></a></p>
+
+<ul>
+<li>Camera and Microphone streaming library via RTMP and SRT for iOS, macOS, tvOS and visionOS.</li>
+<li>README.md contains unreleased content, which can be tested on the main branch.</li>
+<li><a href="https://docs.haishinkit.com/swift/latest/">API Documentation</a></li>
+</ul>
+<h2 id='sponsors' class='heading'>💖 Sponsors</h2>
+
+<p>Do you need additional support? Technical support on Issues and Discussions is provided only to contributors and academic researchers of HaishinKit. By becoming a sponsor, we can provide the support you need.</p>
+
+<p>Sponsor: <a href="https://github.com/sponsors/shogo4405">$50 per month</a>: Technical support via GitHub Issues/Discussions with priority response.</p>
+<h2 id='communication' class='heading'>💬 Communication</h2>
+
+<ul>
+<li>GitHub Issues and Discussions are open spaces for communication among users and are available to everyone as long as <a href="https://github.com/shogo4405/HaishinKit.swift?tab=coc-ov-file">the code of conduct</a> is followed.</li>
+<li>Whether someone is a contributor to HaishinKit is mainly determined by their GitHub profile icon. If you are using the default icon, there is a chance your input might be overlooked, so please consider setting a custom one. It could be a picture of your pet, for example. Personally, I like cats.</li>
+<li>If you want to support e-mail based communication without GitHub.
+
+<ul>
+<li>Consulting fee is <a href="https://www.paypal.me/shogo4405/50USD">$50</a>/1 incident. I&rsquo;m able to response a few days.</li>
+</ul></li>
+</ul>
+<h2 id='related-projects' class='heading'>🌏 Related projects</h2>
+
+<table><thead>
+<tr>
+<th>Project name</th>
+<th>Notes</th>
+<th>License</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/shogo4405/HaishinKit.kt">HaishinKit for Android.</a></td>
+<td>Camera and Microphone streaming library via RTMP for Android.</td>
+<td><a href="https://github.com/shogo4405/HaishinKit.kt/blob/master/LICENSE.md">BSD 3-Clause &ldquo;New&rdquo; or &ldquo;Revised&rdquo; License</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/shogo4405/HaishinKit.dart">HaishinKit for Flutter.</a></td>
+<td>Camera and Microphone streaming library via RTMP for Flutter.</td>
+<td><a href="https://github.com/shogo4405/HaishinKit.dart/blob/master/LICENSE.md">BSD 3-Clause &ldquo;New&rdquo; or &ldquo;Revised&rdquo; License</a></td>
+</tr>
+</tbody></table>
+<h2 id='features' class='heading'>🎨 Features</h2>
+<h3 id='️-rtmp' class='heading'>✏️ RTMP</h3>
+
+<ul>
+<li>[x] Authentication</li>
+<li>[x] Publish and Recording</li>
+<li>[x] <em>Playback (Beta)</em></li>
+<li>[x] <a href="../../issues/1308">Adaptive bitrate streaming</a></li>
+<li>[ ] Action Message Format
+
+<ul>
+<li>[x] AMF0</li>
+<li>[ ] AMF3</li>
+</ul></li>
+<li>[x] SharedObject</li>
+<li>[x] RTMPS
+
+<ul>
+<li>[x] Native (RTMP over SSL/TLS)</li>
+</ul></li>
+<li>[x] ReplayKit Live as a Broadcast Upload Extension</li>
+<li>[x] <a href="https://github.com/veovera/enhanced-rtmp">Enhanced RTMP</a></li>
+</ul>
+<h3 id='️-srt-beta' class='heading'>✏️ SRT(beta)</h3>
+
+<ul>
+<li>[x] Publish and Recording (H264/HEVC/AAC)</li>
+<li>[x] Playback(beta)</li>
+<li>[ ] mode
+
+<ul>
+<li>[x] caller</li>
+<li>[x] listener</li>
+<li>[ ] rendezvous</li>
+</ul></li>
+</ul>
+<h3 id='️-a-href-https-github-com-shogo4405-haishinkit-swift-tree-main-moqthaishinkit-moqt-alpha-a' class='heading'>✏️ <a href="https://github.com/shogo4405/HaishinKit.swift/tree/main/MoQTHaishinKit">MOQT(alpha)</a></h3>
+
+<blockquote>
+<p>[!NOTE]
+I am working on a preliminary implementation of MOQT for research purposes. If you&rsquo;re interested, please check out the repository.</p>
+</blockquote>
+<h3 id='multi-streaming' class='heading'>📹 Multi Streaming.</h3>
+
+<p>Starting from version 2.0.0, multiple streams are supported, allowing live streaming to separate services. Views also support this, enabling the verification of raw video data</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mixer</span> <span class="o">=</span> <span class="kt">MediaMixer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">stream0</span> <span class="o">=</span> <span class="kt">RTMPStream</span><span class="p">()</span> <span class="c1">// for Y Service.</span>
+<span class="k">let</span> <span class="nv">stream1</span> <span class="o">=</span> <span class="kt">RTMPStream</span><span class="p">()</span> <span class="c1">// for F Service.</span>
+
+<span class="k">let</span> <span class="nv">view</span> <span class="o">=</span> <span class="kt">MTHKView</span><span class="p">()</span>
+<span class="n">view</span><span class="o">.</span><span class="n">track</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">// Video Track Number 0 or 1, UInt8.max.</span>
+
+<span class="n">mixer</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">stream0</span><span class="p">)</span>
+<span class="n">mixer</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">stream1</span><span class="p">)</span>
+<span class="n">mixer</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">view</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">view2</span> <span class="o">=</span> <span class="kt">MTHKView</span><span class="p">()</span>
+<span class="n">stream0</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">view2</span><span class="p">)</span>
+</code></pre>
+<h3 id='offscreen-rendering' class='heading'>Offscreen Rendering.</h3>
+
+<p>Through off-screen rendering capabilities, it is possible to display any text or bitmap on a video during broadcasting or viewing. This allows for various applications such as watermarking and time display.
+|Ingest|Playback|
+|:&mdash;:|:&mdash;:|
+|<img width="961" alt="" src="https://github.com/user-attachments/assets/aaf6c06f-d2de-43c1-a435-90907f370977">|<img width="849" alt="" src="https://github.com/user-attachments/assets/0a07b418-aa56-41cb-8e6d-e12596b25ae8">|</p>
+
+<details>
+<summary>Example</summary>
+  
+&ldquo;`swift
+Task { ScreenActor in
+  var videoMixerSettings = VideoMixerSettings()
+  videoMixerSettings.mode = .offscreen
+  await mixer.setVideoMixerSettings(videoMixerSettings)
+
+  textScreenObject.horizontalAlignment = .right
+  textScreenObject.verticalAlignment = .bottom
+  textScreenObject.layoutMargin = .init(top: 0, left: 0, bottom: 16, right: 16)
+
+  await stream.screen.backgroundColor = UIColor.black.cgColor
+
+  let videoScreenObject = VideoTrackScreenObject()
+  videoScreenObject.cornerRadius = 32.0
+  videoScreenObject.track = 1
+  videoScreenObject.horizontalAlignment = .right
+  videoScreenObject.layoutMargin = .init(top: 16, left: 0, bottom: 0, right: 16)
+  videoScreenObject.size = .init(width: 160 * 2, height: 90 * 2)
+  _ = videoScreenObject.registerVideoEffect(MonochromeEffect())
+
+  let imageScreenObject = ImageScreenObject()
+  let imageURL = URL(fileURLWithPath: Bundle.main.path(forResource: &quot;game_jikkyou&rdquo;, ofType: &ldquo;png&rdquo;) ?? &ldquo;&rdquo;)
+  if let provider = CGDataProvider(url: imageURL as CFURL) {
+      imageScreenObject.verticalAlignment = .bottom
+      imageScreenObject.layoutMargin = .init(top: 0, left: 0, bottom: 16, right: 0)
+      imageScreenObject.cgImage = CGImage(
+          pngDataProviderSource: provider,
+          decode: nil,
+          shouldInterpolate: false,
+          intent: .defaultIntent
+      )
+  } else {
+    logger.info(&ldquo;no image&rdquo;)
+  }
+
+  let assetScreenObject = AssetScreenObject()
+  assetScreenObject.size = .init(width: 180, height: 180)
+  assetScreenObject.layoutMargin = .init(top: 16, left: 16, bottom: 0, right: 0)
+  try? assetScreenObject.startReading(AVAsset(url: URL(fileURLWithPath: Bundle.main.path(forResource: &ldquo;SampleVideo_360x240_5mb&rdquo;, ofType: &ldquo;mp4&rdquo;) ?? &ldquo;&rdquo;)))
+  try? mixer.screen.addChild(assetScreenObject)
+  try? mixer.screen.addChild(videoScreenObject)
+  try? mixer.screen.addChild(imageScreenObject)
+  try? mixer.screen.addChild(textScreenObject)
+  stream.screen.delegate = self
+}
+&ldquo;`
+
+</details>
+<h3 id='rendering' class='heading'>Rendering</h3>
+
+<table><thead>
+<tr>
+<th>Features</th>
+<th style="text-align: center"><a href="https://shogo4405.github.io/HaishinKit.swift/Classes/PiPHKView.html">PiPHKView</a></th>
+<th style="text-align: center"><a href="https://shogo4405.github.io/HaishinKit.swift/Classes/MTHKView.html">MTHKView</a></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Engine</td>
+<td style="text-align: center">AVSampleBufferDisplayLayer</td>
+<td style="text-align: center">Metal</td>
+</tr>
+<tr>
+<td>Publish</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+</tr>
+<tr>
+<td>Playback</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+</tr>
+<tr>
+<td>VisualEffect</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+</tr>
+<tr>
+<td>MultiCamera</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+</tr>
+<tr>
+<td>PictureInPicture</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center"><br /></td>
+</tr>
+</tbody></table>
+<h3 id='others' class='heading'>Others</h3>
+
+<ul>
+<li>[x] tvOS 17.0 for AVCaptureSession.</li>
+<li>[x] <a href="https://developer.apple.com/documentation/avfoundation/capture_setup/accessing_the_camera_while_multitasking">Support multitasking camera access.</a></li>
+<li>[x] Support &quot;Allow app extension API only&rdquo; option</li>
+<li>[x] Strict Concurrency</li>
+</ul>
+<h2 id='examples' class='heading'>🐾 Examples</h2>
+
+<p>Examples project are available for iOS, macOS(ARM), tvOS and visionOS.</p>
+
+<blockquote>
+<p>[!IMPORTANT]
+Please check if the same issue occurs with the latest Examples before posting it on GitHub Issues.</p>
+</blockquote>
+<h3 id='usage' class='heading'>Usage</h3>
+
+<p>You can verify by changing the URL of the following file.
+<a href="https://github.com/shogo4405/HaishinKit.swift/blob/abf1883d25d0ba29e1d1d67ea9e3a3b5be61a196/Examples/Preference.swift#L1-L7">https://github.com/shogo4405/HaishinKit.swift/blob/abf1883d25d0ba29e1d1d67ea9e3a3b5be61a196/Examples/Preference.swift#L1-L7</a></p>
+<pre class="highlight shell"><code>git clone https://github.com/shogo4405/HaishinKit.swift.git
+<span class="nb">cd </span>HaishinKit.swift
+open Examples/Examples.xcodeproj
+</code></pre>
+<h2 id='requirements' class='heading'>🌏 Requirements</h2>
+<h3 id='development' class='heading'>Development</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: center">Version</th>
+<th style="text-align: center">Xcode</th>
+<th style="text-align: center">Swift</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: center">2.0.0+</td>
+<td style="text-align: center">16.0+</td>
+<td style="text-align: center">5.10+</td>
+</tr>
+<tr>
+<td style="text-align: center">1.9.0+</td>
+<td style="text-align: center">15.4+</td>
+<td style="text-align: center">5.10+</td>
+</tr>
+</tbody></table>
+<h3 id='os' class='heading'>OS</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: left">-</th>
+<th style="text-align: center">iOS</th>
+<th style="text-align: center">tvOS</th>
+<th style="text-align: center">macOS</th>
+<th style="text-align: center">visionOS</th>
+<th style="text-align: center">watchOS</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">HaishinKit</td>
+<td style="text-align: center">13.0+</td>
+<td style="text-align: center">13.0+</td>
+<td style="text-align: center">10.15+</td>
+<td style="text-align: center">1.0+</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr>
+<td style="text-align: left">SRTHaishinKit</td>
+<td style="text-align: center">13.0+</td>
+<td style="text-align: center">13.0+</td>
+<td style="text-align: center">13.0+</td>
+<td style="text-align: center">1.0+</td>
+<td style="text-align: center">-</td>
+</tr>
+</tbody></table>
+<h3 id='cocoa-keys' class='heading'>Cocoa Keys</h3>
+
+<p>Please contains Info.plist.</p>
+
+<p><strong>iOS 10.0+</strong></p>
+
+<ul>
+<li>NSMicrophoneUsageDescription</li>
+<li>NSCameraUsageDescription</li>
+</ul>
+
+<p><strong>macOS 10.14+</strong></p>
+
+<ul>
+<li>NSMicrophoneUsageDescription</li>
+<li>NSCameraUsageDescription</li>
+</ul>
+
+<p><strong>tvOS 17.0+</strong></p>
+
+<ul>
+<li>NSMicrophoneUsageDescription</li>
+<li>NSCameraUsageDescription</li>
+</ul>
+<h2 id='installation' class='heading'>🔧 Installation</h2>
+
+<p>HaishinKit has a multi-module configuration. If you want to use the SRT protocol, please use SRTHaishinKit.
+|  | HaishinKit | SRTHaishinKit |
+| - | :- | :- |
+| SPM | <a href="https://github.com/shogo4405/HaishinKit.swift">https://github.com/shogo4405/HaishinKit.swift</a> | <a href="https://github.com/shogo4405/HaishinKit.swift">https://github.com/shogo4405/HaishinKit.swift</a> |
+| CocoaPods |<pre>def import_pods<br>  pod &#39;HaishinKit&#39;, &#39;~&gt; 2.0.0&#39;<br>end</pre>|<pre>def import_pods<br>  pod &#39;SRTHaishinKit&#39;, &#39;~&gt; 2.0.0&#39;<br>end</pre>|</p>
+
+<ul>
+<li>SRTHaishinKit via CocoaPods supports only iOS and tvOS.</li>
+<li>Discontinued support for Carthage. #1542</li>
+</ul>
+<h2 id='prerequisites' class='heading'>🔧 Prerequisites</h2>
+
+<p>Make sure you setup and activate your AVAudioSession iOS.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AVFoundation</span>
+
+<span class="k">let</span> <span class="nv">session</span> <span class="o">=</span> <span class="kt">AVAudioSession</span><span class="o">.</span><span class="nf">sharedInstance</span><span class="p">()</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="n">session</span><span class="o">.</span><span class="nf">setCategory</span><span class="p">(</span><span class="o">.</span><span class="n">playAndRecord</span><span class="p">,</span> <span class="nv">mode</span><span class="p">:</span> <span class="o">.</span><span class="k">default</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="n">defaultToSpeaker</span><span class="p">,</span> <span class="o">.</span><span class="n">allowBluetooth</span><span class="p">])</span>
+    <span class="k">try</span> <span class="n">session</span><span class="o">.</span><span class="nf">setActive</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='rtmp-usage' class='heading'>📓 RTMP Usage</h2>
+<h3 id='ingest' class='heading'>Ingest</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mixer</span> <span class="o">=</span> <span class="kt">MediaMixer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">connection</span> <span class="o">=</span> <span class="kt">RTMPConnection</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="kt">RTMPStream</span><span class="p">(</span><span class="nv">connection</span><span class="p">:</span> <span class="n">connection</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">hkView</span> <span class="o">=</span> <span class="kt">MTHKView</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="n">view</span><span class="o">.</span><span class="n">bounds</span><span class="p">)</span>
+
+<span class="kt">Task</span> <span class="p">{</span>
+  <span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">attachAudio</span><span class="p">(</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">audio</span><span class="p">))</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">attachVideo</span><span class="p">(</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="o">.</span><span class="n">builtInWideAngleCamera</span><span class="p">,</span> <span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">video</span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="o">.</span><span class="n">back</span><span class="p">))</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kt">Task</span> <span class="p">{</span> <span class="kt">MainActor</span> <span class="k">in</span>
+  <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">hkView</span><span class="p">)</span>
+  <span class="c1">// add ViewController#view</span>
+  <span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">hkView</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kt">Task</span> <span class="p">{</span>
+  <span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">connection</span><span class="o">.</span><span class="nf">connect</span><span class="p">(</span><span class="s">"rtmp://localhost/appName/instanceName"</span><span class="p">)</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">streamName</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="kt">RTMPConnection</span><span class="o">.</span><span class="kt">Error</span><span class="o">.</span><span class="nf">requestFailed</span><span class="p">(</span><span class="k">let</span> <span class="nv">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="kt">RTMPStream</span><span class="o">.</span><span class="kt">Error</span><span class="o">.</span><span class="nf">requestFailed</span><span class="p">(</span><span class="k">let</span> <span class="nv">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='playback' class='heading'>Playback</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">connection</span> <span class="o">=</span> <span class="kt">RTMPConnection</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="kt">RTMPStream</span><span class="p">(</span><span class="nv">connection</span><span class="p">:</span> <span class="n">connection</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">audioPlayer</span> <span class="o">=</span> <span class="kt">AudioPlayer</span><span class="p">(</span><span class="kt">AVAudioEngine</span><span class="p">())</span>
+
+<span class="k">let</span> <span class="nv">hkView</span> <span class="o">=</span> <span class="kt">MTHKView</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="n">view</span><span class="o">.</span><span class="n">bounds</span><span class="p">)</span>
+
+<span class="kt">Task</span> <span class="p">{</span> <span class="kt">MainActor</span> <span class="k">in</span>
+  <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">hkView</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kt">Task</span> <span class="p">{</span>
+  <span class="c1">// requires attachAudioPlayer</span>
+  <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">attachAudioPlayer</span><span class="p">(</span><span class="n">audioPlayer</span><span class="p">)</span>
+
+  <span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">connection</span><span class="o">.</span><span class="nf">connect</span><span class="p">(</span><span class="s">"rtmp://localhost/appName/instanceName"</span><span class="p">)</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">play</span><span class="p">(</span><span class="n">streamName</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="kt">RTMPConnection</span><span class="o">.</span><span class="kt">Error</span><span class="o">.</span><span class="nf">requestFailed</span><span class="p">(</span><span class="k">let</span> <span class="nv">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="kt">RTMPStream</span><span class="o">.</span><span class="kt">Error</span><span class="o">.</span><span class="nf">requestFailed</span><span class="p">(</span><span class="k">let</span> <span class="nv">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='authentication' class='heading'>Authentication</h3>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">connection</span> <span class="o">=</span> <span class="kt">RTMPConnection</span><span class="p">()</span>
+<span class="n">connection</span><span class="o">.</span><span class="nf">connect</span><span class="p">(</span><span class="s">"rtmp://username:password@localhost/appName/instanceName"</span><span class="p">)</span>
+</code></pre>
+<h2 id='srt-usage' class='heading'>📓 SRT Usage</h2>
+<h3 id='ingest' class='heading'>Ingest</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mixer</span> <span class="o">=</span> <span class="kt">MediaMixer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">connection</span> <span class="o">=</span> <span class="kt">SRTConnection</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="kt">SRTStream</span><span class="p">(</span><span class="nv">connection</span><span class="p">:</span> <span class="n">connection</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">hkView</span> <span class="o">=</span> <span class="kt">MTHKView</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="n">view</span><span class="o">.</span><span class="n">bounds</span><span class="p">)</span>
+
+<span class="kt">Task</span> <span class="p">{</span>
+  <span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">attachAudio</span><span class="p">(</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">audio</span><span class="p">))</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">attachVideo</span><span class="p">(</span><span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="o">.</span><span class="n">builtInWideAngleCamera</span><span class="p">,</span> <span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">video</span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="o">.</span><span class="n">back</span><span class="p">))</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kt">Task</span> <span class="p">{</span> <span class="kt">MainActor</span> <span class="k">in</span>
+  <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">hkView</span><span class="p">)</span>
+  <span class="c1">// add ViewController#view</span>
+  <span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">hkView</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kt">Task</span> <span class="p">{</span>
+  <span class="n">stream</span><span class="o">.</span><span class="nf">attachAudioPlayer</span><span class="p">(</span><span class="n">audioPlayer</span><span class="p">)</span>
+  <span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">connection</span><span class="o">.</span><span class="nf">connect</span><span class="p">(</span><span class="s">"rtmp://localhost/appName/instanceName"</span><span class="p">)</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">streamName</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='playback' class='heading'>Playback</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">connection</span> <span class="o">=</span> <span class="kt">SRTConnection</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">stream</span> <span class="o">=</span> <span class="kt">SRTStream</span><span class="p">(</span><span class="nv">connection</span><span class="p">:</span> <span class="n">connection</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">hkView</span> <span class="o">=</span> <span class="kt">MTHKView</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="n">view</span><span class="o">.</span><span class="n">bounds</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">audioPlayer</span> <span class="o">=</span> <span class="kt">AudioPlayer</span><span class="p">(</span><span class="kt">AVAudioEngine</span><span class="p">())</span>
+
+<span class="kt">Task</span> <span class="p">{</span> <span class="kt">MainActor</span> <span class="k">in</span>
+  <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">hkView</span><span class="p">)</span>
+  <span class="c1">// add ViewController#view</span>
+  <span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">hkView</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kt">Task</span> <span class="p">{</span>
+  <span class="c1">// requires attachAudioPlayer</span>
+  <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">attachAudioPlayer</span><span class="p">(</span><span class="n">audioPlayer</span><span class="p">)</span>
+
+  <span class="k">do</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">connection</span><span class="o">.</span><span class="nf">connect</span><span class="p">(</span><span class="s">"srt://host:port?option=foo"</span><span class="p">)</span>
+    <span class="k">try</span> <span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">play</span><span class="p">()</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='settings' class='heading'>📓 Settings</h2>
+<h3 id='avcapturesession' class='heading'>📹 AVCaptureSession</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mixer</span> <span class="o">=</span> <span class="kt">MediaMixer</span><span class="p">()</span>
+
+<span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">setFrameRate</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">setSessionPreset</span><span class="p">(</span><span class="kt">AVCaptureSession</span><span class="o">.</span><span class="kt">Preset</span><span class="o">.</span><span class="n">medium</span><span class="p">)</span>
+
+<span class="c1">// Do not call beginConfiguration() and commitConfiguration() internally within the scope of the method, as they are called internally.</span>
+<span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="n">configuration</span> <span class="p">{</span> <span class="n">session</span> <span class="k">in</span>
+  <span class="n">session</span><span class="o">.</span><span class="n">automaticallyConfiguresApplicationAudioSession</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='audio' class='heading'>🔊 Audio</h3>
+<h4 id='a-href-https-docs-haishinkit-com-swift-2-0-0-classes-audiodeviceunit-html-device-a' class='heading'><a href="https://docs.haishinkit.com/swift/2.0.0/Classes/AudioDeviceUnit.html">Device</a></h4>
+
+<p>Specifies the audio device settings.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">front</span> <span class="o">=</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">audio</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">?</span> <span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">attachAudio</span><span class="p">(</span><span class="n">front</span><span class="p">,</span> <span class="nv">track</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="n">audioDeviceUnit</span> <span class="k">in</span> <span class="p">}</span>
+</code></pre>
+<h4 id='a-href-https-docs-haishinkit-com-swift-2-0-0-structs-audiomixersettings-html-audiomixersettings-a' class='heading'><a href="https://docs.haishinkit.com/swift/2.0.0/Structs/AudioMixerSettings.html">AudioMixerSettings</a></h4>
+
+<p>If you want to mix multiple audio tracks, please enable the feature flag.</p>
+<pre class="highlight swift"><code><span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">setMultiTrackAudioMixingEnabled</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+</code></pre>
+
+<p>When you specify the sampling rate, it will perform resampling. Additionally, in the case of multiple channels, downsampling can be applied.</p>
+<pre class="highlight swift"><code><span class="c1">// Setting the value to 0 will be the same as the value specified in mainTrack.</span>
+<span class="k">var</span> <span class="nv">settings</span> <span class="o">=</span> <span class="kt">AudioMixerSettings</span><span class="p">(</span>
+  <span class="nv">sampleRate</span><span class="p">:</span> <span class="kt">Float64</span> <span class="o">=</span> <span class="mi">44100</span><span class="p">,</span>
+  <span class="nv">channels</span><span class="p">:</span> <span class="kt">UInt32</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">settings</span><span class="o">.</span><span class="n">tracks</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="mi">0</span><span class="p">:</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span>
+    <span class="nv">isMuted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">downmix</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nv">channelMap</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span>
+  <span class="p">)</span>
+<span class="p">]</span>
+
+<span class="k">async</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">setAudioMixerSettings</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+</code></pre>
+<h4 id='a-href-https-docs-haishinkit-com-swift-2-0-0-structs-audiocodecsettings-html-audiocodecsettings-a' class='heading'><a href="https://docs.haishinkit.com/swift/2.0.0/Structs/AudioCodecSettings.html">AudioCodecSettings</a></h4>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">audioSettings</span> <span class="o">=</span> <span class="kt">AudioCodecSettings</span><span class="p">()</span>
+<span class="c1">/// Specifies the bitRate of audio output.</span>
+<span class="n">audioSettings</span><span class="o">.</span><span class="n">bitrate</span> <span class="o">=</span> <span class="mi">64</span> <span class="o">*</span> <span class="mi">1000</span>
+<span class="c1">/// Specifies the mixes the channels or not. Currently, it supports input sources with 4, 5, 6, and 8 channels.</span>
+<span class="n">audioSettings</span><span class="o">.</span><span class="n">downmix</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="c1">/// Specifies the map of the output to input channels.</span>
+<span class="n">audioSettings</span><span class="o">.</span><span class="nv">channelMap</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span>
+
+<span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">setAudioSettings</span><span class="p">(</span><span class="n">audioSettings</span><span class="p">)</span>
+</code></pre>
+<h3 id='video' class='heading'>🎥 Video</h3>
+<h4 id='a-href-https-docs-haishinkit-com-swift-2-0-0-classes-videodeviceunit-html-device-a' class='heading'><a href="https://docs.haishinkit.com/swift/2.0.0/Classes/VideoDeviceUnit.html">Device</a></h4>
+
+<p>Specifies the video capture settings.</p>
+<pre class="highlight swift"><code>
+<span class="k">let</span> <span class="nv">front</span> <span class="o">=</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="nf">default</span><span class="p">(</span><span class="o">.</span><span class="n">builtInWideAngleCamera</span><span class="p">,</span> <span class="nv">for</span><span class="p">:</span> <span class="o">.</span><span class="n">video</span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="o">.</span><span class="n">front</span><span class="p">)</span>
+<span class="k">do</span> <span class="p">{</span>
+  <span class="k">try</span> <span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">attachCamera</span><span class="p">(</span><span class="n">front</span><span class="p">,</span> <span class="nv">track</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="n">videoUnit</span> <span class="k">in</span>
+    <span class="n">videoUnit</span><span class="o">.</span><span class="n">isVideoMirrored</span> <span class="o">=</span> <span class="kc">true</span>
+    <span class="n">videoUnit</span><span class="o">.</span><span class="n">preferredVideoStabilizationMode</span> <span class="o">=</span> <span class="o">.</span><span class="n">standard</span>
+    <span class="n">videoUnit</span><span class="o">.</span><span class="n">colorFormat</span> <span class="o">=</span> <span class="n">kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange</span>
+  <span class="p">}</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">{</span>
+  <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='a-href-https-docs-haishinkit-com-swift-2-0-0-structs-videomixersettings-html-videomixersettings-a' class='heading'><a href="https://docs.haishinkit.com/swift/2.0.0/Structs/VideoMixerSettings.html">VideoMixerSettings</a></h4>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">videoMixerSettings</span> <span class="o">=</span> <span class="kt">VideoMixerSettings</span><span class="p">()</span>
+<span class="c1">/// Specifies the image rendering mode.</span>
+<span class="n">videoMixerSettings</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="o">.</span><span class="n">passthrough</span> <span class="n">or</span> <span class="o">.</span><span class="n">offscreen</span>
+<span class="c1">/// Specifies the muted indicies whether freeze video signal or not.</span>
+<span class="n">videoMixerSettings</span><span class="o">.</span><span class="n">isMuted</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="c1">/// Specifies the main track number.</span>
+<span class="n">videoMixerSettings</span><span class="o">.</span><span class="n">mainTrack</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">await</span> <span class="n">mixer</span><span class="o">.</span><span class="nf">setVideoMixerSettings</span><span class="p">(</span><span class="n">videoMixerSettings</span><span class="p">)</span>
+</code></pre>
+<h4 id='a-href-https-docs-haishinkit-com-swift-2-0-0-structs-videocodecsettings-html-videocodecsettings-a' class='heading'><a href="https://docs.haishinkit.com/swift/2.0.0/Structs/VideoCodecSettings.html">VideoCodecSettings</a></h4>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">videoSettings</span> <span class="o">=</span> <span class="kt">VideoCodecSettings</span><span class="p">(</span>
+  <span class="nv">videoSize</span><span class="p">:</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">854</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">480</span><span class="p">),</span>
+  <span class="nv">profileLevel</span><span class="p">:</span> <span class="n">kVTProfileLevel_H264_Baseline_3_1</span> <span class="k">as</span> <span class="kt">String</span><span class="p">,</span>
+  <span class="nv">bitRate</span><span class="p">:</span> <span class="mi">640</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">,</span>
+  <span class="nv">maxKeyFrameIntervalDuration</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nv">scalingMode</span><span class="p">:</span> <span class="o">.</span><span class="n">trim</span><span class="p">,</span>
+  <span class="nv">bitRateMode</span><span class="p">:</span> <span class="o">.</span><span class="n">average</span><span class="p">,</span>
+  <span class="nv">allowFrameReordering</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span>
+  <span class="nv">isHardwareEncoderEnabled</span><span class="p">:</span> <span class="kc">true</span>
+<span class="p">)</span>
+
+<span class="k">await</span> <span class="n">stream</span><span class="o">.</span><span class="nf">setVideoSettings</span><span class="p">(</span><span class="n">videoSettings</span><span class="p">)</span>
+</code></pre>
+<h3 id='️-recording' class='heading'>⏺️ Recording</h3>
+<pre class="highlight swift"><code><span class="c1">// Specifies the recording settings. 0" means the same of input.</span>
+<span class="k">let</span> <span class="nv">recorder</span> <span class="o">=</span> <span class="kt">HKStreamRecorder</span><span class="p">()</span>
+<span class="n">stream</span><span class="o">.</span><span class="nf">addOutput</span><span class="p">(</span><span class="n">recorder</span><span class="p">)</span>
+
+<span class="k">try</span> <span class="k">await</span> <span class="n">recorder</span><span class="o">.</span><span class="nf">startRecording</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="nv">settings</span><span class="p">:</span> <span class="p">[</span>
+  <span class="kt">AVMediaType</span><span class="o">.</span><span class="nv">audio</span><span class="p">:</span> <span class="p">[</span>
+    <span class="kt">AVFormatIDKey</span><span class="p">:</span> <span class="kt">Int</span><span class="p">(</span><span class="n">kAudioFormatMPEG4AAC</span><span class="p">),</span>
+    <span class="kt">AVSampleRateKey</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="kt">AVNumberOfChannelsKey</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="c1">// AVEncoderBitRateKey: 128000,</span>
+  <span class="p">],</span>
+  <span class="kt">AVMediaType</span><span class="o">.</span><span class="nv">video</span><span class="p">:</span> <span class="p">[</span>
+    <span class="kt">AVVideoCodecKey</span><span class="p">:</span> <span class="kt">AVVideoCodecH264</span><span class="p">,</span>
+    <span class="kt">AVVideoHeightKey</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="kt">AVVideoWidthKey</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="cm">/*
+    AVVideoCompressionPropertiesKey: [
+      AVVideoMaxKeyFrameIntervalDurationKey: 2,
+      AVVideoProfileLevelKey: AVVideoProfileLevelH264Baseline30,
+      AVVideoAverageBitRateKey: 512000
+    ]
+    */</span>
+  <span class="p">]</span>
+<span class="p">])</span>
+
+<span class="k">try</span> <span class="k">await</span> <span class="n">recorder</span><span class="o">.</span><span class="nf">stopRecording</span><span class="p">()</span>
+</code></pre>
+<h2 id='license' class='heading'>📜 License</h2>
+
+<p>BSD-3-Clause</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="https://github.com/shogo4405/HaishinKit.swift" target="_blank" rel="external noopener">shogo4405</a>. All rights reserved. (Last updated: 2025-01-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

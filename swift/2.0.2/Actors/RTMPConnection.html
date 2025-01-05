@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RTMPConnection Actor Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Actor/RTMPConnection" class="dashAnchor"></a>
+    <a title="RTMPConnection Actor Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">HaishinKit 2.0.2 Docs</a> (92% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">HaishinKit</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Actors.html">Actors</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        RTMPConnection Actor Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Actors.html">Actors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Actors/AudioPlayer.html">AudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKIncomingStream.html">HKIncomingStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKStreamRecorder.html">HKStreamRecorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKStreamRecorder/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKStreamVideoAdaptiveBitRateStrategy.html">HKStreamVideoAdaptiveBitRateStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/MediaMixer.html">MediaMixer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/MediaMixer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/NetworkMonitor.html">NetworkMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/NetworkMonitor/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection.html">RTMPConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPSharedObject.html">RTMPSharedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream.html">RTMPStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/HowToPublish.html">– HowToPublish</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTConnection.html">SRTConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTStream.html">SRTStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/ScreenActor.html">ScreenActor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AssetScreenObject.html">AssetScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AudioDeviceUnit.html">AudioDeviceUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HKOutgoingStream.html">HKOutgoingStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageScreenObject.html">ImageScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MTHKView.html">MTHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Screen.html">Screen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject.html">ScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject/HorizontalAlignment.html">– HorizontalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject/VerticalAlignment.html">– VerticalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObjectContainer.html">ScreenObjectContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObjectContainer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StreamScreenObject.html">StreamScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TSReader.html">TSReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TSWriter.html">TSWriter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextScreenObject.html">TextScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoDeviceUnit.html">VideoDeviceUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoRotator.html">VideoRotator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoRotator/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoTrackScreenObject.html">VideoTrackScreenObject</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:10HaishinKit13kAMFUndefinedAA0C0Vvp">kAMFUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:10HaishinKit01kaB10IdentifierSSvp">kHaishinKitIdentifier</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HKStreamReadyState.html">HKStreamReadyState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkMonitorEvent.html">NetworkMonitorEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RTMPObjectEncoding.html">RTMPObjectEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTLogFunctionalArea.html">SRTLogFunctionalArea</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTLogLevel.html">SRTLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTMode.html">SRTMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTSocketOption.html">SRTSocketOption</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/CMSampleBuffer">CMSampleBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@T@CMSampleBufferRef">CMSampleBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CMVideoFormatDescription.html">CMVideoFormatDescription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:13SRTHaishinKit9SRTSocketC">SRTSocket</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AsyncRunner.html">AsyncRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChromaKeyProcessable.html">ChromaKeyProcessable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HKStream.html">HKStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HKStreamBitRateStrategy.html">HKStreamBitRateStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HKStreamOutput.html">HKStreamOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MediaMixerOutput.html">MediaMixerOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkConnection.html">NetworkConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkTransportReporter.html">NetworkTransportReporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Runner.html">Runner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenDelegate.html">ScreenDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenRenderer.html">ScreenRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VideoEffect.html">VideoEffect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AMFArray.html">AMFArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFTypedObject.html">AMFTypedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFUndefined.html">AMFUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFXML.html">AMFXML</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFXMLDocument.html">AMFXMLDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioCodecSettings.html">AudioCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioMixerSettings.html">AudioMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioMixerTrackSettings.html">AudioMixerTrackSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HKAtomic.html">HKAtomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkMonitorReport.html">NetworkMonitorReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkTransportReport.html">NetworkTransportReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPResponse.html">RTMPResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPStatus.html">RTMPStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPStreamInfo.html">RTMPStreamInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SRTLogger.html">SRTLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SRTPerformanceData.html">SRTPerformanceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundTransform.html">SoundTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VTSessionOption.html">VTSessionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings.html">VideoCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings/BitRateMode.html">– BitRateMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings/ScalingMode.html">– ScalingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoMixerSettings.html">VideoMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoMixerSettings/Mode.html">– Mode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit9AMFObjecta">AMFObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit29AudioDeviceConfigurationBlocka">AudioDeviceConfigurationBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit29VideoDeviceConfigurationBlocka">VideoDeviceConfigurationBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RTMPConnection</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">actor</span> <span class="kt">RTMPConnection</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/NetworkConnection.html">NetworkConnection</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>The RTMPConneciton class create a two-way RTMP connection.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC5ErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/Error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC5ErrorO">Error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The error domain code.</p>
+
+                        <a href="../Actors/RTMPConnection/Error.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Error</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC14defaultTimeoutSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultTimeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC14defaultTimeoutSivpZ">defaultTimeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default time to wait for TCP/IP Handshake done.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultTimeout</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC18defaultWindowSizeSs5Int64VvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultWindowSizeS" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC18defaultWindowSizeSs5Int64VvpZ">defaultWindowSizeS</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default network&rsquo;s window size for RTMPConnection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultWindowSizeS</span><span class="p">:</span> <span class="kt">Int64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC18supportedProtocolsShySSGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/supportedProtocols" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC18supportedProtocolsShySSGvpZ">supportedProtocols</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The supported protocols are rtmp, rtmps, rtmpt and rtmps.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">supportedProtocols</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC19supportedFourCcListSaySSGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/supportedFourCcList" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC19supportedFourCcListSaySSGvpZ">supportedFourCcList</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The supported fourCcList are hvc1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">supportedFourCcList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC11defaultPortSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultPort" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC11defaultPortSivpZ">defaultPort</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default RTMP port is 1935.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultPort</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC17defaultSecurePortSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultSecurePort" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC17defaultSecurePortSivpZ">defaultSecurePort</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default RTMPS port is 443.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultSecurePort</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC15defaultFlashVerSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultFlashVer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC15defaultFlashVerSSvpZ">defaultFlashVer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default flashVer is FMLE/3.0 (compatible; FMSc/1.0).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultFlashVer</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC17defaultChunkSizeSSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultChunkSizeS" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC17defaultChunkSizeSSivpZ">defaultChunkSizeS</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default chunk size for RTMPConnection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultChunkSizeS</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC19defaultCapabilitiesSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultCapabilities" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC19defaultCapabilitiesSivpZ">defaultCapabilities</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default capabilities for RTMPConneciton.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultCapabilities</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC21defaultObjectEncodingAA010RTMPObjectF0OvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultObjectEncoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC21defaultObjectEncodingAA010RTMPObjectF0OvpZ">defaultObjectEncoding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default object encoding for RTMPConnection class.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultObjectEncoding</span><span class="p">:</span> <span class="kt"><a href="../Enums/RTMPObjectEncoding.html">RTMPObjectEncoding</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC21defaultRequestTimeouts6UInt64VvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultRequestTimeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC21defaultRequestTimeouts6UInt64VvpZ">defaultRequestTimeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default an rtmp request time out value (ms).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">defaultRequestTimeout</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC4CodeO"></a>
+                    <a name="//apple_ref/swift/Enum/Code" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC4CodeO">Code</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>NetStatusEvent#info.code for NetConnection</li>
+</ul><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <a href="https://help.adobe.com/en_US/air/reference/html/flash/events/NetStatusEvent.html#NET_STATUS">https://help.adobe.com/en_US/air/reference/html/flash/events/NetStatusEvent.html#NET_STATUS</a>
+
+</div>
+
+                        <a href="../Actors/RTMPConnection/Code.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Code</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC6swfUrlSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/swfUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC6swfUrlSSSgvp">swfUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of .swf.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">swfUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC7pageUrlSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/pageUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC7pageUrlSSSgvp">pageUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of an HTTP referer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">pageUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC8flashVerSSvp"></a>
+                    <a name="//apple_ref/swift/Property/flashVer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC8flashVerSSvp">flashVer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of application.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">flashVer</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC7timeoutSivp"></a>
+                    <a name="//apple_ref/swift/Property/timeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC7timeoutSivp">timeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time to wait for TCP/IP Handshake done.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC14requestTimeouts6UInt64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/requestTimeout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC14requestTimeouts6UInt64Vvp">requestTimeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The RTMP request timeout value. Defaul value is 500 msec.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">requestTimeout</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC9chunkSizeSivp"></a>
+                    <a name="//apple_ref/swift/Property/chunkSize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC9chunkSizeSivp">chunkSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The outgoing RTMPChunkSize.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">chunkSize</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC16qualityOfService8Dispatch0G3QoSVvp"></a>
+                    <a name="//apple_ref/swift/Property/qualityOfService" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC16qualityOfService8Dispatch0G3QoSVvp">qualityOfService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The dispatchQos for socket.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">qualityOfService</span><span class="p">:</span> <span class="kt">DispatchQoS</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC3uri10Foundation3URLVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/uri" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC3uri10Foundation3URLVSgvp">uri</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URI passed to the Self.connect() method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">uri</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC9connectedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/connected" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC9connectedSbvp">connected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The instance connected to server(true) or not(false).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">connected</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC6statusScSyAA10RTMPStatusVGvp"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC6statusScSyAA10RTMPStatusVGvp">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The stream of events you receive RTMP status events from a service.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">AsyncStream</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/RTMPStatus.html">RTMPStatus</a></span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC14objectEncodingAA010RTMPObjectE0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/objectEncoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC14objectEncodingAA010RTMPObjectE0Ovp">objectEncoding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The object encoding for this RTMPConnection instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">objectEncoding</span><span class="p">:</span> <span class="kt"><a href="../Enums/RTMPObjectEncoding.html">RTMPObjectEncoding</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC6swfUrl04pageE08flashVer7timeout14requestTimeout9chunkSize16qualityOfServiceACSSSg_AKSSSis6UInt64VSi8Dispatch0R3QoSVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(swfUrl:pageUrl:flashVer:timeout:requestTimeout:chunkSize:qualityOfService:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC6swfUrl04pageE08flashVer7timeout14requestTimeout9chunkSize16qualityOfServiceACSSSg_AKSSSis6UInt64VSi8Dispatch0R3QoSVtcfc">init(swfUrl:<wbr>pageUrl:<wbr>flashVer:<wbr>timeout:<wbr>requestTimeout:<wbr>chunkSize:<wbr>qualityOfService:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new connection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">swfUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">pageUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">flashVer</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kt">RTMPConnection</span><span class="o">.</span><span class="n"><a href="../Actors/RTMPConnection.html#/s:10HaishinKit14RTMPConnectionC15defaultFlashVerSSvpZ">defaultFlashVer</a></span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kt">RTMPConnection</span><span class="o">.</span><span class="n"><a href="../Actors/RTMPConnection.html#/s:10HaishinKit14RTMPConnectionC14defaultTimeoutSivpZ">defaultTimeout</a></span><span class="p">,</span>
+    <span class="nv">requestTimeout</span><span class="p">:</span> <span class="kt">UInt64</span> <span class="o">=</span> <span class="kt">RTMPConnection</span><span class="o">.</span><span class="n"><a href="../Actors/RTMPConnection.html#/s:10HaishinKit14RTMPConnectionC21defaultRequestTimeouts6UInt64VvpZ">defaultRequestTimeout</a></span><span class="p">,</span>
+    <span class="nv">chunkSize</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="kt">RTMPConnection</span><span class="o">.</span><span class="n"><a href="../Actors/RTMPConnection.html#/s:10HaishinKit14RTMPConnectionC17defaultChunkSizeSSivpZ">defaultChunkSizeS</a></span><span class="p">,</span>
+    <span class="nv">qualityOfService</span><span class="p">:</span> <span class="kt">DispatchQoS</span> <span class="o">=</span> <span class="o">.</span><span class="n">userInitiated</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC4call_9argumentsAA12RTMPResponseVSS_s8Sendable_pSgdtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/call(_:arguments:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC4call_9argumentsAA12RTMPResponseVSS_s8Sendable_pSgdtYaKF">call(_:<wbr>arguments:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calls a command or method on RTMP Server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">call</span><span class="p">(</span><span class="n">_</span> <span class="nv">commandName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">arguments</span><span class="p">:</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Sendable</span><span class="p">)?</span><span class="o">...</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RTMPResponse.html">RTMPResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC7connect_9argumentsAA12RTMPResponseVSS_s8Sendable_pSgdtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/connect(_:arguments:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC7connect_9argumentsAA12RTMPResponseVSS_s8Sendable_pSgdtYaKF">connect(_:<wbr>arguments:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a two-way connection to an application on RTMP Server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="n">_</span> <span class="nv">command</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">arguments</span><span class="p">:</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Sendable</span><span class="p">)?</span><span class="o">...</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RTMPResponse.html">RTMPResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit14RTMPConnectionC5closeyyYaKF"></a>
+                    <a name="//apple_ref/swift/Method/close()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit14RTMPConnectionC5closeyyYaKF">close()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Closes the connection from the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">close</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="https://github.com/shogo4405/HaishinKit.swift" target="_blank" rel="external noopener">shogo4405</a>. All rights reserved. (Last updated: 2025-01-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

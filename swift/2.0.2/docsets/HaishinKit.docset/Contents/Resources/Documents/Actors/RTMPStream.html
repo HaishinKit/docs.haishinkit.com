@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RTMPStream Actor Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Actor/RTMPStream" class="dashAnchor"></a>
+    <a title="RTMPStream Actor Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">HaishinKit 2.0.2 Docs</a> (92% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">HaishinKit</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Actors.html">Actors</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        RTMPStream Actor Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Actors.html">Actors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Actors/AudioPlayer.html">AudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKIncomingStream.html">HKIncomingStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKStreamRecorder.html">HKStreamRecorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKStreamRecorder/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/HKStreamVideoAdaptiveBitRateStrategy.html">HKStreamVideoAdaptiveBitRateStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/MediaMixer.html">MediaMixer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/MediaMixer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/NetworkMonitor.html">NetworkMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/NetworkMonitor/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection.html">RTMPConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPConnection/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPSharedObject.html">RTMPSharedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream.html">RTMPStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/RTMPStream/HowToPublish.html">– HowToPublish</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTConnection.html">SRTConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTConnection/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/SRTStream.html">SRTStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Actors/ScreenActor.html">ScreenActor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AssetScreenObject.html">AssetScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AudioDeviceUnit.html">AudioDeviceUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HKOutgoingStream.html">HKOutgoingStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageScreenObject.html">ImageScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MTHKView.html">MTHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PiPHKView.html">PiPHKView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Screen.html">Screen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject.html">ScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject/HorizontalAlignment.html">– HorizontalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObject/VerticalAlignment.html">– VerticalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObjectContainer.html">ScreenObjectContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScreenObjectContainer/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StreamScreenObject.html">StreamScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TSReader.html">TSReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TSWriter.html">TSWriter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextScreenObject.html">TextScreenObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoDeviceUnit.html">VideoDeviceUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoRotator.html">VideoRotator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoRotator/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VideoTrackScreenObject.html">VideoTrackScreenObject</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:10HaishinKit13kAMFUndefinedAA0C0Vvp">kAMFUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:10HaishinKit01kaB10IdentifierSSvp">kHaishinKitIdentifier</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceUtil.html">DeviceUtil</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HKStreamReadyState.html">HKStreamReadyState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkMonitorEvent.html">NetworkMonitorEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RTMPObjectEncoding.html">RTMPObjectEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTLogFunctionalArea.html">SRTLogFunctionalArea</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTLogLevel.html">SRTLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTMode.html">SRTMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SRTSocketOption.html">SRTSocketOption</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)AVAudioBuffer">AVAudioBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/CMSampleBuffer">CMSampleBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:@T@CMSampleBufferRef">CMSampleBuffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CMVideoFormatDescription.html">CMVideoFormatDescription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/s:13SRTHaishinKit9SRTSocketC">SRTSocket</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AsyncRunner.html">AsyncRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ChromaKeyProcessable.html">ChromaKeyProcessable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HKStream.html">HKStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HKStreamBitRateStrategy.html">HKStreamBitRateStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HKStreamOutput.html">HKStreamOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MediaMixerOutput.html">MediaMixerOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkConnection.html">NetworkConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkTransportReporter.html">NetworkTransportReporter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Runner.html">Runner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenDelegate.html">ScreenDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ScreenRenderer.html">ScreenRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VideoEffect.html">VideoEffect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AMFArray.html">AMFArray</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFTypedObject.html">AMFTypedObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFUndefined.html">AMFUndefined</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFXML.html">AMFXML</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMFXMLDocument.html">AMFXMLDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioCodecSettings.html">AudioCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioMixerSettings.html">AudioMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AudioMixerTrackSettings.html">AudioMixerTrackSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HKAtomic.html">HKAtomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkMonitorReport.html">NetworkMonitorReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkTransportReport.html">NetworkTransportReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPResponse.html">RTMPResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPStatus.html">RTMPStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RTMPStreamInfo.html">RTMPStreamInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SRTLogger.html">SRTLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SRTPerformanceData.html">SRTPerformanceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SoundTransform.html">SoundTransform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VTSessionOption.html">VTSessionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings.html">VideoCodecSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings/BitRateMode.html">– BitRateMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoCodecSettings/ScalingMode.html">– ScalingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoMixerSettings.html">VideoMixerSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoMixerSettings/Mode.html">– Mode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit9AMFObjecta">AMFObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit29AudioDeviceConfigurationBlocka">AudioDeviceConfigurationBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10HaishinKit29VideoDeviceConfigurationBlocka">VideoDeviceConfigurationBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RTMPStream</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">actor</span> <span class="kt">RTMPStream</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">RTMPStream</span><span class="p">:</span> <span class="kt"><a href="../Protocols/HKStream.html">HKStream</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">RTMPStream</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MediaMixerOutput.html">MediaMixerOutput</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>An object that provides the interface to control a one-way channel over an RTMPConnection.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC5ErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/Error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC5ErrorO">Error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The error domain code.</p>
+
+                        <a href="../Actors/RTMPStream/Error.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Error</span> <span class="p">:</span> <span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC4CodeO"></a>
+                    <a name="//apple_ref/swift/Enum/Code" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC4CodeO">Code</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>NetStatusEvent#info.code for NetStream</p>
+<div class="aside aside-seealso">
+    <p class="aside-title">Seealso</p>
+    <a href="https://help.adobe.com/en_US/air/reference/html/flash/events/NetStatusEvent.html#NET_STATUS">https://help.adobe.com/en_US/air/reference/html/flash/events/NetStatusEvent.html#NET_STATUS</a>
+
+</div>
+
+                        <a href="../Actors/RTMPStream/Code.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Code</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC12HowToPublishO"></a>
+                    <a name="//apple_ref/swift/Enum/HowToPublish" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC12HowToPublishO">HowToPublish</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of publish options.</p>
+
+                        <a href="../Actors/RTMPStream/HowToPublish.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">HowToPublish</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC8metadataAA8AMFArrayVvp"></a>
+                    <a name="//apple_ref/swift/Property/metadata" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC8metadataAA8AMFArrayVvp">metadata</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The RTMPStream metadata.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">metadata</span><span class="p">:</span> <span class="kt"><a href="../Structs/AMFArray.html">AMFArray</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC4infoAA0C4InfoVvp"></a>
+                    <a name="//apple_ref/swift/Property/info" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC4infoAA0C4InfoVvp">info</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The RTMPStreamInfo object whose properties contain data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">info</span><span class="p">:</span> <span class="kt"><a href="../Structs/RTMPStreamInfo.html">RTMPStreamInfo</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC14objectEncodingAA010RTMPObjectE0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/objectEncoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC14objectEncodingAA010RTMPObjectE0Ovp">objectEncoding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The object encoding (AMF). Framework supports AMF0 only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">objectEncoding</span><span class="p">:</span> <span class="kt"><a href="../Enums/RTMPObjectEncoding.html">RTMPObjectEncoding</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC17audioSampleAccessSbvp"></a>
+                    <a name="//apple_ref/swift/Property/audioSampleAccess" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC17audioSampleAccessSbvp">audioSampleAccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The boolean value that indicates audio samples allow access or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">audioSampleAccess</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC17videoSampleAccessSbvp"></a>
+                    <a name="//apple_ref/swift/Property/videoSampleAccess" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC17videoSampleAccessSbvp">videoSampleAccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The boolean value that indicates video samples allow access or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">videoSampleAccess</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC10currentFPSs6UInt16Vvp"></a>
+                    <a name="//apple_ref/swift/Property/currentFPS" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC10currentFPSs6UInt16Vvp">currentFPS</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of video frames per seconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">currentFPS</span><span class="p">:</span> <span class="kt">UInt16</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC10readyStateAA013HKStreamReadyE0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/readyState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC10readyStateAA013HKStreamReadyE0Ovp">readyState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ready state of stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">readyState</span><span class="p">:</span> <span class="kt"><a href="../Enums/HKStreamReadyState.html">HKStreamReadyState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC6statusScSyAA10RTMPStatusVGvp"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC6statusScSyAA10RTMPStatusVGvp">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The stream of events you receive RTMP status events from a service.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">AsyncStream</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/RTMPStatus.html">RTMPStatus</a></span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC13fcPublishNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fcPublishName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC13fcPublishNameSSSgvp">fcPublishName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The stream&rsquo;s name used for FMLE-compatible sequences.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">fcPublishName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP12videoTrackIds5UInt8VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/videoTrackId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP12videoTrackIds5UInt8VSgvp">videoTrackId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">videoTrackId</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP12audioTrackIds5UInt8VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/audioTrackId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP12audioTrackIds5UInt8VSgvp">audioTrackId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">audioTrackId</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC10connection13fcPublishNameAcA14RTMPConnectionC_SSSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(connection:fcPublishName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC10connection13fcPublishNameAcA14RTMPConnectionC_SSSgtcfc">init(connection:<wbr>fcPublishName:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">connection</span><span class="p">:</span> <span class="kt"><a href="../Actors/RTMPConnection.html">RTMPConnection</a></span><span class="p">,</span> <span class="nv">fcPublishName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC4playyAA12RTMPResponseVs8Sendable_pSgd_tYaKF"></a>
+                    <a name="//apple_ref/swift/Method/play(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC4playyAA12RTMPResponseVs8Sendable_pSgd_tYaKF">play(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Plays a live stream from a server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">play</span><span class="p">(</span><span class="n">_</span> <span class="nv">arguments</span><span class="p">:</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Sendable</span><span class="p">)?</span><span class="o">...</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RTMPResponse.html">RTMPResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC4seekyySdYaKF"></a>
+                    <a name="//apple_ref/swift/Method/seek(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC4seekyySdYaKF">seek(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Seeks the keyframe.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">seek</span><span class="p">(</span><span class="n">_</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC7publish_4typeAA12RTMPResponseVSSSg_AC12HowToPublishOtYaKF"></a>
+                    <a name="//apple_ref/swift/Method/publish(_:type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC7publish_4typeAA12RTMPResponseVSSSg_AC12HowToPublishOtYaKF">publish(_:<wbr>type:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends streaming audio, vidoe and data message from client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">publish</span><span class="p">(</span><span class="n">_</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">RTMPStream</span><span class="o">.</span><span class="kt"><a href="../Actors/RTMPStream/HowToPublish.html">HowToPublish</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">live</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RTMPResponse.html">RTMPResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC5closeAA12RTMPResponseVyYaKF"></a>
+                    <a name="//apple_ref/swift/Method/close()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC5closeAA12RTMPResponseVyYaKF">close()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops playing or publishing and makes available other uses.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">close</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RTMPResponse.html">RTMPResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC4send_9arguments16isResetTimestampySS_s8Sendable_pSgdSbtKF"></a>
+                    <a name="//apple_ref/swift/Method/send(_:arguments:isResetTimestamp:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC4send_9arguments16isResetTimestampySS_s8Sendable_pSgdSbtKF">send(_:<wbr>arguments:<wbr>isResetTimestamp:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a message on a published stream to all subscribing clients.</p>
+<pre class="highlight swift"><code><span class="c1">// To add a metadata to a live stream sent to an RTMP Service.</span>
+<span class="n">stream</span><span class="o">.</span><span class="nf">send</span><span class="p">(</span><span class="s">"@setDataFrame"</span><span class="p">,</span> <span class="s">"onMetaData"</span><span class="p">,</span> <span class="n">metaData</span><span class="p">)</span>
+<span class="c1">// To clear a metadata that has already been set in the stream.</span>
+<span class="n">stream</span><span class="o">.</span><span class="nf">send</span><span class="p">(</span><span class="s">"@clearDataFrame"</span><span class="p">,</span> <span class="s">"onMetaData"</span><span class="p">);</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">handlerName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">arguments</span><span class="p">:</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Sendable</span><span class="p">)?</span><span class="o">...</span><span class="p">,</span> <span class="nv">isResetTimestamp</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handlerName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The message to send.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>arguemnts</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional arguments.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isResetTimestamp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A workaround option for sending timestamps as 0 in some services.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC12receiveAudioyySbYaKF"></a>
+                    <a name="//apple_ref/swift/Method/receiveAudio(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC12receiveAudioyySbYaKF">receiveAudio(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Incoming audio plays on a stream or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">receiveAudio</span><span class="p">(</span><span class="n">_</span> <span class="nv">receiveAudio</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC12receiveVideoyySbYaKF"></a>
+                    <a name="//apple_ref/swift/Method/receiveVideo(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC12receiveVideoyySbYaKF">receiveVideo(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Incoming video plays on a stream or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">receiveVideo</span><span class="p">(</span><span class="n">_</span> <span class="nv">receiveVideo</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC5pauseyAA12RTMPResponseVSbYaKF"></a>
+                    <a name="//apple_ref/swift/Method/pause(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC5pauseyAA12RTMPResponseVSbYaKF">pause(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pauses playback a  stream or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pause</span><span class="p">(</span><span class="n">_</span> <span class="nv">paused</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RTMPResponse.html">RTMPResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit10RTMPStreamC11togglePauseAA12RTMPResponseVyYaKF"></a>
+                    <a name="//apple_ref/swift/Method/togglePause()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit10RTMPStreamC11togglePauseAA12RTMPResponseVyYaKF">togglePause()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pauses or resumes playback of a stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">togglePause</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RTMPResponse.html">RTMPResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/HKStream"></a>
+                <a name="//apple_ref/swift/Section/HKStream" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/HKStream"></a>
+                  <h3 class="section-name"><span>HKStream</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP14soundTransformAA05SoundE0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/soundTransform" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP14soundTransformAA05SoundE0VSgvp">soundTransform</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">soundTransform</span><span class="p">:</span> <span class="kt"><a href="../Structs/SoundTransform.html">SoundTransform</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">async</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP13audioSettingsAA010AudioCodecE0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/audioSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP13audioSettingsAA010AudioCodecE0Vvp">audioSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">audioSettings</span><span class="p">:</span> <span class="kt"><a href="../Structs/AudioCodecSettings.html">AudioCodecSettings</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP16setAudioSettingsyyAA0e5CodecF0VF"></a>
+                    <a name="//apple_ref/swift/Method/setAudioSettings(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP16setAudioSettingsyyAA0e5CodecF0VF">setAudioSettings(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setAudioSettings</span><span class="p">(</span><span class="n">_</span> <span class="nv">audioSettings</span><span class="p">:</span> <span class="kt"><a href="../Structs/AudioCodecSettings.html">AudioCodecSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP13videoSettingsAA010VideoCodecE0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/videoSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP13videoSettingsAA010VideoCodecE0Vvp">videoSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">videoSettings</span><span class="p">:</span> <span class="kt"><a href="../Structs/VideoCodecSettings.html">VideoCodecSettings</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP16setVideoSettingsyyAA0e5CodecF0VF"></a>
+                    <a name="//apple_ref/swift/Method/setVideoSettings(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP16setVideoSettingsyyAA0e5CodecF0VF">setVideoSettings(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setVideoSettings</span><span class="p">(</span><span class="n">_</span> <span class="nv">videoSettings</span><span class="p">:</span> <span class="kt"><a href="../Structs/VideoCodecSettings.html">VideoCodecSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP17setSoundTransformyyAA0eF0VYaF"></a>
+                    <a name="//apple_ref/swift/Method/setSoundTransform(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP17setSoundTransformyyAA0eF0VYaF">setSoundTransform(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSoundTransform</span><span class="p">(</span><span class="n">_</span> <span class="nv">soundTransform</span><span class="p">:</span> <span class="kt"><a href="../Structs/SoundTransform.html">SoundTransform</a></span><span class="p">)</span> <span class="k">async</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP25setVideoInputBufferCountsyySiF"></a>
+                    <a name="//apple_ref/swift/Method/setVideoInputBufferCounts(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP25setVideoInputBufferCountsyySiF">setVideoInputBufferCounts(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setVideoInputBufferCounts</span><span class="p">(</span><span class="n">_</span> <span class="nv">videoInputBufferCounts</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP6appendyySo17CMSampleBufferRefaF"></a>
+                    <a name="//apple_ref/swift/Method/append(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP6appendyySo17CMSampleBufferRefaF">append(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="n">_</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP6append_4whenySo13AVAudioBufferC_So0F4TimeCtF"></a>
+                    <a name="//apple_ref/swift/Method/append(_:when:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP6append_4whenySo13AVAudioBufferC_So0F4TimeCtF">append(_:<wbr>when:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="n">_</span> <span class="nv">audioBuffer</span><span class="p">:</span> <span class="kt">AVAudioBuffer</span><span class="p">,</span> <span class="nv">when</span><span class="p">:</span> <span class="kt">AVAudioTime</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP17attachAudioPlayeryyAA0eF0CSgYaF"></a>
+                    <a name="//apple_ref/swift/Method/attachAudioPlayer(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP17attachAudioPlayeryyAA0eF0CSgYaF">attachAudioPlayer(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">attachAudioPlayer</span><span class="p">(</span><span class="n">_</span> <span class="nv">audioPlayer</span><span class="p">:</span> <span class="kt"><a href="../Actors/AudioPlayer.html">AudioPlayer</a></span><span class="p">?)</span> <span class="k">async</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP9addOutputyyqd__AA0cE0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/addOutput(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP9addOutputyyqd__AA0cE0Rd__lF">addOutput(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addOutput</span><span class="p">(</span><span class="n">_</span> <span class="nv">observer</span><span class="p">:</span> <span class="kd">some</span> <span class="kt"><a href="../Protocols/HKStreamOutput.html">HKStreamOutput</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP12removeOutputyyqd__AA0cE0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/removeOutput(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP12removeOutputyyqd__AA0cE0Rd__lF">removeOutput(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeOutput</span><span class="p">(</span><span class="n">_</span> <span class="nv">observer</span><span class="p">:</span> <span class="kd">some</span> <span class="kt"><a href="../Protocols/HKStreamOutput.html">HKStreamOutput</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP19setBitrateStorategyyyqd__SgAA0C15BitRateStrategyRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/setBitrateStorategy(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP19setBitrateStorategyyyqd__SgAA0C15BitRateStrategyRd__lF">setBitrateStorategy(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setBitrateStorategy</span><span class="p">(</span><span class="n">_</span> <span class="nv">bitrateStorategy</span><span class="p">:</span> <span class="p">(</span><span class="kd">some</span> <span class="kt"><a href="../Protocols/HKStreamBitRateStrategy.html">HKStreamBitRateStrategy</a></span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit8HKStreamP8dispatchyyAA19NetworkMonitorEventOYaF"></a>
+                    <a name="//apple_ref/swift/Method/dispatch(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit8HKStreamP8dispatchyyAA19NetworkMonitorEventOYaF">dispatch(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Asynchronous
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">dispatch</span><span class="p">(</span><span class="n">_</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Enums/NetworkMonitorEvent.html">NetworkMonitorEvent</a></span><span class="p">)</span> <span class="k">async</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MediaMixerOutput"></a>
+                <a name="//apple_ref/swift/Section/MediaMixerOutput" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/MediaMixerOutput"></a>
+                  <h3 class="section-name"><span>MediaMixerOutput</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP11selectTrack_9mediaTypeys5UInt8VSg_So22CMFormatDescriptionRefa04CoreC0E0cI0VtYaF"></a>
+                    <a name="//apple_ref/swift/Method/selectTrack(_:mediaType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP11selectTrack_9mediaTypeys5UInt8VSg_So22CMFormatDescriptionRefa04CoreC0E0cI0VtYaF">selectTrack(_:<wbr>mediaType:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">selectTrack</span><span class="p">(</span><span class="n">_</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">?,</span> <span class="nv">mediaType</span><span class="p">:</span> <span class="kt">CMFormatDescription</span><span class="o">.</span><span class="kt">MediaType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP5mixer_03didE0yAA0cD0C_So17CMSampleBufferRefatF"></a>
+                    <a name="//apple_ref/swift/Method/mixer(_:didOutput:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP5mixer_03didE0yAA0cD0C_So17CMSampleBufferRefatF">mixer(_:<wbr>didOutput:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">nonisolated</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">mixer</span><span class="p">(</span><span class="n">_</span> <span class="nv">mixer</span><span class="p">:</span> <span class="kt"><a href="../Actors/MediaMixer.html">MediaMixer</a></span><span class="p">,</span> <span class="n">didOutput</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10HaishinKit16MediaMixerOutputP5mixer_03didE04whenyAA0cD0C_So16AVAudioPCMBufferCSo0I4TimeCtF"></a>
+                    <a name="//apple_ref/swift/Method/mixer(_:didOutput:when:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10HaishinKit16MediaMixerOutputP5mixer_03didE04whenyAA0cD0C_So16AVAudioPCMBufferCSo0I4TimeCtF">mixer(_:<wbr>didOutput:<wbr>when:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">nonisolated</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">mixer</span><span class="p">(</span><span class="n">_</span> <span class="nv">mixer</span><span class="p">:</span> <span class="kt"><a href="../Actors/MediaMixer.html">MediaMixer</a></span><span class="p">,</span> <span class="n">didOutput</span> <span class="nv">buffer</span><span class="p">:</span> <span class="kt">AVAudioPCMBuffer</span><span class="p">,</span> <span class="nv">when</span><span class="p">:</span> <span class="kt">AVAudioTime</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="https://github.com/shogo4405/HaishinKit.swift" target="_blank" rel="external noopener">shogo4405</a>. All rights reserved. (Last updated: 2025-01-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
