@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="haishin_kit API docs, for the Dart programming language.">
+  <title>haishin_kit - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://github.com/HaishinKit/HaishinKit.dart">haishin_kit package</a></li>
+  </ol>
+  <div class="self-name">haishin_kit</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="haishinkit-plugin">HaishinKit Plugin</h1>
+<p><a href="https://pub.dev/packages/haishin_kit"><img src="https://img.shields.io/pub/v/haishin_kit.svg" alt="pub package"></a></p>
+<ul>
+<li>A Flutter plugin for iOS, Android. Camera and Microphone streaming library via RTMP.</li>
+</ul>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title">Note</p>
+<p>This project is being developed with the goal of defining a Flutter interface for HaishinKit.
+However, since development is progressing slowly, I recommend using other plugins if you need something stable or are in a hurry.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Android</th>
+<th>iOS</th>
+<th>macOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Support</strong></td>
+<td>SDK 21+</td>
+<td>iOS 13.0+</td>
+<td>10.15+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-sponsors">💖 Sponsors</h2>
+<p>Do you need additional support? Technical support on Issues and Discussions is provided only to
+contributors and academic researchers of HaishinKit. By becoming a sponsor, we can provide the
+support you need.</p>
+<p>Sponsor: <a href="https://github.com/sponsors/shogo4405">$50 per month</a>: Technical support via GitHub
+Issues/Discussions with priority response.</p>
+<h2 id="-communication">💬 Communication</h2>
+<ul>
+<li>GitHub Issues and Discussions are open spaces for communication among users and are available to
+everyone as long
+as <a href="https://github.com/HaishinKit/HaishinKit.dart?tab=coc-ov-file">the code of conduct</a> is
+followed.</li>
+<li>Whether someone is a contributor to HaishinKit is mainly determined by their GitHub profile icon.
+If you are using the default icon, there is a chance your input might be overlooked, so please
+consider setting a custom one. It could be a picture of your pet, for example. Personally, I like
+cats.</li>
+<li>If you want to support e-mail based communication without GitHub.
+<ul>
+<li>Consulting fee is <a href="https://www.paypal.me/shogo4405/50USD">$50</a>/1 incident. I'm able to
+response a few days.</li>
+</ul>
+</li>
+</ul>
+<h1 id="-dependencies">🌏 Dependencies</h1>
+<table>
+<thead>
+<tr>
+<th>Project name</th>
+<th>Notes</th>
+<th>License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/HaishinKit/HaishinKit.swift">HaishinKit for iOS, macOS and tvOS.</a></td>
+<td>Camera and Microphone streaming library via RTMP, HLS for iOS, macOS and tvOS.</td>
+<td><a href="https://github.com/HaishinKit/HaishinKit.swift/blob/master/LICENSE.md">BSD 3-Clause "New" or "Revised" License</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/HaishinKit/HaishinKit.kt">HaishinKit for Android.</a></td>
+<td>Camera and Microphone streaming library via RTMP for Android.</td>
+<td><a href="https://github.com/HaishinKit/HaishinKit.kt/blob/master/LICENSE.md">BSD 3-Clause "New" or "Revised" License</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="-setup">🔧 Setup</h2>
+<p>Please contains <code>macos/Runner/Info.plist</code> and <code>ios/Runner/Info.plist</code> files.</p>
+<pre class="language-xml"><code class="language-xml">&lt;key&gt;NSCameraUsageDescription&lt;/key&gt;
+&lt;string&gt;your usage description here&lt;/string&gt;
+&lt;key&gt;NSMicrophoneUsageDescription&lt;/key&gt;
+&lt;string&gt;your usage description here&lt;/string&gt;
+</code></pre>
+<p>Please contains <code>macos/Runner/Debug.Entitlements</code> and <code>macos/Runner/Release.Entitlements</code> files.</p>
+<pre class="language-xml"><code class="language-xml">&lt;key&gt;com.apple.security.device.audio-input&lt;/key&gt;
+&lt;true/&gt;
+&lt;key&gt;com.apple.security.device.camera&lt;/key&gt;
+&lt;true/&gt;
+</code></pre>
+<h2 id="-features">🎨 Features</h2>
+<h3 id="rtmp">RTMP</h3>
+<ul>
+<li><code>x</code> Authentication</li>
+<li><code>x</code> Publish and Recording (H264/AAC)</li>
+<li><code>x</code> <em>Playback (Beta)</em></li>
+<li><code>x</code> Adaptive bitrate streaming
+<ul>
+<li><code>x</code> Automatic drop frames</li>
+</ul>
+</li>
+<li><code> </code> Action Message Format
+<ul>
+<li><code>x</code> AMF0</li>
+<li><code> </code> AMF3</li>
+</ul>
+</li>
+<li><code>x</code> SharedObject</li>
+<li><code>x</code> RTMPS
+<ul>
+<li><code>x</code> Native (RTMP over SSL/TLS)</li>
+</ul>
+</li>
+</ul>
+<h1 id="-example">🐾 Example</h1>
+<p>An example project is available for both iOS and Android.
+<a href="https://github.com/HaishinKit/HaishinKit.dart/tree/main/example">https://github.com/HaishinKit/HaishinKit.dart/tree/main/example</a></p>
+<h2 id="-license">📜 License</h2>
+<p>BSD-3-Clause</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="audio_settings">
+  <span class="name"><a href="audio_settings">audio_settings</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="audio_source">
+  <span class="name"><a href="audio_source">audio_source</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="av_capture_session_preset">
+  <span class="name"><a href="av_capture_session_preset">av_capture_session_preset</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="haishin_kit">
+  <span class="name"><a href="haishin_kit">haishin_kit</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="haishin_kit_method_channel">
+  <span class="name"><a href="haishin_kit_method_channel">haishin_kit_method_channel</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="haishin_kit_platform_interface">
+  <span class="name"><a href="haishin_kit_platform_interface">haishin_kit_platform_interface</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rtmp_connection">
+  <span class="name"><a href="rtmp_connection">rtmp_connection</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rtmp_connection_method_channel">
+  <span class="name"><a href="rtmp_connection_method_channel">rtmp_connection_method_channel</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rtmp_connection_platform_interface">
+  <span class="name"><a href="rtmp_connection_platform_interface">rtmp_connection_platform_interface</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rtmp_stream">
+  <span class="name"><a href="rtmp_stream">rtmp_stream</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rtmp_stream_method_channel">
+  <span class="name"><a href="rtmp_stream_method_channel">rtmp_stream_method_channel</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rtmp_stream_platform_interface">
+  <span class="name"><a href="rtmp_stream_platform_interface">rtmp_stream_platform_interface</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="screen_settings">
+  <span class="name"><a href="screen_settings">screen_settings</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="stream">
+  <span class="name"><a href="stream">stream</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="stream_view_texture">
+  <span class="name"><a href="stream_view_texture">stream_view_texture</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="video_settings">
+  <span class="name"><a href="video_settings">video_settings</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="video_source">
+  <span class="name"><a href="video_source">video_source</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="https://github.com/HaishinKit/HaishinKit.dart">haishin_kit package</a></li>
+</ol>
+
+    <h5 class="hidden-xs"><span class="package-name">haishin_kit</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="audio_settings">audio_settings</a></li>
+      <li><a href="audio_source">audio_source</a></li>
+      <li><a href="av_capture_session_preset">av_capture_session_preset</a></li>
+      <li><a href="haishin_kit">haishin_kit</a></li>
+      <li><a href="haishin_kit_method_channel">haishin_kit_method_channel</a></li>
+      <li><a href="haishin_kit_platform_interface">haishin_kit_platform_interface</a></li>
+      <li><a href="rtmp_connection">rtmp_connection</a></li>
+      <li><a href="rtmp_connection_method_channel">rtmp_connection_method_channel</a></li>
+      <li><a href="rtmp_connection_platform_interface">rtmp_connection_platform_interface</a></li>
+      <li><a href="rtmp_stream">rtmp_stream</a></li>
+      <li><a href="rtmp_stream_method_channel">rtmp_stream_method_channel</a></li>
+      <li><a href="rtmp_stream_platform_interface">rtmp_stream_platform_interface</a></li>
+      <li><a href="screen_settings">screen_settings</a></li>
+      <li><a href="stream">stream</a></li>
+      <li><a href="stream_view_texture">stream_view_texture</a></li>
+      <li><a href="video_settings">video_settings</a></li>
+      <li><a href="video_source">video_source</a></li>
+</ol>
+
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+</main>
+<footer>
+  <span class="no-break">
+    haishin_kit
+      0.14.2
+  </span>
+  
+</footer>
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+
