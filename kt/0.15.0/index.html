@@ -199,7 +199,7 @@
       <h3 class="">⏺️ Recording</h3>
       <p class="paragraph">Now support local recording. Additionally, you can specify separate videoSettings and audioSettings from the live stream.</p>
       <div class="sample-container">
-        <pre><code class="block lang-kt" theme="idea">val recorder: StreamRecorder by lazy { StreamRecorder(requireContext()) }<br>recorder.videoSettings.profileLevel = VideoCodecProfileLevel.HEVC_MAIN_3_1<br>recorder.attachStream(stream)<br>recorder.startRecording(<br>    File(<br>        Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),<br>        &quot;output.mp4&quot;<br>    ).toString(),<br>    MediaMuxer.OutputFormat.MUXER_OUTPUT_MPEG_4<br>)</code></pre>
+        <pre><code class="block lang-kt" theme="idea">var mixer = MediaMixer(context)<br>var recorder = MediaRecorder(context)<br>mixer.registerOutput(recorder)<br>recorder.videoSettings.profileLevel = VideoCodecProfileLevel.HEVC_MAIN_3_1<br>recorder.startRecording(<br>    File(<br>        Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),<br>        &quot;output.mp4&quot;<br>    ).toString(),<br>    MediaMuxer.OutputFormat.MUXER_OUTPUT_MPEG_4<br>)</code></pre>
 <span class="top-right-position"><span class="copy-icon"></span>
           <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
         </span></div>
@@ -280,7 +280,7 @@
       </ul>
       <h3 class="">Settings</h3>
       <div class="sample-container">
-        <pre><code class="block lang-kt" theme="idea">stream.audioSettings.bitrate = 32 * 1000<br><br>stream.videoSettings.width = 640 // The width resoulution of video output.<br>stream.videoSettings.height = 360 // The height resoulution of video output.<br>stream.videoSettings.bitrate = 160 * 1000 // The bitRate of video output.<br>stream.videoSettings.IFrameInterval = 2 // The key-frmae interval</code></pre>
+        <pre><code class="block lang-kt" theme="idea">stream.audioSettings.bitrate = 32 * 1000<br><br>stream.videoSettings.width = 640 // The width resolution of video output.<br>stream.videoSettings.height = 360 // The height resolution of video output.<br>stream.videoSettings.bitrate = 160 * 1000 // The bitRate of video output.<br>stream.videoSettings.IFrameInterval = 2 // The keyframe interval</code></pre>
 <span class="top-right-position"><span class="copy-icon"></span>
           <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
         </span></div>
@@ -289,15 +289,11 @@
 <p align="center">
   <img width="732" alt="" src="https://github.com/HaishinKit/HaishinKit.kt/assets/810189/f2e189eb-d98a-41b4-9b4c-0b7d70637675">
 </p>      <div class="sample-container">
-        <pre><code class="block lang-kt" theme="idea">mixer.attachVideo(cameraSource)<br><br>val text = TextScreenObject()<br>text.textSize = 60f<br>text.textValue = &quot;23:44:56&quot;<br>text.layoutMargins.set(0, 0, 16, 16)<br>text.horizontalAlignment = ScreenObject.HORIZONTAL_ALIGNMENT_RIGHT<br>text.verticalAlignment = ScreenObject.VERTICAL_ALIGNMENT_BOTTOM<br>stream.screen.addChild(text)<br><br>val image = ImageScreenObject()<br>image.bitmap = BitmapFactory.decodeResource(resources, R.drawable.game_jikkyou)<br>image.verticalAlignment = ScreenObject.VERTICAL_ALIGNMENT_BOTTOM<br>image.frame.set(0, 0, 180, 180)<br>stream.screen.addChild(image)</code></pre>
+        <pre><code class="block lang-kt" theme="idea">mixer.attachVideo(0, cameraSource)<br><br>val text = TextScreenObject()<br>text.textSize = 60f<br>text.textValue = &quot;23:44:56&quot;<br>text.layoutMargins.set(0, 0, 16, 16)<br>text.horizontalAlignment = ScreenObject.HORIZONTAL_ALIGNMENT_RIGHT<br>text.verticalAlignment = ScreenObject.VERTICAL_ALIGNMENT_BOTTOM<br>mixer.screen.addChild(text)<br><br>val image = ImageScreenObject()<br>image.bitmap = BitmapFactory.decodeResource(resources, R.drawable.game_jikkyou)<br>image.verticalAlignment = ScreenObject.VERTICAL_ALIGNMENT_BOTTOM<br>image.frame.set(0, 0, 180, 180)<br>mixer.screen.addChild(image)</code></pre>
 <span class="top-right-position"><span class="copy-icon"></span>
           <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
         </span></div>
-      <h2 class="">🌏 Architecture Overview</h2>
-      <h3 class="">Publishing Feature</h3>
-<p align="center">
-  <img width="732" alt="" src="https://user-images.githubusercontent.com/810189/164874912-3cdc0dde-2cfb-4c94-9404-eeb2ff6091ac.png">
-</p>      <h2 class="">🐾 Examples</h2>
+      <h2 class="">🐾 Examples</h2>
       <p class="paragraph">Examples project are available for Android.</p>
       <ul>
         <li>
@@ -308,7 +304,7 @@
         </li>
       </ul>
       <div class="sample-container">
-        <pre><code class="block lang-sh" theme="idea">git clone https://github.com/HaishinKit/HaishinKit.kt.git<br>cd HaishinKit.kt<br>git submodule update --init<br><br># Open [Android Studio] -&gt; [Open] ...</code></pre>
+        <pre><code class="block lang-sh" theme="idea">git clone https://github.com/HaishinKit/HaishinKit.kt.git<br>cd HaishinKit.kt<br><br># Open [Android Studio] -&gt; [Open] ...</code></pre>
 <span class="top-right-position"><span class="copy-icon"></span>
           <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
         </span></div>
@@ -324,7 +320,7 @@
         </li>
       </ul>
       <div class="sample-container">
-        <pre><code class="block lang-gradle" theme="idea">allprojects {<br>  repositories {<br>    maven { url 'https://jitpack.io' }<br>  }<br>}<br><br>dependencies {<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:haishinkit:x.x.x'<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:compose:x.x.x'<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:lottie:x.x.x'<br>}</code></pre>
+        <pre><code class="block lang-gradle" theme="idea">allprojects {<br>  repositories {<br>    maven { url 'https://jitpack.io' }<br>  }<br>}<br><br>dependencies {<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:haishinkit:x.x.x'<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:rtmp:x.x.x'<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:compose:x.x.x'<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:lottie:x.x.x'<br>}</code></pre>
 <span class="top-right-position"><span class="copy-icon"></span>
           <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
         </span></div>
@@ -350,6 +346,14 @@
             <td>It's the base module for HaishinKit.</td>
           </tr>
           <tr>
+            <td>rtmp</td>
+            <td>21+</td>
+            <td>5</td>
+            <td>Require</td>
+            <td>Stable</td>
+            <td>It's support for an rtmp streaming.</td>
+          </tr>
+          <tr>
             <td>compose</td>
             <td>21+</td>
             <td>5</td>
@@ -369,7 +373,7 @@
       </table>
       <h3 class="">Android manifest</h3>
       <div class="sample-container">
-        <pre><code class="block lang-xml" theme="idea">&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;<br>&lt;uses-permission android:name=&quot;android.permission.CAMERA&quot; /&gt;<br>&lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot; /&gt;</code></pre>
+        <pre><code class="block lang-xml" theme="idea">&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;&lt;uses-permission<br>android:name=&quot;android.permission.CAMERA&quot; /&gt;&lt;uses-permission<br>android:name=&quot;android.permission.RECORD_AUDIO&quot; /&gt;</code></pre>
 <span class="top-right-position"><span class="copy-icon"></span>
           <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
         </span></div>
