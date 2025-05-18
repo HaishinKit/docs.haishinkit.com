@@ -94,7 +94,7 @@
   <div class="breadcrumbs"><a href="../../index.html">haishinkit</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.media</a><span class="delimiter">/</span><span class="current">MediaMixer</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Media</span><wbr><span><span>Mixer</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MediaMixer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">applicationContext<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Mixing audio and video for streaming.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MediaMixer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span> : <a href="../-media-output-data-source/index.html">MediaOutputDataSource</a>, <span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span>, <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/DefaultLifecycleObserver.html">DefaultLifecycleObserver</a></div><p class="paragraph">Mixing audio and video for streaming.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -111,7 +111,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">applicationContext<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -120,17 +120,47 @@
       </div>
       <div data-togglable="PROPERTY">
         <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-1885280650%2FProperties%2F-565415849" anchor-label="audioSource" id="-1885280650%2FProperties%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+        <div class="table"><a data-name="391539964%2FProperties%2F-565415849" anchor-label="coroutineContext" id="391539964%2FProperties%2F-565415849" data-filterable-set=":haishinkit/release"></a>
           <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="audio-source.html"><span>audio</span><wbr><span><span>Source</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1885280650%2FProperties%2F-565415849"></span>
+                  <div><a href="coroutine-context.html"><span>coroutine</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="391539964%2FProperties%2F-565415849"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="audio-source.html">audioSource</a><span class="token operator">: </span><a href="../../com.haishinkit.media.source/-audio-source/index.html">AudioSource</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The current audio source object.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="coroutine-context.html">coroutineContext</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-601516809%2FProperties%2F-565415849" anchor-label="hasAudio" id="-601516809%2FProperties%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-audio.html"><span>has</span><wbr><span><span>Audio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-601516809%2FProperties%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="has-audio.html">hasAudio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether audio source is enabled or not.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="357347314%2FProperties%2F-565415849" anchor-label="hasVideo" id="357347314%2FProperties%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-video.html"><span>has</span><wbr><span><span>Video</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="357347314%2FProperties%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="has-video.html">hasVideo</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether video source is enabled or not.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -145,22 +175,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="screen.html">screen</a><span class="token operator">: </span><a href="../../com.haishinkit.screen/-screen/index.html">Screen</a></div><div class="brief "><p class="paragraph">The offscreen renderer for video output.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1330157873%2FProperties%2F-565415849" anchor-label="videoSource" id="1330157873%2FProperties%2F-565415849" data-filterable-set=":haishinkit/release"></a>
-          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="video-source.html"><span>video</span><wbr><span><span>Source</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1330157873%2FProperties%2F-565415849"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="video-source.html">videoSource</a><span class="token operator">: </span><a href="../../com.haishinkit.media.source/-video-source/index.html">VideoSource</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The current video source object.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="screen.html">screen</a><span class="token operator">: </span><a href="../../com.haishinkit.screen/-screen/index.html">Screen</a></div><div class="brief "><p class="paragraph">The offscreen renderer for video output.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -169,32 +184,32 @@
       </div>
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="1766911668%2FFunctions%2F-565415849" anchor-label="attachAudio" id="1766911668%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+        <div class="table"><a data-name="-852023895%2FFunctions%2F-565415849" anchor-label="attachAudio" id="-852023895%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
           <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="attach-audio.html"><span>attach</span><wbr><span><span>Audio</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1766911668%2FFunctions%2F-565415849"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-852023895%2FFunctions%2F-565415849"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="attach-audio.html"><span class="token function">attachAudio</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">audio<span class="token operator">: </span><a href="../../com.haishinkit.media.source/-audio-source/index.html">AudioSource</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Attaches an audio source.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="attach-audio.html"><span class="token function">attachAudio</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">track<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">audio<span class="token operator">: </span><a href="../../com.haishinkit.media.source/-audio-source/index.html">AudioSource</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Attaches a audio source.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-966148972%2FFunctions%2F-565415849" anchor-label="attachVideo" id="-966148972%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+<a data-name="-582569805%2FFunctions%2F-565415849" anchor-label="attachVideo" id="-582569805%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
           <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="attach-video.html"><span>attach</span><wbr><span><span>Video</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-966148972%2FFunctions%2F-565415849"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-582569805%2FFunctions%2F-565415849"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="attach-video.html"><span class="token function">attachVideo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">video<span class="token operator">: </span><a href="../../com.haishinkit.media.source/-video-source/index.html">VideoSource</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Attaches a video source.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="attach-video.html"><span class="token function">attachVideo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">track<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">video<span class="token operator">: </span><a href="../../com.haishinkit.media.source/-video-source/index.html">VideoSource</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Attaches a video source.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -210,6 +225,141 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="dispose.html"><span class="token function">dispose</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Disposes the stream of memory management.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="139941652%2FFunctions%2F-565415849" anchor-label="onCreate" id="139941652%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#139941652%2FFunctions%2F-565415849"><span>on</span><wbr><span><span>Create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="139941652%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#139941652%2FFunctions%2F-565415849"><span class="token function">onCreate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1057561704%2FFunctions%2F-565415849" anchor-label="onDestroy" id="1057561704%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1057561704%2FFunctions%2F-565415849"><span>on</span><wbr><span><span>Destroy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1057561704%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1057561704%2FFunctions%2F-565415849"><span class="token function">onDestroy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="187777572%2FFunctions%2F-565415849" anchor-label="onPause" id="187777572%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#187777572%2FFunctions%2F-565415849"><span>on</span><wbr><span><span>Pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="187777572%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#187777572%2FFunctions%2F-565415849"><span class="token function">onPause</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1807945979%2FFunctions%2F-565415849" anchor-label="onResume" id="-1807945979%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1807945979%2FFunctions%2F-565415849"><span>on</span><wbr><span><span>Resume</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1807945979%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1807945979%2FFunctions%2F-565415849"><span class="token function">onResume</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1240777104%2FFunctions%2F-565415849" anchor-label="onStart" id="1240777104%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1240777104%2FFunctions%2F-565415849"><span>on</span><wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1240777104%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1240777104%2FFunctions%2F-565415849"><span class="token function">onStart</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="487071706%2FFunctions%2F-565415849" anchor-label="onStop" id="487071706%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#487071706%2FFunctions%2F-565415849"><span>on</span><wbr><span><span>Stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="487071706%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#487071706%2FFunctions%2F-565415849"><span class="token function">onStop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">owner<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html">LifecycleOwner</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="846472713%2FFunctions%2F-565415849" anchor-label="registerOutput" id="846472713%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-output.html"><span>register</span><wbr><span><span>Output</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="846472713%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="register-output.html"><span class="token function">registerOutput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">output<span class="token operator">: </span><a href="../-media-output/index.html">MediaOutput</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers an output instance.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-312482533%2FFunctions%2F-565415849" anchor-label="setVideoEffect" id="-312482533%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-video-effect.html"><span>set</span><wbr><span>Video</span><wbr><span><span>Effect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-312482533%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-video-effect.html"><span class="token function">setVideoEffect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">track<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">videoEffect<span class="token operator">: </span><a href="../../com.haishinkit.graphics.effect/-video-effect/index.html">VideoEffect</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets a video effect.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1367202864%2FFunctions%2F-565415849" anchor-label="unregisterOutput" id="-1367202864%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unregister-output.html"><span>unregister</span><wbr><span><span>Output</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1367202864%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unregister-output.html"><span class="token function">unregisterOutput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">output<span class="token operator">: </span><a href="../-media-output/index.html">MediaOutput</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unregisters an output instance.</p></div></div></div>
                 </div>
               </div>
             </div>

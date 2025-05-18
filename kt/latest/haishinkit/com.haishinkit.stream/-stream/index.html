@@ -94,7 +94,7 @@
   <div class="breadcrumbs"><a href="../../index.html">haishinkit</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.stream</a><span class="delimiter">/</span><span class="current">Stream</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Stream</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">Stream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">applicationContext<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span> : <a href="../../com.haishinkit.screen/-video-screen-object/-on-surface-changed-listener/index.html">VideoScreenObject.OnSurfaceChangedListener</a></div><p class="paragraph">The Stream class is the foundation of a <a href="../../com.haishinkit.rtmp/-rtmp-stream/index.html">RtmpStream</a>.</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../com.haishinkit.rtmp/-rtmp-stream/index.html">RtmpStream</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">Stream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span> : <a href="../../com.haishinkit.media/-media-output/index.html">MediaOutput</a>, <a href="../../com.haishinkit.media/-media-output-data-source/index.html">MediaOutputDataSource</a>, <a href="../../com.haishinkit.screen/-video-screen-object/-on-surface-changed-listener/index.html">VideoScreenObject.OnSurfaceChangedListener</a></div><p class="paragraph">The Stream class is the foundation of a com.haishinkit.rtmp.RtmpStream.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -111,7 +111,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">applicationContext<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -135,6 +135,21 @@
               </div>
             </div>
           </div>
+<a data-name="1960640419%2FProperties%2F-565415849" anchor-label="dataSource" id="1960640419%2FProperties%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data-source.html"><span>data</span><wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1960640419%2FProperties%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="data-source.html">dataSource</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/ref/WeakReference.html">WeakReference</a><span class="token operator">&lt;</span><a href="../../com.haishinkit.media/-media-output-data-source/index.html">MediaOutputDataSource</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The source of the media data object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-569600692%2FProperties%2F-565415849" anchor-label="hasAudio" id="-569600692%2FProperties%2F-565415849" data-filterable-set=":haishinkit/release"></a>
           <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
             <div class="main-subrow keyValue ">
@@ -145,7 +160,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="has-audio.html">hasAudio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="has-audio.html">hasAudio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether audio source is enabled or not.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -160,7 +175,22 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="has-video.html">hasVideo</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="has-video.html">hasVideo</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether video source is enabled or not.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2119437684%2FProperties%2F-565415849" anchor-label="mediaLink" id="2119437684%2FProperties%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="media-link.html"><span>media</span><wbr><span><span>Link</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2119437684%2FProperties%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="media-link.html">mediaLink</a><span class="token operator">: </span><a href="../../com.haishinkit.media/-media-link/index.html">MediaLink</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -175,7 +205,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="screen.html">screen</a><span class="token operator">: </span><a href="../../com.haishinkit.screen/-screen/index.html">Screen</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The offscreen renderer for video output.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="screen.html">screen</a><span class="token operator">: </span><a href="../../com.haishinkit.screen/-screen/index.html">Screen</a></div><div class="brief "><p class="paragraph">The offscreen renderer for video output.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -199,32 +229,17 @@
       </div>
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="330218883%2FFunctions%2F-565415849" anchor-label="attachMediaMixer" id="330218883%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+        <div class="table"><a data-name="-1999424855%2FFunctions%2F-565415849" anchor-label="append" id="-1999424855%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
           <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="attach-media-mixer.html"><span>attach</span><wbr><span>Media</span><wbr><span><span>Mixer</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="330218883%2FFunctions%2F-565415849"></span>
+                  <div><a href="append.html"><span><span>append</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1999424855%2FFunctions%2F-565415849"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="attach-media-mixer.html"><span class="token function">attachMediaMixer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mixer<span class="token operator">: </span><a href="../../com.haishinkit.media/-media-mixer/index.html">MediaMixer</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Attaches the media mixer.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="862662910%2FFunctions%2F-565415849" anchor-label="attachView" id="862662910%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
-          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="attach-view.html"><span>attach</span><wbr><span><span>View</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="862662910%2FFunctions%2F-565415849"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="attach-view.html"><span class="token function">attachView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">view<span class="token operator">: </span><a href="../../com.haishinkit.view/-stream-view/index.html">StreamView</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Attaches a view.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="append.html"><span class="token function">append</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><a href="../../com.haishinkit.media/-media-buffer/index.html">MediaBuffer</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Invoked immediately after capture data.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -274,32 +289,47 @@
               </div>
             </div>
           </div>
-<a data-name="1537879376%2FFunctions%2F-565415849" anchor-label="registerAudioCodec" id="1537879376%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+<a data-name="1621407256%2FFunctions%2F-565415849" anchor-label="queueOutputBuffer" id="1621407256%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
           <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="register-audio-codec.html"><span>register</span><wbr><span>Audio</span><wbr><span><span>Codec</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1537879376%2FFunctions%2F-565415849"></span>
+                  <div><a href="queue-output-buffer.html"><span>queue</span><wbr><span>Output</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1621407256%2FFunctions%2F-565415849"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="register-audio-codec.html"><span class="token function">registerAudioCodec</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">codec<span class="token operator">: </span><a href="../../com.haishinkit.codec/-audio-codec/index.html">AudioCodec</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers an audio codec instance.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="queue-output-buffer.html"><span class="token function">queueOutputBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="../../com.haishinkit.media/-media-type/index.html">MediaType</a><span class="token punctuation">, </span></span><span class="parameter ">index<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">payload<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html">ByteBuffer</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">timestamp<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">sync<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="1702748009%2FFunctions%2F-565415849" anchor-label="unregisterAudioCodec" id="1702748009%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+<a data-name="1282227870%2FFunctions%2F-565415849" anchor-label="registerOutput" id="1282227870%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
           <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="unregister-audio-codec.html"><span>unregister</span><wbr><span>Audio</span><wbr><span><span>Codec</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1702748009%2FFunctions%2F-565415849"></span>
+                  <div><a href="register-output.html"><span>register</span><wbr><span><span>Output</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1282227870%2FFunctions%2F-565415849"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="unregister-audio-codec.html"><span class="token function">unregisterAudioCodec</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">codec<span class="token operator">: </span><a href="../../com.haishinkit.codec/-audio-codec/index.html">AudioCodec</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unregisters an audio codec instance.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="register-output.html"><span class="token function">registerOutput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">output<span class="token operator">: </span><a href="../../com.haishinkit.media/-media-output/index.html">MediaOutput</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Registers an output instance.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="781675301%2FFunctions%2F-565415849" anchor-label="unregisterOutput" id="781675301%2FFunctions%2F-565415849" data-filterable-set=":haishinkit/release"></a>
+          <div class="table-row" data-filterable-current=":haishinkit/release" data-filterable-set=":haishinkit/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unregister-output.html"><span>unregister</span><wbr><span><span>Output</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="781675301%2FFunctions%2F-565415849"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unregister-output.html"><span class="token function">unregisterOutput</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">output<span class="token operator">: </span><a href="../../com.haishinkit.media/-media-output/index.html">MediaOutput</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unregisters an output instance.</p></div></div></div>
                 </div>
               </div>
             </div>
