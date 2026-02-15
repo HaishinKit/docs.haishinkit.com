@@ -1,0 +1,544 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>VideoScreenObject</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    HaishinKit
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":haishinkit/main">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":haishinkit/main" data-filter=":haishinkit/main">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    HaishinKit
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="haishinkit::com.haishinkit.screen/VideoScreenObject///PointingToDeclaration//246003485">
+  <div class="breadcrumbs"><a href="../../index.html">haishinkit</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.screen</a><span class="delimiter">/</span><span class="current">VideoScreenObject</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Video</span><wbr><span>Screen</span><wbr><span><span>Object</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">VideoScreenObject</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">target<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>GLES11Ext.GL_TEXTURE_EXTERNAL_OES</span></span><span class="token punctuation">)</span> : <a href="../-screen-object/index.html">ScreenObject</a></div><p class="paragraph">An object that manages offscreen rendering a video source.</p><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-media-output-screen-object/index.html">MediaOutputScreenObject</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="473065232%2FConstructors%2F246003485" anchor-label="VideoScreenObject" id="473065232%2FConstructors%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-video-screen-object.html"><span>Video</span><wbr><span>Screen</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="473065232%2FConstructors%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">target<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>GLES11Ext.GL_TEXTURE_EXTERNAL_OES</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="1913693851%2FClasslikes%2F246003485" anchor-label="Companion" id="1913693851%2FClasslikes%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1913693851%2FClasslikes%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-105911502%2FProperties%2F246003485" anchor-label="bounds" id="-105911502%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/bounds.html"><span><span>bounds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-105911502%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/bounds.html">bounds</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a></div><div class="brief "><p class="paragraph">The bounds rectangle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="512532986%2FProperties%2F246003485" anchor-label="deviceOrientation" id="512532986%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="device-orientation.html"><span>device</span><wbr><span><span>Orientation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="512532986%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="device-orientation.html">deviceOrientation</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Specifies the deviceOrientation that describe the physical orientation of the device.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="152688175%2FProperties%2F246003485" anchor-label="elements" id="152688175%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="elements.html"><span><span>elements</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="152688175%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="elements.html">elements</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">A key-value representation of this object for serialization.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1108243162%2FProperties%2F246003485" anchor-label="frame" id="-1108243162%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/frame.html"><span><span>frame</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1108243162%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/frame.html">frame</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a></div><div class="brief "><p class="paragraph">Specifies the frame rectangle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2138780108%2FProperties%2F246003485" anchor-label="horizontalAlignment" id="-2138780108%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/horizontal-alignment.html"><span>horizontal</span><wbr><span><span>Alignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2138780108%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-screen-object/horizontal-alignment.html">horizontalAlignment</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Specifies the alignment position along the horizontal axis.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1546619020%2FProperties%2F246003485" anchor-label="id" id="1546619020%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1546619020%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Unique identifier of this screen object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-309507471%2FProperties%2F246003485" anchor-label="imageOrientation" id="-309507471%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="image-orientation.html"><span>image</span><wbr><span><span>Orientation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-309507471%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="image-orientation.html">imageOrientation</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics/-image-orientation/index.html">ImageOrientation</a></div><div class="brief "><p class="paragraph">Specifies the imageOrientation that describe the image orientation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-729466015%2FProperties%2F246003485" anchor-label="isRotatesWithContent" id="-729466015%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-rotates-with-content.html"><span>is</span><wbr><span>Rotates</span><wbr><span>With</span><wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-729466015%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-rotates-with-content.html">isRotatesWithContent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Specifies whether displayed images rotates(true), or not(false).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-28728309%2FProperties%2F246003485" anchor-label="isVisible" id="-28728309%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/is-visible.html"><span>is</span><wbr><span><span>Visible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-28728309%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/is-visible.html">isVisible</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Specifies the visibility of the object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="121110095%2FProperties%2F246003485" anchor-label="layoutMargin" id="121110095%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/layout-margin.html"><span>layout</span><wbr><span><span>Margin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="121110095%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/layout-margin.html">layoutMargin</a><span class="token operator">: </span><a href="../-edge-insets/index.html">EdgeInsets</a></div><div class="brief "><p class="paragraph">Specifies the default spacing to laying out content in the screen object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1744351322%2FProperties%2F246003485" anchor-label="matrix" id="-1744351322%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/matrix.html"><span><span>matrix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1744351322%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/matrix.html">matrix</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html">FloatArray</a></div><div class="brief "><p class="paragraph">The mvp matrix.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1622443741%2FProperties%2F246003485" anchor-label="parent" id="1622443741%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/parent.html"><span><span>parent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1622443741%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/parent.html">parent</a><span class="token operator">: </span><a href="../-screen-object-container/index.html">ScreenObjectContainer</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The screen object container that contains this screen object</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-41763025%2FProperties%2F246003485" anchor-label="shouldInvalidateLayout" id="-41763025%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/should-invalidate-layout.html"><span>should</span><wbr><span>Invalidate</span><wbr><span><span>Layout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-41763025%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/should-invalidate-layout.html">shouldInvalidateLayout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1843388458%2FProperties%2F246003485" anchor-label="target" id="-1843388458%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/target.html"><span><span>target</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1843388458%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/target.html">target</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="686864413%2FProperties%2F246003485" anchor-label="textureId" id="686864413%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/texture-id.html"><span>texture</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="686864413%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/texture-id.html">textureId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">OpenGL ES texture ID associated with this screen object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1932082711%2FProperties%2F246003485" anchor-label="track" id="-1932082711%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="track.html"><span><span>track</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1932082711%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="track.html">track</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-979388980%2FProperties%2F246003485" anchor-label="type" id="-979388980%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-979388980%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="type.html">type</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Logical type of this screen object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-630666618%2FProperties%2F246003485" anchor-label="verticalAlignment" id="-630666618%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/vertical-alignment.html"><span>vertical</span><wbr><span><span>Alignment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-630666618%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-screen-object/vertical-alignment.html">verticalAlignment</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Specifies the alignment position along the vertical axis.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-418365177%2FProperties%2F246003485" anchor-label="videoEffect" id="-418365177%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/video-effect.html"><span>video</span><wbr><span><span>Effect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-418365177%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-screen-object/video-effect.html">videoEffect</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics.effect/-video-effect/index.html">VideoEffect</a></div><div class="brief "><p class="paragraph">Specifies the video effect such as a monochrome, a sepia.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1633090349%2FProperties%2F246003485" anchor-label="videoGravity" id="-1633090349%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-gravity.html"><span>video</span><wbr><span><span>Gravity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1633090349%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="video-gravity.html">videoGravity</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics/-video-gravity/index.html">VideoGravity</a></div><div class="brief "><p class="paragraph">Specifies the videoGravity how the displays the visual content.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1488610888%2FProperties%2F246003485" anchor-label="videoSize" id="-1488610888%2FProperties%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="video-size.html"><span>video</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1488610888%2FProperties%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="video-size.html">videoSize</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/Size.html">Size</a></div><div class="brief "><p class="paragraph">Specifies the videoSize that describe the video source.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="867150835%2FFunctions%2F246003485" anchor-label="draw" id="867150835%2FFunctions%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/draw.html"><span><span>draw</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="867150835%2FFunctions%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-screen-object/draw.html"><span class="token function">draw</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">renderer<span class="token operator">: </span><a href="../-renderer/index.html">Renderer</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Draws the screen object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="359469960%2FFunctions%2F246003485" anchor-label="findById" id="359469960%2FFunctions%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/find-by-id.html"><span>find</span><wbr><span>By</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="359469960%2FFunctions%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-screen-object/find-by-id.html"><span class="token function">findById</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-screen-object/index.html">ScreenObject</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2022973218%2FFunctions%2F246003485" anchor-label="invalidateLayout" id="2022973218%2FFunctions%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-screen-object/invalidate-layout.html"><span>invalidate</span><wbr><span><span>Layout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2022973218%2FFunctions%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-screen-object/invalidate-layout.html"><span class="token function">invalidateLayout</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Invalidates the current layout and triggers a layout update.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2101171660%2FFunctions%2F246003485" anchor-label="layout" id="2101171660%2FFunctions%2F246003485" data-filterable-set=":haishinkit/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":haishinkit/main" data-filterable-set=":haishinkit/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="layout.html"><span><span>layout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2101171660%2FFunctions%2F246003485"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="layout.html"><span class="token function">layout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">renderer<span class="token operator">: </span><a href="../-renderer/index.html">Renderer</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Layouts the screen object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
