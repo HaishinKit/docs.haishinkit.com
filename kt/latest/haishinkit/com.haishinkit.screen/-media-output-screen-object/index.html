@@ -94,7 +94,7 @@
   <div class="breadcrumbs"><a href="../../index.html">haishinkit</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.screen</a><span class="delimiter">/</span><span class="current">MediaOutputScreenObject</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Media</span><wbr><span>Output</span><wbr><span>Screen</span><wbr><span><span>Object</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MediaOutputScreenObject</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../-video-screen-object/index.html">VideoScreenObject</a>, <a href="../../com.haishinkit.media/-media-output/index.html">MediaOutput</a></div><p class="paragraph">An object that manages offscreen rendering a streaming video source.</p><h3 class="">Usage</h3><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val session = StreamSession.Builder(context, Preference.shared.rtmpURL.toUri()).build()<br><br>val screenSessionObject = MediaOutputScreenObject(context)<br>screenSessionObject.frame.set(0, 0, 160, 90)<br>screenSessionObject.videoSize = Size(1600, 900)<br>playback.stream.registerOutput(screenSessionObject)<br>mixer.screen.addChild(screenSessionObject)<br><br>session.connect(StreamSession.Method.PLAYBACK)</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MediaOutputScreenObject</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../-video-screen-object/index.html">VideoScreenObject</a>, <a href="../../com.haishinkit.media/-media-output/index.html">MediaOutput</a></div><p class="paragraph">Renders another media source's video composition inside a screen.</p><p class="paragraph">For RTMP playback, register the RTMP session factory first. Run the suspending <code class="lang-kotlin">session.connect()</code> call from a coroutine. The example assumes an existing mixer and Android context.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">StreamSession.Builder.registerFactory(RtmpStreamSessionFactory)<br>val session = StreamSession.Builder(context, Uri.parse("rtmps://example.com/live/stream"))<br>    .setMode(StreamSession.Mode.PLAYBACK)<br>    .build()<br>val video = MediaOutputScreenObject(context)<br>video.frame = Rect(0, 0, 160, 90)<br>video.videoSize = Size(1600, 900)<br>session.stream.registerOutput(video)<br>mixer.screen.addChild(video)<br>session.connect().getOrThrow()</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><p class="paragraph">When finished, close the session, unregister the output, and remove the object from the screen.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -130,7 +130,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/bounds.html">bounds</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a></div><div class="brief "><p class="paragraph">The bounds rectangle.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/bounds.html">bounds</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a></div><div class="brief "><p class="paragraph">The rectangle computed by the most recent layout pass, in pixels.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="data-source.html">dataSource</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/ref/WeakReference.html">WeakReference</a><span class="token operator">&lt;</span><a href="../../com.haishinkit.media/-media-output-data-source/index.html">MediaOutputDataSource</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The source of the media data object.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="data-source.html">dataSource</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/ref/WeakReference.html">WeakReference</a><span class="token operator">&lt;</span><a href="../../com.haishinkit.media/-media-output-data-source/index.html">MediaOutputDataSource</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">A weak reference to the registered media source, or <code class="lang-kotlin">null</code> when detached.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/device-orientation.html">deviceOrientation</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Specifies the deviceOrientation that describe the physical orientation of the device.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/device-orientation.html">deviceOrientation</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The display rotation, expressed as a <code class="lang-kotlin">Surface.ROTATION_*</code> constant.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/frame.html">frame</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a></div><div class="brief "><p class="paragraph">Specifies the frame rectangle.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/frame.html">frame</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a></div><div class="brief "><p class="paragraph">The requested layout rectangle, in pixels.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -235,7 +235,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/image-orientation.html">imageOrientation</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics/-image-orientation/index.html">ImageOrientation</a></div><div class="brief "><p class="paragraph">Specifies the imageOrientation that describe the image orientation.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/image-orientation.html">imageOrientation</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics/-image-orientation/index.html">ImageOrientation</a></div><div class="brief "><p class="paragraph">The rotation and mirroring of the source image.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -250,7 +250,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/is-rotates-with-content.html">isRotatesWithContent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Specifies whether displayed images rotates(true), or not(false).</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/is-rotates-with-content.html">isRotatesWithContent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether to apply <a href="../-video-screen-object/device-orientation.html">deviceOrientation</a> when rotating the video.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -280,7 +280,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/layout-margin.html">layoutMargin</a><span class="token operator">: </span><a href="../-edge-insets/index.html">EdgeInsets</a></div><div class="brief "><p class="paragraph">Specifies the default spacing to laying out content in the screen object.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/layout-margin.html">layoutMargin</a><span class="token operator">: </span><a href="../-edge-insets/index.html">EdgeInsets</a></div><div class="brief "><p class="paragraph">Margins used to position and size this object, in pixels.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -295,7 +295,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/matrix.html">matrix</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html">FloatArray</a></div><div class="brief "><p class="paragraph">The mvp matrix.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../-screen-object/matrix.html">matrix</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float-array/index.html">FloatArray</a></div><div class="brief "><p class="paragraph">The 4 × 4 model-view-projection matrix used for rendering.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -310,7 +310,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/parent.html">parent</a><span class="token operator">: </span><a href="../-screen-object-container/index.html">ScreenObjectContainer</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The screen object container that contains this screen object</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/parent.html">parent</a><span class="token operator">: </span><a href="../-screen-object-container/index.html">ScreenObjectContainer</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The container that owns this object, or <code class="lang-kotlin">null</code> when detached.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -325,7 +325,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/should-invalidate-layout.html">shouldInvalidateLayout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-screen-object/should-invalidate-layout.html">shouldInvalidateLayout</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether the object needs another layout pass.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -340,7 +340,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="surface.html">surface</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/Surface.html">Surface</a><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="surface.html">surface</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/Surface.html">Surface</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The destination surface for rendering the registered source's screen.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -385,7 +385,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/track.html">track</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/track.html">track</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The video track to render, matching the track passed to <code class="lang-kotlin">MediaMixer.attachVideo</code>. Defaults to 0.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -430,7 +430,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-screen-object/video-effect.html">videoEffect</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics.effect/-video-effect/index.html">VideoEffect</a></div><div class="brief "><p class="paragraph">Specifies the video effect such as a monochrome, a sepia.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-screen-object/video-effect.html">videoEffect</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics.effect/-video-effect/index.html">VideoEffect</a></div><div class="brief "><p class="paragraph">The effect applied when rendering this object.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -445,7 +445,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/video-gravity.html">videoGravity</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics/-video-gravity/index.html">VideoGravity</a></div><div class="brief "><p class="paragraph">Specifies the videoGravity how the displays the visual content.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="../-video-screen-object/video-gravity.html">videoGravity</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics/-video-gravity/index.html">VideoGravity</a></div><div class="brief "><p class="paragraph">How the video is scaled to fit its bounds.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -460,7 +460,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-video-screen-object/video-size.html">videoSize</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/Size.html">Size</a></div><div class="brief "><p class="paragraph">Specifies the videoSize that describe the video source.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="../-video-screen-object/video-size.html">videoSize</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/Size.html">Size</a></div><div class="brief "><p class="paragraph">The source video dimensions, in pixels.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -479,7 +479,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="append.html"><span class="token function">append</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><a href="../../com.haishinkit.media/-media-buffer/index.html">MediaBuffer</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Invoked immediately after capture data.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="append.html"><span class="token function">append</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><a href="../../com.haishinkit.media/-media-buffer/index.html">MediaBuffer</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Receives a media buffer from the source. Consume or copy its payload before it is reused.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -509,7 +509,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-screen-object/find-by-id.html"><span class="token function">findById</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-screen-object/index.html">ScreenObject</a><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-screen-object/find-by-id.html"><span class="token function">findById</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-screen-object/index.html">ScreenObject</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns this object if its identifier matches, or <code class="lang-kotlin">null</code>. Containers also search their descendants.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -539,7 +539,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="layout.html"><span class="token function">layout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">renderer<span class="token operator">: </span><a href="../-renderer/index.html">Renderer</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Layouts the screen object.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="layout.html"><span class="token function">layout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">renderer<span class="token operator">: </span><a href="../-renderer/index.html">Renderer</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Calculates the object bounds and updates its rendering layout.</p></div></div></div>
                 </div>
               </div>
             </div>

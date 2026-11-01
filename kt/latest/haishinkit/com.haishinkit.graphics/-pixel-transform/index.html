@@ -94,7 +94,7 @@
   <div class="breadcrumbs"><a href="../../index.html">haishinkit</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.graphics</a><span class="delimiter">/</span><span class="current">PixelTransform</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Pixel</span><wbr><span><span>Transform</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">PixelTransform</a></div><p class="paragraph">The PixelTransform interface provides some graphics operations.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">PixelTransform</a></div><p class="paragraph">Renders a composited <a href="../../com.haishinkit.screen/-screen/index.html">Screen</a> to an output <a href="https://developer.android.com/reference/kotlin/android/view/Surface.html">Surface</a>.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -160,7 +160,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="frame-rate.html">frameRate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Specifies the frameRate for an output source in frames/sec.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="frame-rate.html">frameRate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The target output frame rate, in frames per second.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -175,7 +175,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="image-extent.html">imageExtent</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/Size.html">Size</a></div><div class="brief "><p class="paragraph">Specifies the current width and height of the output surface.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="image-extent.html">imageExtent</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/util/Size.html">Size</a></div><div class="brief "><p class="paragraph">The output dimensions, in pixels.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="screen.html">screen</a><span class="token operator">: </span><a href="../../com.haishinkit.screen/-screen/index.html">Screen</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Specifies the off screen object.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="screen.html">screen</a><span class="token operator">: </span><a href="../../com.haishinkit.screen/-screen/index.html">Screen</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The screen to render, or <code class="lang-kotlin">null</code> when no screen is attached.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="surface.html">surface</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/Surface.html">Surface</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Specifies the surface that is an output source.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="surface.html">surface</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/Surface.html">Surface</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The destination surface, or <code class="lang-kotlin">null</code> when no output is attached.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -220,7 +220,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="video-effect.html">videoEffect</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics.effect/-video-effect/index.html">VideoEffect</a></div><div class="brief "><p class="paragraph">Specifies the videoEffect such as a monochrome, a sepia.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="video-effect.html">videoEffect</a><span class="token operator">: </span><a href="../../com.haishinkit.graphics.effect/-video-effect/index.html">VideoEffect</a></div><div class="brief "><p class="paragraph">The effect applied to rendered video, such as monochrome or sepia.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -235,7 +235,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="video-gravity.html">videoGravity</a><span class="token operator">: </span><a href="../-video-gravity/index.html">VideoGravity</a></div><div class="brief "><p class="paragraph">Specifies the videoGravity how the displays the inputSurface's visual content.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="video-gravity.html">videoGravity</a><span class="token operator">: </span><a href="../-video-gravity/index.html">VideoGravity</a></div><div class="brief "><p class="paragraph">How the video is scaled to fit the output surface.</p></div></div></div>
                 </div>
               </div>
             </div>

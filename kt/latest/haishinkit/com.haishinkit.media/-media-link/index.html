@@ -94,7 +94,7 @@
   <div class="breadcrumbs"><a href="../../index.html">haishinkit</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.media</a><span class="delimiter">/</span><span class="current">MediaLink</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Media</span><wbr><span><span>Link</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MediaLink</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>stream<span class="token operator">: </span><a href="../../com.haishinkit.stream/-stream/index.html">Stream</a></span></span><span class="token punctuation">)</span> : <a href="../../com.haishinkit.lang/-running/index.html">Running</a>, <span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span>, <a href="https://developer.android.com/reference/kotlin/android/view/Choreographer.FrameCallback.html">Choreographer.FrameCallback</a></div><p class="paragraph">The MediaLink class can be used to synchronously play audio and video streams.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MediaLink</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>stream<span class="token operator">: </span><a href="../../com.haishinkit.stream/-stream/index.html">Stream</a></span></span><span class="token punctuation">)</span> : <a href="../../com.haishinkit.lang/-running/index.html">Running</a>, <span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span>, <a href="https://developer.android.com/reference/kotlin/android/view/Choreographer.FrameCallback.html">Choreographer.FrameCallback</a></div><p class="paragraph">Schedules decoded audio and video for synchronized playback.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -130,7 +130,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="audio-track.html">audioTrack</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/media/AudioTrack.html">AudioTrack</a><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="audio-track.html">audioTrack</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/media/AudioTrack.html">AudioTrack</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The playback audio track. Setting it to <code class="lang-kotlin">null</code> releases the existing track and switches to clock synchronization.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -175,7 +175,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="paused.html">paused</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Specifies the paused indicates the playback of a media pause(TRUE) or not(FALSE).</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="paused.html">paused</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether the audio playback track is paused. Setting this has no effect if no track exists.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="stream.html">stream</a><span class="token operator">: </span><a href="../../com.haishinkit.stream/-stream/index.html">Stream</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="stream.html">stream</a><span class="token operator">: </span><a href="../../com.haishinkit.stream/-stream/index.html">Stream</a></div><div class="brief "><p class="paragraph">The stream whose codec output buffers are queued and released.</p></div></div></div>
                 </div>
               </div>
             </div>

@@ -94,7 +94,7 @@
   <div class="breadcrumbs"><a href="../../index.html">rtmp</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.rtmp.event</a><span class="delimiter">/</span><span class="current">Event</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Event</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">Event</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">bubbles<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">The Event interface is used to provide information.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">Event</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">bubbles<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Carries an event name, payload, and dispatch metadata.</p><h4 class="tableheader">Parameters</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":rtmp/main" data-filterable-set=":rtmp/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>type</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The event name.</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":rtmp/main" data-filterable-set=":rtmp/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>bubbles</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether the event is marked as bubbling.</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":rtmp/main" data-filterable-set=":rtmp/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>data</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The event payload, or <code class="lang-kotlin">null</code>.</p></div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -149,7 +149,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="current-target.html">currentTarget</a><span class="token operator">: </span><a href="../-i-event-dispatcher/index.html">IEventDispatcher</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The currentTarget indicates the <a href="../-i-event-dispatcher/index.html">IEventDispatcher</a>s are currently being evaluated.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="current-target.html">currentTarget</a><span class="token operator">: </span><a href="../-i-event-dispatcher/index.html">IEventDispatcher</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The dispatcher currently delivering the event.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -164,7 +164,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="data.html">data</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The data indicates the to provide information.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="data.html">data</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The event payload, or <code class="lang-kotlin">null</code> if no payload is supplied.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -179,7 +179,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-bubbles.html">isBubbles</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">The isBubbles indicates whether ot not an event is a bubbling event.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="is-bubbles.html">isBubbles</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether this event is marked as bubbling.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -194,7 +194,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="target.html">target</a><span class="token operator">: </span><a href="../-i-event-dispatcher/index.html">IEventDispatcher</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The target indicates the <a href="../-i-event-dispatcher/index.html">IEventDispatcher</a>.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="target.html">target</a><span class="token operator">: </span><a href="../-i-event-dispatcher/index.html">IEventDispatcher</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The originating dispatcher, when assigned.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -209,7 +209,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="type.html">type</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The type represents the event name.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="type.html">type</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The event name, such as <a href="-companion/-r-t-m-p_-s-t-a-t-u-s.html">RTMP_STATUS</a> or <a href="-companion/-i-o_-e-r-r-o-r.html">IO_ERROR</a>.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -228,7 +228,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="stop-propagation.html"><span class="token function">stopPropagation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":rtmp/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="stop-propagation.html"><span class="token function">stopPropagation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Marks propagation as stopped after the current target's listeners finish.</p></div></div></div>
                 </div>
               </div>
             </div>

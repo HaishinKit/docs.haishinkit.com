@@ -94,7 +94,7 @@
   <div class="breadcrumbs"><a href="../../index.html">haishinkit</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.media.source</a><span class="delimiter">/</span><span class="current">AudioRecordSource</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Audio</span><wbr><span>Record</span><wbr><span><span>Source</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AudioRecordSource</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span> : <a href="../-audio-source/index.html">AudioSource</a></div><p class="paragraph">An audio source that captures a microphone by the AudioRecord api.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AudioRecordSource</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span> : <a href="../-audio-source/index.html">AudioSource</a></div><p class="paragraph">Captures PCM audio using <a href="https://developer.android.com/reference/kotlin/android/media/AudioRecord.html">AudioRecord</a>.</p><p class="paragraph">Grant <code class="lang-kotlin">RECORD_AUDIO</code> permission and configure capture settings before attaching this source with <code class="lang-kotlin">MediaMixer.attachAudio</code>. The default format is 16-bit mono PCM at 44,100 Hz.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -149,7 +149,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="audio-record.html">audioRecord</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/media/AudioRecord.html">AudioRecord</a><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="audio-record.html">audioRecord</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/media/AudioRecord.html">AudioRecord</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The lazily created recorder, or <code class="lang-kotlin">null</code> if audio recording permission has not been granted.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -164,7 +164,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="audio-source.html">audioSource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="audio-source.html">audioSource</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The Android audio capture source; defaults to <code class="lang-kotlin">MediaRecorder.AudioSource.CAMCORDER</code>.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -179,7 +179,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="channel.html">channel</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="channel.html">channel</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The input channel mask, such as <code class="lang-kotlin">AudioFormat.CHANNEL_IN_MONO</code>.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -194,7 +194,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-muted.html">isMuted</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Specifies the muted indicates whether the media muted.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-muted.html">isMuted</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether captured audio is replaced with silence.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -209,7 +209,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="min-buffer-size.html">minBufferSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="min-buffer-size.html">minBufferSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The capture buffer size, in bytes; computed on first access unless explicitly assigned.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -224,7 +224,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="sample-rate.html">sampleRate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="sample-rate.html">sampleRate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The capture sample rate, in hertz.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -243,7 +243,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Closes a source.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Closes the source and returns the result of releasing its capture resources.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -258,7 +258,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="open.html"><span class="token function">open</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mixer<span class="token operator">: </span><a href="../../com.haishinkit.media/-media-mixer/index.html">MediaMixer</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Open a source.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">suspend override </span><span class="token keyword">fun </span><a href="open.html"><span class="token function">open</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mixer<span class="token operator">: </span><a href="../../com.haishinkit.media/-media-mixer/index.html">MediaMixer</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-result/index.html">Result</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Opens the source for the given mixer and returns the result of initialization.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -273,7 +273,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read.html"><span class="token function">read</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">track<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.haishinkit.media/-media-buffer/index.html">MediaBuffer</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read.html"><span class="token function">read</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">track<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.haishinkit.media/-media-buffer/index.html">MediaBuffer</a></div><div class="brief "><p class="paragraph">Reads audio for the given track.</p></div></div></div>
                 </div>
               </div>
             </div>

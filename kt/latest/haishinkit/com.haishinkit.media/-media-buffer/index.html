@@ -94,7 +94,7 @@
   <div class="breadcrumbs"><a href="../../index.html">haishinkit</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.media</a><span class="delimiter">/</span><span class="current">MediaBuffer</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Media</span><wbr><span><span>Buffer</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">MediaBuffer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="../-media-type/index.html">MediaType</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>index<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>payload<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html">ByteBuffer</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>timestamp<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>sync<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">MediaBuffer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="../-media-type/index.html">MediaType</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>index<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>payload<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html">ByteBuffer</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>timestamp<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>sync<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">A media payload and its capture or codec metadata.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -130,7 +130,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="--index--.html">index</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="--index--.html">index</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The source track identifier for captured audio, or the codec output buffer index for playback.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="payload.html">payload</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html">ByteBuffer</a><span class="token operator">?</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="payload.html">payload</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html">ByteBuffer</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The media bytes, or <code class="lang-kotlin">null</code> for surface-backed video. Producers may reuse this storage.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="sync.html">sync</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="sync.html">sync</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether this is a synchronization frame, such as a video keyframe.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -175,7 +175,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="timestamp.html">timestamp</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="timestamp.html">timestamp</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The presentation timestamp in microseconds for decoded playback; capture sources may use zero.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="type.html">type</a><span class="token operator">: </span><a href="../-media-type/index.html">MediaType</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":haishinkit/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="type.html">type</a><span class="token operator">: </span><a href="../-media-type/index.html">MediaType</a></div><div class="brief "><p class="paragraph">Whether the buffer contains audio or video.</p></div></div></div>
                 </div>
               </div>
             </div>
