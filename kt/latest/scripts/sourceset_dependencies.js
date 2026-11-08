@@ -1,1 +1,1 @@
-sourceset_dependencies = '{":rtmp/debug":[],":rtmp/main":[],":rtmp/release":[],":lottie/debug":[],":lottie/main":[],":lottie/release":[],":haishinkit/debug":[],":haishinkit/main":[],":haishinkit/release":[],":compose/debug":[],":compose/main":[],":compose/release":[]}'
+sourceset_dependencies = '{":rtmp/release":[],":lottie/release":[],":haishinkit/release":[],":srt/release":[],":vulkan/release":[],":compose/release":[]}'

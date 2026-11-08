@@ -25,3 +25,7 @@ module:rtmp
 com.haishinkit.rtmp
 com.haishinkit.rtmp.amf
 com.haishinkit.rtmp.event
+module:srt
+com.haishinkit.srt
+module:vulkan
+com.haishinkit.vulkan

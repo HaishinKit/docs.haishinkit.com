@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SrtConnection</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    HaishinKit
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":srt/release">release</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":srt/release" data-filter=":srt/release">
+                                <span class="checkbox--icon"></span>
+                                release
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    HaishinKit
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="srt::com.haishinkit.srt/SrtConnection///PointingToDeclaration//-951792139">
+  <div class="breadcrumbs"><a href="../../index.html">srt</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.srt</a><span class="delimiter">/</span><span class="current">SrtConnection</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Srt</span><wbr><span><span>Connection</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">SrtConnection</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="-options/index.html">SrtConnection.Options</a><span class="token operator"> = </span>Options()</span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/java/io/Closeable.html">Closeable</a></div><p class="paragraph">Owns one SRT peer connection. <a href="connect.html">connect</a> suspends until a caller connects or a listener accepts a peer. No stream multiplexing or media framing is performed.</p><p class="paragraph"><a href="../../../srt/com.haishinkit.srt/-srt-connection/--root--.html">scope</a> owns disconnection monitoring; its cancellation closes this connection. Close the connection (for example with use) before leaving that scope normally. After close/failure, this instance can connect again while its scope is active.</p><h4 class="tableheader">Parameters</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>scope</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Owner of connection monitoring; its context must contain a Job.</p></div></div></div></div><div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>options</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Default socket configuration, overridden by supported URI query parameters.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="117189941%2FConstructors%2F-951792139" anchor-label="SrtConnection" id="117189941%2FConstructors%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-srt-connection.html"><span>Srt</span><wbr><span><span>Connection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="117189941%2FConstructors%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scope<span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="-options/index.html">SrtConnection.Options</a><span class="token operator"> = </span>Options()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-733274801%2FClasslikes%2F-951792139" anchor-label="Companion" id="-733274801%2FClasslikes%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-733274801%2FClasslikes%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="377357060%2FClasslikes%2F-951792139" anchor-label="Mode" id="377357060%2FClasslikes%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-mode/index.html"><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="377357060%2FClasslikes%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-mode/index.html">Mode</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-mode/index.html">SrtConnection.Mode</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Handshake role, independent of whether media is sent or received.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1536007043%2FClasslikes%2F-951792139" anchor-label="Options" id="-1536007043%2FClasslikes%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-options/index.html"><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1536007043%2FClasslikes%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-options/index.html">Options</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>latencyMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">120</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>connectTimeoutMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">3000</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>passphrase<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>streamId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Default native socket configuration. Typed durations are milliseconds; URI <code class="lang-kotlin">latency</code> uses microseconds and is rounded up to whole milliseconds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-939950631%2FClasslikes%2F-951792139" anchor-label="ReadyState" id="-939950631%2FClasslikes%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-ready-state/index.html"><span>Ready</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-939950631%2FClasslikes%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-ready-state/index.html">ReadyState</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-ready-state/index.html">SrtConnection.ReadyState</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Observable lifecycle of the current connection attempt.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="190315913%2FProperties%2F-951792139" anchor-label="inputs" id="190315913%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="inputs.html"><span><span>inputs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="190315913%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="inputs.html">inputs</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/Flow///PointingToDeclaration/">Flow</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Cold, unbuffered message flow for a single collector. Each collection uses the currently open peer. Completion or cancellation closes that peer. Concurrent readers are rejected without interrupting the existing reader. I/O failures propagate to the collector; no reconnection is automatic.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1296727337%2FProperties%2F-951792139" anchor-label="isConnected" id="1296727337%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-connected.html"><span>is</span><wbr><span><span>Connected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1296727337%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="is-connected.html">isConnected</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Reads the native peer state; false while connecting, listening or closed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1351644759%2FProperties%2F-951792139" anchor-label="localAddress" id="-1351644759%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="local-address.html"><span>local</span><wbr><span><span>Address</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1351644759%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="local-address.html">localAddress</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/InetSocketAddress.html">InetSocketAddress</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Native local address once bound; null before binding or after close. Port zero exposes the allocated port here.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1897172047%2FProperties%2F-951792139" anchor-label="mode" id="1897172047%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mode.html"><span><span>mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1897172047%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="mode.html">mode</a><span class="token operator">: </span><a href="-mode/index.html">SrtConnection.Mode</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Selected handshake role, or null when closed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1415272718%2FProperties%2F-951792139" anchor-label="performanceData" id="1415272718%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="performance-data.html"><span>performance</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1415272718%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="performance-data.html">performanceData</a><span class="token operator">: </span><a href="../-srt-performance-data/index.html">SrtPerformanceData</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">A fresh native statistics snapshot while OPEN; null in all other states.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1195244516%2FProperties%2F-951792139" anchor-label="readyState" id="1195244516%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ready-state.html"><span>ready</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1195244516%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="ready-state.html">readyState</a><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines.flow/StateFlow///PointingToDeclaration/">StateFlow</span><span class="token operator">&lt;</span><a href="-ready-state/index.html">SrtConnection.ReadyState</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">State of the current attempt. CLOSED is the initial state; fast transitions may be conflated.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-358740900%2FProperties%2F-951792139" anchor-label="uri" id="-358740900%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="uri.html"><span><span>uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-358740900%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="uri.html">uri</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Original endpoint, including its query, retained until the attempt/connection closes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-307137904%2FFunctions%2F-951792139" anchor-label="close" id="-307137904%2FFunctions%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close.html"><span><span>close</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-307137904%2FFunctions%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="close.html"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Cancels pending setup and monitoring and releases listener/peer sockets. Idempotent and reusable: a later <a href="connect.html">connect</a> starts a new native socket. Queued transport bytes are discarded; close does not flush pending sends. The owning scope is never cancelled by this method.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="44124201%2FFunctions%2F-951792139" anchor-label="connect" id="44124201%2FFunctions%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="connect.html"><span><span>connect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="44124201%2FFunctions%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="connect.html"><span class="token function">connect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Establishes one peer connection. In listener mode this suspends until accept; observe LISTENING and <a href="local-address.html">localAddress</a> to discover a dynamically allocated port.</p></div><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="connect.html"><span class="token function">connect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uri<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Parses an endpoint string and connects using <a href="connect.html">connect</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1708680517%2FFunctions%2F-951792139" anchor-label="receive" id="1708680517%2FFunctions%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="receive.html"><span><span>receive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1708680517%2FFunctions%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="receive.html"><span class="token function">receive</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a></div><div class="brief "><p class="paragraph">Receives one message into an owned byte array. Only one receive or <a href="inputs.html">inputs</a> collector may be active. Cancellation closes an active receive's connection.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-558200282%2FFunctions%2F-951792139" anchor-label="send" id="-558200282%2FFunctions%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send.html"><span><span>send</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-558200282%2FFunctions%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="send.html"><span class="token function">send</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sends transport bytes as messages of at most 1316 bytes, applying native backpressure. Concurrent calls retain their chunk ordering. Do not mutate <a href="send.html">data</a> until return. Success means libsrt accepted the bytes, not that the peer has consumed them. Cancelling an active send closes the connection; cancelling a queued sender leaves the active sender intact. Empty arrays produce no messages.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

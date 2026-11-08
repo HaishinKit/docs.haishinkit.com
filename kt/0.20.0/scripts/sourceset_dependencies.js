@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":rtmp/release":[],":lottie/release":[],":haishinkit/release":[],":srt/release":[],":vulkan/release":[],":compose/release":[]}'
