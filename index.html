@@ -55,8 +55,20 @@
         </article>
         <article id="kotlin">
           <h3>HaishinKit.kt</h3>
-          <p>Kotlin API documentation for Android applications, including camera and microphone streaming via RTMP.</p>
+          <p>Kotlin API documentation for Android applications, including camera and microphone streaming via RTMP/RTMPS and experimental SRT with MPEG-TS.</p>
           <p><a href="/kt/latest/">Browse Kotlin API documentation</a></p>
+          <ul>
+            <li><a href="/kt/latest/haishinkit/">Core media, mixing and stream session APIs</a></li>
+            <li><a href="/kt/latest/rtmp/">RTMP/RTMPS publishing and playback</a></li>
+            <li><a href="/kt/latest/srt/">SRT connections and MPEG-TS publishing/playback (experimental)</a></li>
+            <li><a href="/kt/latest/compose/">Jetpack Compose components</a></li>
+            <li><a href="/kt/latest/lottie/">Lottie animations</a></li>
+            <li><a href="/kt/latest/vulkan/">Optional Vulkan output backend</a></li>
+          </ul>
+          <p>Use the common <a href="/kt/latest/haishinkit/com.haishinkit.stream/-stream-session/">StreamSession API</a>
+            with an RTMP or SRT factory. See the
+            <a href="https://github.com/HaishinKit/HaishinKit.kt/blob/master/srt/README.md">Android SRT setup guide</a>
+            for native build requirements and caller, listener, rendezvous and encryption options.</p>
           <p><a href="https://github.com/HaishinKit/HaishinKit.kt">Android source code and examples</a></p>
         </article>
         <article id="flutter">
