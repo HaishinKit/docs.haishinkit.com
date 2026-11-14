@@ -82,7 +82,7 @@
       <p class="paragraph"><a href="https://raw.githubusercontent.com/HaishinKit/HaishinKit.kt/master/LICENSE.md"><img alt="GitHub license" src="https://img.shields.io/badge/license-New%20BSD-blue.svg"></a> <a href="https://jitpack.io/#HaishinKit/HaishinKit~kt"><img alt="" src="https://jitpack.io/v/HaishinKit/HaishinKit~kt.svg"></a> <a href="https://github.com/sponsors/shogo4405"></a></p>
       <ul>
         <li>
-          <p class="paragraph">Camera and microphone streaming library via RTMP/RTMPS and SRT for Android.</p>
+          <p class="paragraph">Camera and microphone streaming library via RTMP/RTMPS, SRT and WHIP/WHEP for Android.</p>
         </li>
         <li>
           <p class="paragraph"><a href="https://docs.haishinkit.com/kt/latest/">API Documentation</a></p>
@@ -94,10 +94,10 @@
       <h2 class="">🎨 Features</h2>
       <ul>
         <li>
-          <p class="paragraph"><strong>Protocols</strong> ✨Publish and play back over RTMP/RTMPS or experimental SRT (MPEG-TS with H.264/H.265 and AAC).</p>
+          <p class="paragraph"><strong>Protocols</strong> ✨Publish and play back over RTMP/RTMPS, experimental SRT (MPEG-TS with H.264/H.265 and AAC), or experimental WHIP/WHEP (WebRTC with H.264 and Opus).</p>
         </li>
         <li>
-          <p class="paragraph"><strong>Stream sessions</strong> ✨Use a common <code class="lang-kotlin">StreamSession</code> API for RTMP and SRT publishing and playback.</p>
+          <p class="paragraph"><strong>Stream sessions</strong> ✨Use a common <code class="lang-kotlin">StreamSession</code> API for RTMP, SRT, WHIP and WHEP publishing and playback.</p>
         </li>
         <li>
           <p class="paragraph"><strong>Multi Camera access</strong> ✨Support multi camera access.</p>
@@ -112,7 +112,7 @@
       <h2 class="">🐾 Examples</h2>
       <ul>
         <li>
-          <p class="paragraph">Reference implementation app for live streaming <code class="lang-kotlin">publish</code> and <code class="lang-kotlin">playback</code>.</p>
+          <p class="paragraph">Reference implementation app for RTMP/SRT publishing and playback, WHIP publishing and WHEP playback. The sample requires Android 10 (API 29) or later; the core and RTMP/SRT libraries still support API 23+.</p>
         </li>
         <li>
           <p class="paragraph">If an issue occurs, please check whether it also happens in the examples app.</p>
@@ -123,6 +123,22 @@
 <span class="copy-tooltip">
           <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
 <span class="copy-icon"></span></span></div>
+      <h3 class="">Try WHIP and WHEP in the sample</h3>
+      <ol>
+        <li>
+          <p class="paragraph">Open <strong>Preference</strong> and enter the complete WHIP endpoint in <strong>Publish URL (RTMP / SRT / WHIP)</strong>. An <code class="lang-kotlin">http://</code> or <code class="lang-kotlin">https://</code> URL selects WebRTC.</p>
+        </li>
+        <li>
+          <p class="paragraph">Enter the matching stream's complete endpoint in <strong>WHEP playback URL</strong>. RTMP StreamName is ignored for HTTP(S); WHIP and WHEP paths are supplied by your server.</p>
+        </li>
+        <li>
+          <p class="paragraph">Set <strong>Bearer token (optional)</strong> without the <code class="lang-kotlin">Bearer </code> prefix, and <strong>STUN / TURN servers (optional)</strong> with one URL per line, if required. These settings apply to both WHIP and WHEP.</p>
+        </li>
+        <li>
+          <p class="paragraph">Open <strong>Publish</strong>, grant camera/microphone permissions and tap <strong>GO LIVE</strong> to send with WHIP. Open <strong>Playback</strong> and tap <strong>PLAY</strong> to receive with WHEP. <strong>STOP</strong> disconnects or cancels connection setup.</p>
+        </li>
+      </ol>
+      <p class="paragraph">The sample allows local plain-HTTP endpoints and captures audio at 48 kHz. Settings are kept for the current app process and are applied when reopening each tab. Keep Publish open and use a second device/player for continuous publish-and-watch tests. See the app/README.md for build commands and other protocols, and rtc/README.md for authentication, ICE and implementation limits.</p>
       <h2 class="">🔧 Usage</h2>
       <h3 class="">Gradle dependency</h3>
       <p class="paragraph"><strong>JitPack</strong></p>
@@ -142,7 +158,7 @@
 <span class="copy-icon"></span></span></div>
       <p class="paragraph">Add dependencies to your app's <code class="lang-kotlin">build.gradle</code>:</p>
       <div class="sample-container">
-        <pre><code class="block lang-gradle" theme="idea">dependencies {<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:haishinkit:x.x.x'<br>  // Choose the transport modules your app uses.<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:rtmp:x.x.x'<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:srt:x.x.x'<br>  // Optional UI and composition modules.<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:compose:x.x.x'<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:lottie:x.x.x'<br>  // Optional Vulkan output (API 28+).<br>  // implementation 'com.github.HaishinKit.HaishinKit~kt:vulkan:x.x.x'<br>}</code></pre>
+        <pre><code class="block lang-gradle" theme="idea">dependencies {<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:haishinkit:x.x.x'<br>  // Choose the transport modules your app uses.<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:rtmp:x.x.x'<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:srt:x.x.x'<br>  // Optional WHIP/WHEP (API 29+).<br>  // implementation 'com.github.HaishinKit.HaishinKit~kt:rtc:x.x.x'<br>  // Optional UI and composition modules.<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:compose:x.x.x'<br>  implementation 'com.github.HaishinKit.HaishinKit~kt:lottie:x.x.x'<br>  // Optional Vulkan output (API 28+).<br>  // implementation 'com.github.HaishinKit.HaishinKit~kt:vulkan:x.x.x'<br>}</code></pre>
 <span class="copy-tooltip">
           <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
 <span class="copy-icon"></span></span></div>
@@ -185,6 +201,14 @@
               <td>SRT publishing and playback with MPEG-TS and encryption support.</td>
             </tr>
             <tr>
+              <td>rtc</td>
+              <td>29+</td>
+              <td>10</td>
+              <td>Optional</td>
+              <td>Experimental</td>
+              <td>WHIP publishing and WHEP playback with H.264/Opus and libdatachannel.</td>
+            </tr>
+            <tr>
               <td>compose</td>
               <td>23+</td>
               <td>6.0</td>
@@ -211,7 +235,7 @@
           </tbody>
         </table>
       </div>
-      <p class="paragraph">Add <code class="lang-kotlin">rtmp</code>, <code class="lang-kotlin">srt</code>, or both for network streaming. Use the same version for all artifacts and choose a release that includes the modules you need.</p>
+      <p class="paragraph">Add <code class="lang-kotlin">rtmp</code>, <code class="lang-kotlin">srt</code>, or <code class="lang-kotlin">rtc</code> for the network protocols your app needs. Use the same version for all artifacts and choose a release that includes the modules you need.</p>
       <h3 class="">Android manifest</h3>
       <div class="sample-container">
         <pre><code class="block lang-xml" theme="idea">&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;<br>&lt;uses-permission android:name=&quot;android.permission.CAMERA&quot; /&gt;<br>&lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot; /&gt;</code></pre>
@@ -235,6 +259,16 @@
       <h3 class="">Experimental SRT module</h3>
       <p class="paragraph">The <code class="lang-kotlin">:srt</code> module supports encrypted SRT connections and MPEG-TS publishing and playback through <code class="lang-kotlin">SrtConnection</code>, <code class="lang-kotlin">SrtStream</code>, and <code class="lang-kotlin">SrtStreamSessionFactory</code>. Caller, listener, and rendezvous socket modes are supported. To listen for one peer, use <code class="lang-kotlin">srt://:9710?mode=listener</code>. Socket mode is independent of publishing/playback; connect a caller to a listener, or configure both peers for rendezvous.</p>
       <p class="paragraph">Pass the complete SRT URL, including options such as <code class="lang-kotlin">streamid</code>, <code class="lang-kotlin">latency</code> (microseconds), or <code class="lang-kotlin">passphrase</code>. A separate RTMP stream name is not used. See <a href="https://github.com/HaishinKit/HaishinKit.kt/blob/master/srt/README.md">Android SRT setup</a> for requirements, build commands, encryption options, and example app usage.</p>
+      <h3 class="">WHIP and WHEP stream sessions</h3>
+      <p class="paragraph">Add <code class="lang-kotlin">:rtc</code> and set your app's <code class="lang-kotlin">minSdk</code> to 29 or later. A complete WHIP or WHEP HTTP(S) endpoint is used directly; no separate RTMP stream name is appended.</p>
+      <div class="sample-container">
+        <pre><code class="block lang-kotlin" theme="idea">import android.net.Uri<br>import com.haishinkit.rtc.HTTPStreamSessionFactory<br>import com.haishinkit.rtc.RTCConfiguration<br>import com.haishinkit.stream.StreamSession<br><br>val rtcConfiguration = RTCConfiguration(<br>    // Set iceServers / bearerToken when required by your server and network.<br>)<br>StreamSession.Builder.registerFactory(HTTPStreamSessionFactory(rtcConfiguration))<br>val session = StreamSession.Builder(context, Uri.parse(endpoint))<br>    .setMode(StreamSession.Mode.PUBLISH) // WHIP. Use PLAYBACK with a WHEP endpoint.<br>    .build()<br>// Publishing: register session.stream with a MediaMixer and use 48 kHz PCM capture.<br>// Playback: register a StreamView output with session.stream before connecting.<br>session.connect().getOrThrow()<br>// When finished:<br>session.close().getOrThrow()<br>session.stream.dispose()</code></pre>
+<span class="copy-tooltip">
+          <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
+<span class="copy-icon"></span></span></div>
+      <h3 class="">Experimental WHIP/WHEP module</h3>
+      <p class="paragraph">The <code class="lang-kotlin">:rtc</code> module provides <code class="lang-kotlin">RTCSession</code> and <code class="lang-kotlin">HTTPStreamSessionFactory</code> for WHIP publishing and WHEP playback over HTTP(S). It requires Android 10+, uses libdatachannel for WebRTC transport and MediaCodec for H.264/Opus. The other modules retain their existing minimum Android versions. Configure audio capture to 48 kHz for its default Opus settings.</p>
+      <p class="paragraph">See rtc/README.md for publishing/playback examples, STUN/TURN and authentication settings, build commands and current limitations. The sample app requires Android 10+. Enter the WHIP and WHEP endpoints in Preference, then use Publish → GO LIVE or Playback → PLAY.</p>
       <h3 class="">Optional Vulkan output</h3>
       <p class="paragraph">Android API 28+ can select the Vulkan output backend for publishing, recording, and preview. Screen composition and effects use the existing OpenGL renderer. See <a href="https://github.com/HaishinKit/HaishinKit.kt/blob/master/vulkan/module-docs.md">the Vulkan module guide</a> for setup, capability requirements, OpenGL fallback, and device validation.</p>
       <h2 class="">🌏 Related projects</h2>
@@ -263,6 +297,7 @@
       </div>
       <h2 class="">📜 License</h2>
       <p class="paragraph">BSD-3-Clause</p>
+      <p class="paragraph">The optional RTC module includes libdatachannel (MPL-2.0) and other third-party dependencies. Their license texts and source links are bundled in the AAR under <code class="lang-kotlin">assets/libdatachannel</code>; see the rtc/src/main/assets/libdatachannel/NOTICE.</p>
     </div>
     <h2 class="">All modules:</h2>
     <div class="table"><a data-name="-1770459077%2FMain%2F0" anchor-label="compose" id="-1770459077%2FMain%2F0" data-filterable-set=""></a>
@@ -301,6 +336,19 @@
               </span></span></div>
           <div><span class="brief-comment">
               <p class="paragraph">Render Lottie animations in video compositions with com.haishinkit.lottie.LottieScreen. Load an animation, add the object to a mixer's screen, and start animation playback.</p>
+            </span></div>
+        </div>
+      </div>
+<a data-name="664398924%2FMain%2F0" anchor-label="rtc" id="664398924%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="rtc/index.html">rtc</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="664398924%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment">
+              <p class="paragraph">Android 10+ WHIP publishing and WHEP playback using libdatachannel, H.264 and Opus.</p>
             </span></div>
         </div>
       </div>

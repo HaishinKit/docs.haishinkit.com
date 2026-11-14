@@ -93,24 +93,24 @@
   <div class="breadcrumbs"><a href="../../index.html">srt</a><span class="delimiter">/</span><a href="../index.html">com.haishinkit.srt</a><span class="delimiter">/</span><span class="current">SrtPerformanceData</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Srt</span><wbr><span>Performance</span><wbr><span><span>Data</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">SrtPerformanceData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>bytesSent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bytesReceived<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sendBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>receiveBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roundTripTimeMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sendRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>receiveRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Immutable native statistics snapshot. Byte totals include protocol overhead; outgoing totals also include retransmissions. Reading does not reset counters.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">SrtPerformanceData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>bytesSent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bytesReceived<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sendBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>receiveBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roundTripTimeMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sendRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>receiveRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>msTimeStamp<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSentTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRecvTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSndLossTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvLossTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRetransTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSentACKTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRecvACKTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSentNAKTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRecvNAKTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>usSndDurationTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSndDropTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvDropTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvUndecryptTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteRcvLossTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteRetransTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteSndDropTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteRcvDropTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteRcvUndecryptTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRecv<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSndLoss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvLoss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRetrans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvRetrans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSentACK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRecvACK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSentNAK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRecvNAK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>usSndDuration<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktReorderDistance<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvAvgBelatedTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvBelated<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSndDrop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvDrop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvUndecrypt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteSent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteRecv<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteRcvLoss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteRetrans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteSndDrop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteRcvDrop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteRcvUndecrypt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>usPktSndPeriod<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktFlowWindow<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktCongestionWindow<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktFlightSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mbpsBandwidth<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteAvailSndBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteAvailRcvBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mbpsMaxBW<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>byteMSS<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSndBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>msSndBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>msSndTsbPdDelay<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>msRcvBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>msRcvTsbPdDelay<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSndFilterExtraTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvFilterExtraTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvFilterSupplyTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvFilterLossTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktSndFilterExtra<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvFilterExtra<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvFilterSupply<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktRcvFilterLoss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pktReorderTolerance<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Immutable native statistics snapshot. Byte totals include protocol overhead; outgoing totals also include retransmissions. Fields ending in <code class="lang-kotlin">Total</code> and the two byte totals are cumulative. Interval counters cover the time since the previous reset. Buffer sizes and RTT describe the sampled state.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="tableheader">Constructors</h2>
-        <div class="table"><a data-name="801594405%2FConstructors%2F-951792139" anchor-label="SrtPerformanceData" id="801594405%2FConstructors%2F-951792139" data-filterable-set=":srt/release"></a>
+        <div class="table"><a data-name="2054512155%2FConstructors%2F-951792139" anchor-label="SrtPerformanceData" id="2054512155%2FConstructors%2F-951792139" data-filterable-set=":srt/release"></a>
           <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-srt-performance-data.html"><span>Srt</span><wbr><span>Performance</span><wbr><span><span>Data</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="801594405%2FConstructors%2F-951792139"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2054512155%2FConstructors%2F-951792139"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bytesSent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">bytesReceived<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">sendBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">receiveBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">roundTripTimeMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">sendRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">receiveRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bytesSent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">bytesReceived<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">sendBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">receiveBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">roundTripTimeMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">sendRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">receiveRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">msTimeStamp<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSentTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRecvTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSndLossTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvLossTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRetransTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSentACKTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRecvACKTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSentNAKTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRecvNAKTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">usSndDurationTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSndDropTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvDropTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvUndecryptTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteRcvLossTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteRetransTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteSndDropTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteRcvDropTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteRcvUndecryptTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRecv<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSndLoss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvLoss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRetrans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvRetrans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSentACK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRecvACK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSentNAK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRecvNAK<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">usSndDuration<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktReorderDistance<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvAvgBelatedTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvBelated<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSndDrop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvDrop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvUndecrypt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteSent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteRecv<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteRcvLoss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteRetrans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteSndDrop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteRcvDrop<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteRcvUndecrypt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">usPktSndPeriod<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.0</span><span class="token punctuation">, </span></span><span class="parameter ">pktFlowWindow<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktCongestionWindow<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktFlightSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">mbpsBandwidth<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.0</span><span class="token punctuation">, </span></span><span class="parameter ">byteAvailSndBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">byteAvailRcvBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">mbpsMaxBW<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">0.0</span><span class="token punctuation">, </span></span><span class="parameter ">byteMSS<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSndBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">msSndBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">msSndTsbPdDelay<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">msRcvBuf<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">msRcvTsbPdDelay<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSndFilterExtraTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvFilterExtraTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvFilterSupplyTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvFilterLossTotal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktSndFilterExtra<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvFilterExtra<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvFilterSupply<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktRcvFilterLoss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">pktReorderTolerance<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bytesSent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">bytesReceived<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">sendBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">receiveBufferBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">roundTripTimeMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">sendRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">receiveRateMbps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -119,7 +119,232 @@
       </div>
       <div data-togglable="PROPERTY">
         <h2 class="tableheader">Properties</h2>
-        <div class="table"><a data-name="-1512767668%2FProperties%2F-951792139" anchor-label="bytesReceived" id="-1512767668%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+        <div class="table"><a data-name="-647782237%2FProperties%2F-951792139" anchor-label="byteAvailRcvBuf" id="-647782237%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-avail-rcv-buf.html"><span>byte</span><wbr><span>Avail</span><wbr><span>Rcv</span><wbr><span><span>Buf</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-647782237%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-avail-rcv-buf.html">byteAvailRcvBuf</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The available space in the receive buffer, in bytes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="236566439%2FProperties%2F-951792139" anchor-label="byteAvailSndBuf" id="236566439%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-avail-snd-buf.html"><span>byte</span><wbr><span>Avail</span><wbr><span>Snd</span><wbr><span><span>Buf</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="236566439%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-avail-snd-buf.html">byteAvailSndBuf</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The available space in the send buffer, in bytes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1043130445%2FProperties%2F-951792139" anchor-label="byteMSS" id="-1043130445%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-m-s-s.html"><span>byte</span><wbr><span><span>MSS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1043130445%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-m-s-s.html">byteMSS</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The maximum transmission unit, in bytes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1660026196%2FProperties%2F-951792139" anchor-label="byteRcvDrop" id="-1660026196%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-rcv-drop.html"><span>byte</span><wbr><span>Rcv</span><wbr><span><span>Drop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1660026196%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-rcv-drop.html">byteRcvDrop</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of bytes dropped because they were too late to play, estimated from the average packet size.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2016176010%2FProperties%2F-951792139" anchor-label="byteRcvDropTotal" id="2016176010%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-rcv-drop-total.html"><span>byte</span><wbr><span>Rcv</span><wbr><span>Drop</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2016176010%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-rcv-drop-total.html">byteRcvDropTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of bytes dropped because they were too late to play, estimated from the average packet size.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1422088%2FProperties%2F-951792139" anchor-label="byteRcvLoss" id="-1422088%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-rcv-loss.html"><span>byte</span><wbr><span>Rcv</span><wbr><span><span>Loss</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1422088%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-rcv-loss.html">byteRcvLoss</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of lost bytes reported by the receiver.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1193192638%2FProperties%2F-951792139" anchor-label="byteRcvLossTotal" id="1193192638%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-rcv-loss-total.html"><span>byte</span><wbr><span>Rcv</span><wbr><span>Loss</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1193192638%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-rcv-loss-total.html">byteRcvLossTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The total number of lost bytes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1954781483%2FProperties%2F-951792139" anchor-label="byteRcvUndecrypt" id="1954781483%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-rcv-undecrypt.html"><span>byte</span><wbr><span>Rcv</span><wbr><span><span>Undecrypt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1954781483%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-rcv-undecrypt.html">byteRcvUndecrypt</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of bytes that could not be decrypted.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-780400533%2FProperties%2F-951792139" anchor-label="byteRcvUndecryptTotal" id="-780400533%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-rcv-undecrypt-total.html"><span>byte</span><wbr><span>Rcv</span><wbr><span>Undecrypt</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-780400533%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-rcv-undecrypt-total.html">byteRcvUndecryptTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of bytes that could not be decrypted.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="768214548%2FProperties%2F-951792139" anchor-label="byteRecv" id="768214548%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-recv.html"><span>byte</span><wbr><span><span>Recv</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="768214548%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-recv.html">byteRecv</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of received bytes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="3847787%2FProperties%2F-951792139" anchor-label="byteRetrans" id="3847787%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-retrans.html"><span>byte</span><wbr><span><span>Retrans</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="3847787%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-retrans.html">byteRetrans</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of retransmitted bytes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-370855125%2FProperties%2F-951792139" anchor-label="byteRetransTotal" id="-370855125%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-retrans-total.html"><span>byte</span><wbr><span>Retrans</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-370855125%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-retrans-total.html">byteRetransTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The total number of retransmitted bytes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-907871070%2FProperties%2F-951792139" anchor-label="byteSent" id="-907871070%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-sent.html"><span>byte</span><wbr><span><span>Sent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-907871070%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-sent.html">byteSent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of sent data bytes, including retransmissions.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-15021016%2FProperties%2F-951792139" anchor-label="byteSndDrop" id="-15021016%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-snd-drop.html"><span>byte</span><wbr><span>Snd</span><wbr><span><span>Drop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-15021016%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-snd-drop.html">byteSndDrop</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of bytes dropped because they were too late to send.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1330523022%2FProperties%2F-951792139" anchor-label="byteSndDropTotal" id="1330523022%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-snd-drop-total.html"><span>byte</span><wbr><span>Snd</span><wbr><span>Drop</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1330523022%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="byte-snd-drop-total.html">byteSndDropTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of bytes dropped because they were too late to send.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1512767668%2FProperties%2F-951792139" anchor-label="bytesReceived" id="-1512767668%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
           <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -145,6 +370,741 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="bytes-sent.html">bytesSent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Total outgoing bytes reported by libsrt.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-353588705%2FProperties%2F-951792139" anchor-label="mbpsBandwidth" id="-353588705%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mbps-bandwidth.html"><span>mbps</span><wbr><span><span>Bandwidth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-353588705%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="mbps-bandwidth.html">mbpsBandwidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The estimated available bandwidth, in megabits per second.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2131857559%2FProperties%2F-951792139" anchor-label="mbpsMaxBW" id="2131857559%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mbps-max-b-w.html"><span>mbps</span><wbr><span>Max</span><wbr><span><span>BW</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2131857559%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="mbps-max-b-w.html">mbpsMaxBW</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The transmission bandwidth limit, in megabits per second.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1768933070%2FProperties%2F-951792139" anchor-label="msRcvBuf" id="1768933070%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ms-rcv-buf.html"><span>ms</span><wbr><span>Rcv</span><wbr><span><span>Buf</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1768933070%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="ms-rcv-buf.html">msRcvBuf</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The time span of data awaiting delivery in the receive buffer, in milliseconds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-67581459%2FProperties%2F-951792139" anchor-label="msRcvTsbPdDelay" id="-67581459%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ms-rcv-tsb-pd-delay.html"><span>ms</span><wbr><span>Rcv</span><wbr><span>Tsb</span><wbr><span>Pd</span><wbr><span><span>Delay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-67581459%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="ms-rcv-tsb-pd-delay.html">msRcvTsbPdDelay</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The receiver’s timestamp-based packet delivery delay, in milliseconds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1641685550%2FProperties%2F-951792139" anchor-label="msSndBuf" id="-1641685550%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ms-snd-buf.html"><span>ms</span><wbr><span>Snd</span><wbr><span><span>Buf</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1641685550%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="ms-snd-buf.html">msSndBuf</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The time span of unacknowledged data in the send buffer, in milliseconds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="152012393%2FProperties%2F-951792139" anchor-label="msSndTsbPdDelay" id="152012393%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ms-snd-tsb-pd-delay.html"><span>ms</span><wbr><span>Snd</span><wbr><span>Tsb</span><wbr><span>Pd</span><wbr><span><span>Delay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="152012393%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="ms-snd-tsb-pd-delay.html">msSndTsbPdDelay</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The sender’s timestamp-based packet delivery delay, in milliseconds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1138453512%2FProperties%2F-951792139" anchor-label="msTimeStamp" id="1138453512%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ms-time-stamp.html"><span>ms</span><wbr><span>Time</span><wbr><span><span>Stamp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1138453512%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="ms-time-stamp.html">msTimeStamp</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The elapsed time since the socket started, in milliseconds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="637115400%2FProperties%2F-951792139" anchor-label="pktCongestionWindow" id="637115400%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-congestion-window.html"><span>pkt</span><wbr><span>Congestion</span><wbr><span><span>Window</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="637115400%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-congestion-window.html">pktCongestionWindow</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The congestion window size, in number of packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2072021714%2FProperties%2F-951792139" anchor-label="pktFlightSize" id="-2072021714%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-flight-size.html"><span>pkt</span><wbr><span>Flight</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2072021714%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-flight-size.html">pktFlightSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets in flight.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-506117215%2FProperties%2F-951792139" anchor-label="pktFlowWindow" id="-506117215%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-flow-window.html"><span>pkt</span><wbr><span>Flow</span><wbr><span><span>Window</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-506117215%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-flow-window.html">pktFlowWindow</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The flow window size, in number of packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1384012256%2FProperties%2F-951792139" anchor-label="pktRcvAvgBelatedTime" id="1384012256%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-avg-belated-time.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Avg</span><wbr><span>Belated</span><wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1384012256%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-avg-belated-time.html">pktRcvAvgBelatedTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The average delay of late packets whose sequence numbers precede the acknowledged position.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2025831063%2FProperties%2F-951792139" anchor-label="pktRcvBelated" id="-2025831063%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-belated.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span><span>Belated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2025831063%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-belated.html">pktRcvBelated</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of received packets ignored because they arrived too late.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1056230801%2FProperties%2F-951792139" anchor-label="pktRcvBuf" id="1056230801%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-buf.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span><span>Buf</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1056230801%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-buf.html">pktRcvBuf</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets awaiting delivery in the receive buffer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2071616423%2FProperties%2F-951792139" anchor-label="pktRcvDrop" id="2071616423%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-drop.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span><span>Drop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2071616423%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-drop.html">pktRcvDrop</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets dropped because they were too late to play.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1811451025%2FProperties%2F-951792139" anchor-label="pktRcvDropTotal" id="-1811451025%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-drop-total.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Drop</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1811451025%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-drop-total.html">pktRcvDropTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets dropped because they were too late to play.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-225152724%2FProperties%2F-951792139" anchor-label="pktRcvFilterExtra" id="-225152724%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-filter-extra.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Filter</span><wbr><span><span>Extra</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-225152724%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-filter-extra.html">pktRcvFilterExtra</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of filter control packets received and consumed by the packet filter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="904333578%2FProperties%2F-951792139" anchor-label="pktRcvFilterExtraTotal" id="904333578%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-filter-extra-total.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Filter</span><wbr><span>Extra</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="904333578%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-filter-extra-total.html">pktRcvFilterExtraTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of filter control packets received and consumed by the packet filter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1186266779%2FProperties%2F-951792139" anchor-label="pktRcvFilterLoss" id="1186266779%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-filter-loss.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Filter</span><wbr><span><span>Loss</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1186266779%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-filter-loss.html">pktRcvFilterLoss</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of lost packets that the packet filter could not recover.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-830437125%2FProperties%2F-951792139" anchor-label="pktRcvFilterLossTotal" id="-830437125%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-filter-loss-total.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Filter</span><wbr><span>Loss</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-830437125%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-filter-loss-total.html">pktRcvFilterLossTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of lost packets that the packet filter could not recover.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-625224177%2FProperties%2F-951792139" anchor-label="pktRcvFilterSupply" id="-625224177%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-filter-supply.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Filter</span><wbr><span><span>Supply</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-625224177%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-filter-supply.html">pktRcvFilterSupply</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets recovered by the packet filter, such as through forward error correction.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1981430279%2FProperties%2F-951792139" anchor-label="pktRcvFilterSupplyTotal" id="1981430279%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-filter-supply-total.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Filter</span><wbr><span>Supply</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1981430279%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-filter-supply-total.html">pktRcvFilterSupplyTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets recovered by the packet filter, such as through forward error correction.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-564746765%2FProperties%2F-951792139" anchor-label="pktRcvLoss" id="-564746765%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-loss.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span><span>Loss</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-564746765%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-loss.html">pktRcvLoss</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of lost packets (receiver side).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1660532899%2FProperties%2F-951792139" anchor-label="pktRcvLossTotal" id="1660532899%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-loss-total.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Loss</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1660532899%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-loss-total.html">pktRcvLossTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of lost packets (receiver side).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="235517551%2FProperties%2F-951792139" anchor-label="pktRcvRetrans" id="235517551%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-retrans.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span><span>Retrans</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="235517551%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-retrans.html">pktRcvRetrans</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of retransmitted packets received.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1872845552%2FProperties%2F-951792139" anchor-label="pktRcvUndecrypt" id="-1872845552%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-undecrypt.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span><span>Undecrypt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1872845552%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-undecrypt.html">pktRcvUndecrypt</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets that could not be decrypted.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="848667558%2FProperties%2F-951792139" anchor-label="pktRcvUndecryptTotal" id="848667558%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-rcv-undecrypt-total.html"><span>pkt</span><wbr><span>Rcv</span><wbr><span>Undecrypt</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="848667558%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-rcv-undecrypt-total.html">pktRcvUndecryptTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets that could not be decrypted.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1747830521%2FProperties%2F-951792139" anchor-label="pktRecv" id="1747830521%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-recv.html"><span>pkt</span><wbr><span><span>Recv</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1747830521%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-recv.html">pktRecv</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of received packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1941668536%2FProperties%2F-951792139" anchor-label="pktRecvACK" id="1941668536%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-recv-a-c-k.html"><span>pkt</span><wbr><span>Recv</span><wbr><span><span>ACK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1941668536%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-recv-a-c-k.html">pktRecvACK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of received ACK packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1181290238%2FProperties%2F-951792139" anchor-label="pktRecvACKTotal" id="1181290238%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-recv-a-c-k-total.html"><span>pkt</span><wbr><span>Recv</span><wbr><span><span>ACKTotal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1181290238%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-recv-a-c-k-total.html">pktRecvACKTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of received ACK packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1001832713%2FProperties%2F-951792139" anchor-label="pktRecvNAK" id="1001832713%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-recv-n-a-k.html"><span>pkt</span><wbr><span>Recv</span><wbr><span><span>NAK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1001832713%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-recv-n-a-k.html">pktRecvNAK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of received NAK packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1711465651%2FProperties%2F-951792139" anchor-label="pktRecvNAKTotal" id="-1711465651%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-recv-n-a-k-total.html"><span>pkt</span><wbr><span>Recv</span><wbr><span><span>NAKTotal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1711465651%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-recv-n-a-k-total.html">pktRecvNAKTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of received NAK packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1045673123%2FProperties%2F-951792139" anchor-label="pktRecvTotal" id="-1045673123%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-recv-total.html"><span>pkt</span><wbr><span>Recv</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1045673123%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-recv-total.html">pktRecvTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The total number of received packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1196339189%2FProperties%2F-951792139" anchor-label="pktReorderDistance" id="-1196339189%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-reorder-distance.html"><span>pkt</span><wbr><span>Reorder</span><wbr><span><span>Distance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1196339189%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-reorder-distance.html">pktReorderDistance</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The sequence-number distance of reordered received packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1271428621%2FProperties%2F-951792139" anchor-label="pktReorderTolerance" id="1271428621%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-reorder-tolerance.html"><span>pkt</span><wbr><span>Reorder</span><wbr><span><span>Tolerance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1271428621%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-reorder-tolerance.html">pktReorderTolerance</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The packet reordering tolerance, measured in packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-559476890%2FProperties%2F-951792139" anchor-label="pktRetrans" id="-559476890%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-retrans.html"><span>pkt</span><wbr><span><span>Retrans</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-559476890%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-retrans.html">pktRetrans</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of retransmitted packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="96485136%2FProperties%2F-951792139" anchor-label="pktRetransTotal" id="96485136%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-retrans-total.html"><span>pkt</span><wbr><span>Retrans</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="96485136%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-retrans-total.html">pktRetransTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of retransmitted packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="71744903%2FProperties%2F-951792139" anchor-label="pktSent" id="71744903%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-sent.html"><span>pkt</span><wbr><span><span>Sent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="71744903%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-sent.html">pktSent</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The number of sent data packets, including retransmissions.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1330161302%2FProperties%2F-951792139" anchor-label="pktSentACK" id="-1330161302%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-sent-a-c-k.html"><span>pkt</span><wbr><span>Sent</span><wbr><span><span>ACK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1330161302%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-sent-a-c-k.html">pktSentACK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of sent ACK packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1260492684%2FProperties%2F-951792139" anchor-label="pktSentACKTotal" id="1260492684%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-sent-a-c-k-total.html"><span>pkt</span><wbr><span>Sent</span><wbr><span><span>ACKTotal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1260492684%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-sent-a-c-k-total.html">pktSentACKTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of sent ACK packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2024970171%2FProperties%2F-951792139" anchor-label="pktSentNAK" id="2024970171%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-sent-n-a-k.html"><span>pkt</span><wbr><span>Sent</span><wbr><span><span>NAK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2024970171%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-sent-n-a-k.html">pktSentNAK</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of sent NAK packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1632263205%2FProperties%2F-951792139" anchor-label="pktSentNAKTotal" id="-1632263205%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-sent-n-a-k-total.html"><span>pkt</span><wbr><span>Sent</span><wbr><span><span>NAKTotal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1632263205%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-sent-n-a-k-total.html">pktSentNAKTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of sent NAK packets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1358086769%2FProperties%2F-951792139" anchor-label="pktSentTotal" id="-1358086769%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-sent-total.html"><span>pkt</span><wbr><span>Sent</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1358086769%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-sent-total.html">pktSentTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The total number of sent data packets, including retransmissions.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1940579477%2FProperties%2F-951792139" anchor-label="pktSndBuf" id="1940579477%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-snd-buf.html"><span>pkt</span><wbr><span>Snd</span><wbr><span><span>Buf</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1940579477%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-snd-buf.html">pktSndBuf</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of unacknowledged packets in the send buffer.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-578345693%2FProperties%2F-951792139" anchor-label="pktSndDrop" id="-578345693%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-snd-drop.html"><span>pkt</span><wbr><span>Snd</span><wbr><span><span>Drop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-578345693%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-snd-drop.html">pktSndDrop</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets dropped because they were too late to send.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1797863283%2FProperties%2F-951792139" anchor-label="pktSndDropTotal" id="1797863283%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-snd-drop-total.html"><span>pkt</span><wbr><span>Snd</span><wbr><span>Drop</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1797863283%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-snd-drop-total.html">pktSndDropTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of packets dropped because they were too late to send.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2007677904%2FProperties%2F-951792139" anchor-label="pktSndFilterExtra" id="-2007677904%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-snd-filter-extra.html"><span>pkt</span><wbr><span>Snd</span><wbr><span>Filter</span><wbr><span><span>Extra</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2007677904%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-snd-filter-extra.html">pktSndFilterExtra</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of control packets supplied by packet filter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1300592774%2FProperties%2F-951792139" anchor-label="pktSndFilterExtraTotal" id="1300592774%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-snd-filter-extra-total.html"><span>pkt</span><wbr><span>Snd</span><wbr><span>Filter</span><wbr><span>Extra</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1300592774%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-snd-filter-extra-total.html">pktSndFilterExtraTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of control packets supplied by packet filter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1080258415%2FProperties%2F-951792139" anchor-label="pktSndLoss" id="1080258415%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-snd-loss.html"><span>pkt</span><wbr><span>Snd</span><wbr><span><span>Loss</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1080258415%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-snd-loss.html">pktSndLoss</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The number of lost packets (sender side).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="974879911%2FProperties%2F-951792139" anchor-label="pktSndLossTotal" id="974879911%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pkt-snd-loss-total.html"><span>pkt</span><wbr><span>Snd</span><wbr><span>Loss</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="974879911%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="pkt-snd-loss-total.html">pktSndLossTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The total number of lost packets (sender side).</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -220,6 +1180,51 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="send-rate-mbps.html">sendRateMbps</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">Measured sending rate in megabits per second.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1658977299%2FProperties%2F-951792139" anchor-label="usPktSndPeriod" id="1658977299%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="us-pkt-snd-period.html"><span>us</span><wbr><span>Pkt</span><wbr><span>Snd</span><wbr><span><span>Period</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1658977299%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="us-pkt-snd-period.html">usPktSndPeriod</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">The packet sending period, in microseconds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="692437369%2FProperties%2F-951792139" anchor-label="usSndDuration" id="692437369%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="us-snd-duration.html"><span>us</span><wbr><span>Snd</span><wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="692437369%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="us-snd-duration.html">usSndDuration</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The time spent sending data during the measurement interval, excluding idle time, in microseconds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1930632995%2FProperties%2F-951792139" anchor-label="usSndDurationTotal" id="-1930632995%2FProperties%2F-951792139" data-filterable-set=":srt/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":srt/release" data-filterable-set=":srt/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="us-snd-duration-total.html"><span>us</span><wbr><span>Snd</span><wbr><span>Duration</span><wbr><span><span>Total</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1930632995%2FProperties%2F-951792139"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":srt/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="us-snd-duration-total.html">usSndDurationTotal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">The cumulative time spent sending data, excluding idle time, in microseconds.</p></div></div></div>
                 </div>
               </div>
             </div>
