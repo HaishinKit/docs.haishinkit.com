@@ -67,13 +67,14 @@
     </section>
     
 <section class="desc markdown">
-  <p>Enables mixing multiple audio tracks independently when set to true. Defaults to false.</p>
+  <p>Enables mixing multiple audio tracks independently when set to true. Defaults to false. iOS Only.</p>
 </section>
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">bool get multiTrackAudioMixingEnabled =&gt; throw _privateConstructorUsedError;</code></pre>
+  <pre class="language-dart"><code class="language-dart">CaptureSessionMode get captureSessionMode;&#47;&#47;&#47; Enables mixing multiple audio tracks independently when set to true. Defaults to false. iOS Only.
+bool get multiTrackAudioMixingEnabled;</code></pre>
 </section>
 
   </section>
@@ -103,7 +104,7 @@
 <footer>
   <span class="no-break">
     haishin_kit
-      0.17.0
+      0.18.0
   </span>
   
 </footer>

@@ -74,7 +74,10 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">bool get isMuted =&gt; throw _privateConstructorUsedError;</code></pre>
+  <pre class="language-dart"><code class="language-dart">@JsonKey(defaultValue: VideoRenderingMode.offscreen, unknownEnumValue: VideoRenderingMode.offscreen) VideoRenderingMode get mode;&#47;&#47;&#47; Whether the video output is muted.
+&#47;&#47;&#47;
+&#47;&#47;&#47; When set to `true`, video frames are not rendered or mixed.
+ bool get isMuted;</code></pre>
 </section>
 
   </section>
@@ -104,7 +107,7 @@
 <footer>
   <span class="no-break">
     haishin_kit
-      0.17.0
+      0.18.0
   </span>
   
 </footer>

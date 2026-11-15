@@ -75,7 +75,11 @@ and one of them should be treated as the primary source.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">int get mainTrack =&gt; throw _privateConstructorUsedError;</code></pre>
+  <pre class="language-dart"><code class="language-dart">bool get isMuted;&#47;&#47;&#47; Index of the main video track.
+&#47;&#47;&#47;
+&#47;&#47;&#47; This value is typically used when multiple video tracks are available
+&#47;&#47;&#47; and one of them should be treated as the primary source.
+int get mainTrack;</code></pre>
 </section>
 
   </section>
@@ -105,7 +109,7 @@ and one of them should be treated as the primary source.</p>
 <footer>
   <span class="no-break">
     haishin_kit
-      0.17.0
+      0.18.0
   </span>
   
 </footer>

@@ -75,7 +75,11 @@ object over time.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">String get id =&gt; throw _privateConstructorUsedError;</code></pre>
+  <pre class="language-dart"><code class="language-dart">String get type;&#47;&#47;&#47; The unique identifier of the screen object.
+&#47;&#47;&#47;
+&#47;&#47;&#47; This ID is stable across snapshots and can be used to track the same
+&#47;&#47;&#47; object over time.
+String get id;</code></pre>
 </section>
 
   </section>
@@ -105,7 +109,7 @@ object over time.</p>
 <footer>
   <span class="no-break">
     haishin_kit
-      0.17.0
+      0.18.0
   </span>
   
 </footer>

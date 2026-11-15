@@ -46,7 +46,7 @@
   <h1 id="haishinkit-plugin">HaishinKit Plugin</h1>
 <p><a href="https://pub.dev/packages/haishin_kit"><img src="https://img.shields.io/pub/v/haishin_kit.svg" alt="pub package"></a></p>
 <ul>
-<li>A Flutter plugin for iOS, Android. Camera and Microphone streaming library via RTMP.</li>
+<li>A Flutter plugin for RTMP and SRT streaming on Android, iOS, and macOS.</li>
 </ul>
 <div class="markdown-alert markdown-alert-note">
 <p class="markdown-alert-title">Note</p>
@@ -66,7 +66,7 @@ something stable or are in a hurry.</p>
 <tbody>
 <tr>
 <td><strong>Support</strong></td>
-<td>SDK 21+</td>
+<td>SDK 23+</td>
 <td>iOS 15.0+</td>
 <td>12.0+</td>
 </tr>
@@ -97,7 +97,7 @@ response a few days.</li>
 </ul>
 <h2 id="-features">🎨 Features</h2>
 <ul>
-<li><strong>Protocols</strong> ✨Publish and playback feature are available RTMP.</li>
+<li><strong>Protocols</strong> Publish and play RTMP and SRT streams.</li>
 <li><strong>Multi Streaming</strong> ✨Allowing live streaming to separate services. Views also support this, enabling the verification of raw video data.</li>
 <li><strong>Video mixing</strong> ✨Possible to display any text or bitmap on a video during broadcasting or viewing. This allows for various applications such as watermarking and time display.</li>
 </ul>
@@ -138,10 +138,14 @@ flutter pub get
 2.3.0 distributes its SRT and WebRTC dependencies through Swift packages.
 The Dart API is unchanged; existing <code>StreamSession</code>, <code>MediaMixer</code>, and screen
 snapshot calls continue to use the shared iOS/macOS bridge.
-Android uses HaishinKit.kt 0.19.0 (<code>haishinkit</code> and <code>rtmp</code>) from JitPack,
-including the cross-platform <code>ScreenObjectSnapshot</code> and rendering fixes.</p>
-<p>Android apps consuming this plugin need <code>compileSdk = 37</code> or newer. The example
-uses Android Gradle Plugin 9.2.1 and Gradle 9.4.1. With the current Kotlin plugin
+Android uses HaishinKit.kt 0.20.2 (<code>haishinkit</code>, <code>rtmp</code>, and <code>srt</code>) from JitPack.
+Use a complete <code>srt://host:port</code> URL, including any query options, with
+<code>StreamSession.create</code> for SRT publishing or playback. In the example, enter the
+complete SRT URL in the URL field; the RTMP stream name is ignored for SRT.
+Screen composition, encoding, and Flutter texture previews use OpenGL; the
+optional Vulkan module is not included.</p>
+<p>Android apps consuming this plugin need <code>minSdk = 23</code> and <code>compileSdk = 37</code> or newer.
+The example uses Android Gradle Plugin 9.2.1 and Gradle 9.4.1. With the current Kotlin plugin
 configuration, also set these properties in <code>android/gradle.properties</code>:</p>
 <pre class="language-properties"><code class="language-properties">android.builtInKotlin=false
 android.newDsl=false
@@ -504,7 +508,7 @@ try running the following command.</p>
 <footer>
   <span class="no-break">
     haishin_kit
-      0.17.0
+      0.18.0
   </span>
   
 </footer>
