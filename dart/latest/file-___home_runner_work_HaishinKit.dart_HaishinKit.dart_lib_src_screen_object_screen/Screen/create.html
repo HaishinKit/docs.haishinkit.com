@@ -62,6 +62,9 @@
 
     </section>
     
+<section class="desc markdown">
+  <p>Creates a screen associated with <code>mixer</code>.</p>
+</section>
 
 
     
@@ -69,8 +72,9 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">static Future&lt;Screen&gt; create(MediaMixer mixer) async {
   var object = Screen._();
-  object._memory =
-      await HaishinKitPlatformInterface.instance.newScreen(mixer.memory);
+  object._memory = await HaishinKitPlatformInterface.instance.newScreen(
+    mixer.memory,
+  );
   return object;
 }</code></pre>
 </section>
@@ -100,7 +104,7 @@
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

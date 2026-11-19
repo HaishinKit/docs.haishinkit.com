@@ -110,7 +110,7 @@ set size(ScreenObjectSize value) {
   assert(_memory != null);
   ScreenPlatformInterface.instance.setSize({
     &quot;memory&quot;: _memory,
-    &quot;value&quot;: convert.json.encode(value.toJson())
+    &quot;value&quot;: convert.json.encode(value.toJson()),
   });
   super.size = value;
 }</code></pre>
@@ -142,7 +142,7 @@ set size(ScreenObjectSize value) {
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

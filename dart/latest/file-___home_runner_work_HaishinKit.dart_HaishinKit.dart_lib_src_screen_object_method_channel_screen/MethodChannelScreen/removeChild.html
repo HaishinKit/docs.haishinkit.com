@@ -74,8 +74,10 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 Future&lt;void&gt; removeChild(Map&lt;String, dynamic&gt; params) async {
-  return await MethodChannelHaishinKit.channel
-      .invokeMethod&lt;void&gt;(&quot;Screen#removeChild&quot;, params);
+  return await MethodChannelHaishinKit.channel.invokeMethod&lt;void&gt;(
+    &quot;Screen#removeChild&quot;,
+    params,
+  );
 }</code></pre>
 </section>
 
@@ -104,7 +106,7 @@ Future&lt;void&gt; removeChild(Map&lt;String, dynamic&gt; params) async {
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

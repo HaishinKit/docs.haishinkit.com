@@ -55,7 +55,7 @@
 
     
 <section class="desc markdown">
-  <p>An object that manages offscreen rendering a text source.</p>
+  <p>Displays a text overlay on the composition screen.</p>
 </section>
 
 
@@ -107,8 +107,20 @@
 
 </dt>
 <dd>
-  Gets the text color in ARGB format (<code>0xAARRGGBB</code>).
+  The text color. Defaults to white.
   <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="cornerRadius" class="property inherited">
+  <span class="name"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object/ScreenObject/cornerRadius.html">cornerRadius</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The corner radius in composition pixels. Supported on Android.
+  <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
 
@@ -131,7 +143,7 @@
 
 </dt>
 <dd>
-  Gets the text size.
+  The font size. Defaults to 32.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -169,6 +181,18 @@
 <dd class="inherited">
   The unique identifier of this screen object.
   <div class="features"><span class="feature">final</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="isUpdatingLayout" class="property inherited">
+  <span class="name"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object/ScreenObject/isUpdatingLayout.html">isUpdatingLayout</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Whether related layout changes are currently being batched.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
 
 </dd>
 
@@ -275,7 +299,7 @@
 
 </dt>
 <dd>
-  Gets the text string.
+  The text to display.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -366,6 +390,19 @@
 
 </dd>
 
+        <dt id="updateLayout" class="callable inherited">
+  <span class="name"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object/ScreenObject/updateLayout.html">updateLayout</a></span><span class="signature">(<wbr><span class="parameter" id="updateLayout-param-update"><span class="type-annotation">void</span> <span class="parameter-name">update</span>()</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Applies related layout changes in a single native update.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
     </dl>
   </section>
     
@@ -416,7 +453,7 @@
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

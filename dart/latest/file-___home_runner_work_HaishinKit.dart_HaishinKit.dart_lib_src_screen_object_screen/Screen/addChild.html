@@ -80,7 +80,7 @@ void addChild(ScreenObject child) {
   assert(_memory != null);
   ScreenPlatformInterface.instance.addChild({
     &quot;memory&quot;: _memory,
-    &quot;value&quot;: convert.json.encode(child.snapshot().toJson())
+    &quot;value&quot;: convert.json.encode(child.snapshot().toJson()),
   });
   return super.addChild(child);
 }</code></pre>
@@ -111,7 +111,7 @@ void addChild(ScreenObject child) {
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

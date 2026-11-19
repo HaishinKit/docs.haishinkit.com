@@ -55,16 +55,13 @@
 
     
 <section class="desc markdown">
-  <p>Configuration options for the media mixer.</p>
-<p>This class defines how the media mixer captures and mixes audio and video.
-It supports JSON serialization/deserialization via <code>freezed</code> and <code>json_serializable</code>.</p>
-<p>Example:</p>
+  <p>Configures native capture and audio mixing on Apple platforms.</p>
 <pre class="language-dart"><code class="language-dart">final options = MediaMixerOptions(
   captureSessionMode: CaptureSessionMode.multi,
   multiTrackAudioMixingEnabled: true,
 );
 </code></pre>
-<p>This class is immutable. To modify values, use <code>copyWith</code>.</p>
+<p>Use <code>copyWith</code> to create a copy with different settings.</p>
 </section>
 
 
@@ -121,7 +118,7 @@ It supports JSON serialization/deserialization via <code>freezed</code> and <cod
 
 </dt>
 <dd class="inherited">
-  Specifies how capture sessions are managed. iOS only.
+  The capture session mode. Defaults to <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_media_mixer_media_mixer_options/CaptureSessionMode.html">CaptureSessionMode.single</a>.
   <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -158,7 +155,7 @@ with the given fields replaced by the non-null parameter values.
 
 </dt>
 <dd class="inherited">
-  Enables mixing multiple audio tracks independently when set to true. Defaults to false. iOS Only.
+  Whether to mix multiple audio tracks. Defaults to <code>false</code>.
   <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -375,7 +372,7 @@ with the given fields replaced by the non-null parameter values.
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

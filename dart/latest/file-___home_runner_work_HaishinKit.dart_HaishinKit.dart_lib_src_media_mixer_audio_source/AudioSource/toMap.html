@@ -67,7 +67,7 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">Map&lt;String, dynamic&gt; toMap() {
-  return {};
+  return {if (sampleRate != null) &#39;sampleRate&#39;: sampleRate};
 }</code></pre>
 </section>
 
@@ -96,7 +96,7 @@
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

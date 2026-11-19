@@ -53,6 +53,11 @@
 </h1></div>
 
     
+<section class="desc markdown">
+  <p>The root of a mixer's native video composition.</p>
+<p>Set <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen/Screen/size.html">size</a> to configure the composition dimensions. Use <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen/Screen/addChild.html">addChild</a> to
+place text, images, or video tracks in the composition.</p>
+</section>
 
 
     <section>
@@ -95,6 +100,18 @@
 <dd class="inherited">
   Gets the list of children.
   <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="cornerRadius" class="property inherited">
+  <span class="name"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object/ScreenObject/cornerRadius.html">cornerRadius</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The corner radius in composition pixels. Supported on Android.
+  <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
 
@@ -143,6 +160,18 @@
 <dd class="inherited">
   The unique identifier of this screen object.
   <div class="features"><span class="feature">final</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="isUpdatingLayout" class="property inherited">
+  <span class="name"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object/ScreenObject/isUpdatingLayout.html">isUpdatingLayout</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Whether related layout changes are currently being batched.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
 
 </dd>
 
@@ -284,7 +313,20 @@
 
 </dt>
 <dd>
+  Releases the native screen handle.
   
+
+</dd>
+
+        <dt id="getBounds" class="callable">
+  <span class="name"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen/Screen/getBounds.html">getBounds</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Reads the latest native layout rectangles in composition pixels.
   
 
 </dd>
@@ -367,6 +409,19 @@
 
 </dd>
 
+        <dt id="updateLayout" class="callable inherited">
+  <span class="name"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object/ScreenObject/updateLayout.html">updateLayout</a></span><span class="signature">(<wbr><span class="parameter" id="updateLayout-param-update"><span class="type-annotation">void</span> <span class="parameter-name">update</span>()</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Applies related layout changes in a single native update.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
     </dl>
   </section>
     
@@ -403,7 +458,7 @@
 
 </dt>
 <dd>
-  
+  Creates a screen associated with <code>mixer</code>.
   
 
 </dd>
@@ -435,7 +490,7 @@
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

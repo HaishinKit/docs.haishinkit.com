@@ -55,7 +55,7 @@
 
     
 <section class="desc markdown">
-  <p>The HaishinKit platform interface.</p>
+  <p>The contract that native implementations of HaishinKit must implement.</p>
 </section>
 
 
@@ -86,7 +86,7 @@
           <span class="name"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_haishin_kit_platform_interface_haishin_kit/HaishinKitPlatformInterface/HaishinKitPlatformInterface.html">HaishinKitPlatformInterface</a></span><span class="signature">()</span>
         </dt>
         <dd>
-          Creates an instance.
+          Creates a platform implementation with a verification token.
         </dd>
     </dl>
   </section>
@@ -127,7 +127,7 @@
 
 </dt>
 <dd>
-  Gets the available video sources.
+  Lists the video input sources reported by the native platform.
   <div class="features"><span class="feature">no setter</span></div>
 
 </dd>
@@ -149,7 +149,7 @@
 
 </dt>
 <dd>
-  Gets the HaishinKit library version.
+  Returns the native HaishinKit library identifier.
   
 
 </dd>
@@ -162,7 +162,7 @@
 
 </dt>
 <dd>
-  Creates a new MediaMixer platform instance.
+  Creates a native media mixer and returns its handle.
   
 
 </dd>
@@ -175,7 +175,7 @@
 
 </dt>
 <dd>
-  
+  Returns a handle to the composition screen for the native <code>mixer</code>.
   
 
 </dd>
@@ -188,7 +188,7 @@
 
 </dt>
 <dd>
-  Creates a new Session platform instance.
+  Creates a native streaming session and returns its handle.
   
 
 </dd>
@@ -253,7 +253,7 @@
 
 </dt>
 <dd>
-  Sets the <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_haishin_kit_platform_interface_haishin_kit/HaishinKitPlatformInterface/instance.html">HaishinKitPlatformInterface.instance</a>
+  The platform implementation used by the plugin.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -286,7 +286,7 @@
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

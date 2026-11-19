@@ -59,16 +59,7 @@
 
     
 <section class="desc markdown">
-  <p>Specifies the capture session mode used by the media mixer.</p>
-<p>This enum defines how capture sessions are managed:</p>
-<ul>
-<li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_media_mixer_media_mixer_options/CaptureSessionMode.html">single</a>: Uses a single capture session. This is the default mode and is
-suitable for most use cases where only one input source is required.</li>
-<li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_media_mixer_media_mixer_options/CaptureSessionMode.html">multi</a>: Uses multiple capture sessions simultaneously. This mode enables
-handling multiple input sources independently.</li>
-<li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_media_mixer_media_mixer_options/CaptureSessionMode.html">manual</a>: Uses a manually managed capture session. This mode allows the
-application to control the capture session lifecycle and configuration.</li>
-</ul>
+  <p>Determines how the native mixer manages capture on Apple platforms.</p>
 </section>
 
 
@@ -119,7 +110,7 @@ application to control the capture session lifecycle and configuration.</li>
 
 </dt>
 <dd>
-  <p>Uses multiple capture sessions.</p>
+  <p>Uses an Apple multicamera capture session where supported.</p>
   
 
 </dd>
@@ -131,7 +122,7 @@ application to control the capture session lifecycle and configuration.</li>
 
 </dt>
 <dd>
-  <p>Uses a manually managed capture session.</p>
+  <p>Uses manual input mode for media supplied by the application.</p>
   
 
 </dd>
@@ -299,7 +290,7 @@ application to control the capture session lifecycle and configuration.</li>
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

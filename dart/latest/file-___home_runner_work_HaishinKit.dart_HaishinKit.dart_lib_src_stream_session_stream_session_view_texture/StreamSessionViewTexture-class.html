@@ -54,13 +54,7 @@
 
     
 <section class="desc markdown">
-  <p>A Flutter widget that renders a native video texture provided by a
-<a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession-class.html">StreamSession</a>.</p>
-<p>This widget displays video frames using Flutter's <a href="https://api.flutter.dev/flutter/dart-web_gl/Texture-class.html">Texture</a> widget,
-where the underlying texture is registered and managed by the native
-platform (iOS, macOS, or Android).</p>
-<p>The scaling behavior of the video inside its layout bounds is controlled
-by <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session_view_texture/StreamSessionViewTexture/videoGravity.html">videoGravity</a>. The actual scaling is applied on the native side.</p>
+  <p>Displays a native video texture from a <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession-class.html">StreamSession</a>.</p>
 </section>
 
 
@@ -73,8 +67,7 @@ by <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_
           <span class="name"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session_view_texture/StreamSessionViewTexture/StreamSessionViewTexture.html">StreamSessionViewTexture</a></span><span class="signature">(<span class="parameter" id="param-session"><span class="type-annotation"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession-class.html">StreamSession</a>?</span> <span class="parameter-name">session</span>, {</span><span class="parameter" id="param-key"><span class="type-annotation">dynamic</span> <span class="parameter-name">key</span>, </span><span class="parameter" id="param-videoGravity"><span class="type-annotation"><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_haishin_kit_video_gravity/VideoGravity.html">VideoGravity</a></span> <span class="parameter-name">videoGravity</span> = <span class="default-value">VideoGravity.resizeAspect</span></span>})</span>
         </dt>
         <dd>
-          Creates a widget that renders the video texture associated with
-the given <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession-class.html">StreamSession</a>.
+          Displays video from <code>session</code>, or an empty view when <code>session</code> is null.
             <div class="constructor-modifier features">const</div>
         </dd>
     </dl>
@@ -116,8 +109,7 @@ the given <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_l
 
 </dt>
 <dd>
-  The streaming session responsible for registering and updating
-the underlying native texture.
+  The session that provides the video texture.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -129,7 +121,7 @@ the underlying native texture.
 
 </dt>
 <dd>
-  Controls how the video is resized or scaled within the widget bounds.
+  How the video fits within the widget's bounds.
   <div class="features"><span class="feature">final</span></div>
 
 </dd>
@@ -232,7 +224,7 @@ the underlying native texture.
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

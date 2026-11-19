@@ -78,7 +78,7 @@ that parent containers are also updated.</p>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 void invalidateLayout() {
-  layout(_renderer);
+  if (!isUpdatingLayout) layout(_renderer);
   super.invalidateLayout();
 }</code></pre>
 </section>
@@ -108,7 +108,7 @@ void invalidateLayout() {
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

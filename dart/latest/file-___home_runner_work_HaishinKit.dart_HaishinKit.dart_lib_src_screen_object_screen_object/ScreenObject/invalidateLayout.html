@@ -73,7 +73,7 @@ that parent containers are also updated.</p>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">void invalidateLayout() {
   _shouldInvalidateLayout = true;
-  if (parent != null) {
+  if (_layoutUpdateDepth == 0 &amp;&amp; parent != null) {
     parent?.invalidateLayout();
   }
 }</code></pre>
@@ -104,7 +104,7 @@ that parent containers are also updated.</p>
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

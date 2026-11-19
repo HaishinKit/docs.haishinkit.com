@@ -60,12 +60,11 @@
 
     
 <section class="desc markdown">
-  <p>Capture, mix, preview, publish, and play audio and video on native platforms.</p>
+  <p>Capture, mix, and preview audio and video on Android, iOS, and macOS.</p>
 <p>Use <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_media_mixer_media_mixer/MediaMixer-class.html">MediaMixer</a> to attach input sources and compose overlays through its
-<a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen/Screen-class.html">Screen</a>. Use <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession-class.html">StreamSession</a> to publish or play a stream and
+<a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen/Screen-class.html">Screen</a>. Use <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession-class.html">StreamSession</a> to publish or play RTMP and SRT streams and
 <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session_view_texture/StreamSessionViewTexture-class.html">StreamSessionViewTexture</a> to display the native video texture.</p>
-<p>Apple platforms use HaishinKit.swift 2.3.0 through Swift Package Manager;
-Android uses HaishinKit.kt 0.19.0. See the package README for native setup.</p>
+<p>See the package README for native dependencies and setup instructions.</p>
 </section>
 
 
@@ -77,7 +76,7 @@ Android uses HaishinKit.kt 0.19.0. See the package README for native setup.</p>
 
 </dt>
 <dd>
-  
+  Settings for the session's audio encoder.
 </dd>
 
           <dt id="AudioMixerSettings">
@@ -85,7 +84,7 @@ Android uses HaishinKit.kt 0.19.0. See the package README for native setup.</p>
 
 </dt>
 <dd>
-  Constraints on the audio mixier settings.
+  Settings for mixing captured audio.
 </dd>
 
           <dt id="AudioSource">
@@ -93,7 +92,7 @@ Android uses HaishinKit.kt 0.19.0. See the package README for native setup.</p>
 
 </dt>
 <dd>
-  
+  Selects the default audio input for capture.
 </dd>
 
           <dt id="HaishinKitPlatformInterface">
@@ -101,7 +100,7 @@ Android uses HaishinKit.kt 0.19.0. See the package README for native setup.</p>
 
 </dt>
 <dd>
-  The HaishinKit platform interface.
+  The contract that native implementations of HaishinKit must implement.
 </dd>
 
           <dt id="ImageScreenObject">
@@ -109,7 +108,7 @@ Android uses HaishinKit.kt 0.19.0. See the package README for native setup.</p>
 
 </dt>
 <dd>
-  A screen object that renders an image.
+  Displays an image overlay on the composition screen.
 </dd>
 
           <dt id="MediaMixer">
@@ -125,7 +124,7 @@ Android uses HaishinKit.kt 0.19.0. See the package README for native setup.</p>
 
 </dt>
 <dd>
-  Configuration options for the media mixer.
+  Configures native capture and audio mixing on Apple platforms.
 </dd>
 
           <dt id="Screen">
@@ -133,7 +132,15 @@ Android uses HaishinKit.kt 0.19.0. See the package README for native setup.</p>
 
 </dt>
 <dd>
-  
+  The root of a mixer's native video composition.
+</dd>
+
+          <dt id="ScreenCoordinateTransform">
+  <span class="name "><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_coordinate_transform/ScreenCoordinateTransform-class.html">ScreenCoordinateTransform</a></span> 
+
+</dt>
+<dd>
+  Maps composition pixels to preview-local coordinates and back.
 </dd>
 
           <dt id="ScreenObject">
@@ -161,12 +168,20 @@ that are rendered on the screen.
   Represents edge insets used for layout spacing around a <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object/ScreenObject-class.html">ScreenObject</a>.
 </dd>
 
+          <dt id="ScreenObjectEditor">
+  <span class="name "><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object_editor/ScreenObjectEditor-class.html">ScreenObjectEditor</a></span> 
+
+</dt>
+<dd>
+  Edits direct children using layout measured by the native renderer.
+</dd>
+
           <dt id="ScreenObjectSize">
   <span class="name "><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object_size/ScreenObjectSize-class.html">ScreenObjectSize</a></span> 
 
 </dt>
 <dd>
-  Represents a rectangular area in screen coordinates.
+  The requested width and height of a screen object.
 </dd>
 
           <dt id="StreamSession">
@@ -182,8 +197,7 @@ that are rendered on the screen.
 
 </dt>
 <dd>
-  A Flutter widget that renders a native video texture provided by a
-<a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession-class.html">StreamSession</a>.
+  Displays a native video texture from a <a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession-class.html">StreamSession</a>.
 </dd>
 
           <dt id="TextScreenObject">
@@ -191,7 +205,7 @@ that are rendered on the screen.
 
 </dt>
 <dd>
-  An object that manages offscreen rendering a text source.
+  Displays a text overlay on the composition screen.
 </dd>
 
           <dt id="VideoCodecSettings">
@@ -199,7 +213,7 @@ that are rendered on the screen.
 
 </dt>
 <dd>
-  
+  Settings for the session's video encoder.
 </dd>
 
           <dt id="VideoMixerSettings">
@@ -215,7 +229,7 @@ that are rendered on the screen.
 
 </dt>
 <dd>
-  An object that manages offscreen rendering a video source.
+  Displays a video track on the composition screen.
 </dd>
 
           <dt id="VideoSource">
@@ -245,7 +259,7 @@ that are rendered on the screen.
 
 </dt>
 <dd>
-  Specifies the capture session mode used by the media mixer.
+  Determines how the native mixer manages capture on Apple platforms.
 </dd>
 
           <dt id="HorizontalAlignment">
@@ -269,7 +283,7 @@ that are rendered on the screen.
 
 </dt>
 <dd>
-  
+  The H.264 profile and level requested for video encoding.
 </dd>
 
           <dt id="StreamSessionMode">
@@ -277,7 +291,7 @@ that are rendered on the screen.
 
 </dt>
 <dd>
-  Represents the type of session to establish.
+  Determines the direction of media transfer.
 </dd>
 
           <dt id="StreamSessionReadyState">
@@ -294,6 +308,14 @@ that are rendered on the screen.
 </dt>
 <dd>
   Defines vertical alignment options.
+</dd>
+
+          <dt id="VideoGravity">
+  <span class="name "><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_haishin_kit_video_gravity/VideoGravity.html">VideoGravity</a></span> 
+
+</dt>
+<dd>
+  Specifies how a video should be resized or scaled to fit within its container.
 </dd>
 
           <dt id="VideoRenderingMode">
@@ -466,9 +488,11 @@ that are rendered on the screen.
       <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_method_channel_screen/">src/screen_object/method_channel_screen</a></li>
       <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_platform_interface_screen/">src/screen_object/platform_interface_screen</a></li>
       <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen/">src/screen_object/screen</a></li>
+      <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_coordinate_transform/">src/screen_object/screen_coordinate_transform</a></li>
       <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object/">src/screen_object/screen_object</a></li>
       <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object_container/">src/screen_object/screen_object_container</a></li>
       <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object_edge_insets/">src/screen_object/screen_object_edge_insets</a></li>
+      <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object_editor/">src/screen_object/screen_object_editor</a></li>
       <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object_size/">src/screen_object/screen_object_size</a></li>
       <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_object_snapshot/">src/screen_object/screen_object_snapshot</a></li>
       <li><a href="../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_screen_object_screen_renderer/">src/screen_object/screen_renderer</a></li>
@@ -496,7 +520,7 @@ that are rendered on the screen.
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>

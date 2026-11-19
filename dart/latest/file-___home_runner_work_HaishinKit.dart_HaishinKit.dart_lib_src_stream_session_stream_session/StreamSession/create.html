@@ -65,9 +65,10 @@
     
 <section class="desc markdown">
   <p>Creates a native session for <code>url</code> in the specified <code>mode</code>.</p>
-<p>Use an absolute streaming URL supported by the target platform, such as
-<code>rtmp://example.com/live/stream</code>. Creating a session does not connect it;
-call <a href="../../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession/connect.html">connect</a> to establish the connection.</p>
+<p>For RTMP, include the stream name in <code>url</code>, as in
+<code>rtmp://example.com/live/camera</code>. For SRT, pass the complete
+<code>srt://</code> URL with any query options required by the server.
+Call <a href="../../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib_src_stream_session_stream_session/StreamSession/connect.html">connect</a> when ready to start publishing or playback.</p>
 </section>
 
 
@@ -110,7 +111,7 @@ call <a href="../../file-___home_runner_work_HaishinKit.dart_HaishinKit.dart_lib
 <footer>
   <span class="no-break">
     haishin_kit
-      0.18.0
+      0.19.0
   </span>
   
 </footer>
