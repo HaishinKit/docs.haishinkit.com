@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="haishin_kit API docs, for the Dart programming language.">
+  <title>haishin_kit - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://github.com/HaishinKit/HaishinKit.dart">haishin_kit package</a></li>
+  </ol>
+  <div class="self-name">haishin_kit</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
+</header>
+<main>
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="-haishinkithttpshaishinkitcom-plugin">📡 <a href="https://haishinkit.com/">HaishinKit</a> Plugin</h1>
+<p><a href="https://github.com/HaishinKit/HaishinKit.dart/actions/workflows/dart.yml"><img src="https://github.com/HaishinKit/HaishinKit.dart/actions/workflows/dart.yml/badge.svg?branch=main" alt="Dart CI"></a>
+<a href="https://pub.dev/packages/haishin_kit"><img src="https://img.shields.io/pub/v/haishin_kit.svg" alt="pub package"></a>
+<a href="#-installation"><img src="https://img.shields.io/badge/Android-API%2024%2B-3DDC84?logo=android&amp;logoColor=white" alt="Android API 24+"></a>
+<a href="#-installation"><img src="https://img.shields.io/badge/Apple-iOS%2015%2B%20%7C%20macOS%2012%2B-black?logo=apple" alt="Apple platforms"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-BSD--3--Clause-blue" alt="BSD-3-Clause"></a></p>
+<p>A Flutter interface to HaishinKit's native streaming libraries for Android, iOS,
+and macOS. Capture, compose, preview, publish, and play audio/video with RTMP,
+RTMPS, SRT, WHIP, and WHEP.</p>
+<p><a href="https://docs.haishinkit.com/dart/latest/">API reference</a> ·
+<a href="https://pub.dev/packages/haishin_kit">pub.dev</a> · <a href="example/README.md">Example app</a></p>
+<h2 id="-features">🎨 Features</h2>
+<ul>
+<li>Camera and microphone capture through a common <code>MediaMixer</code> interface.</li>
+<li>RTMP/RTMPS and SRT publishing/playback, WHIP publishing, and WHEP playback.</li>
+<li>Text, image, and video compositions, snapshots, and ScreenObject editing APIs.</li>
+<li>Native video textures for Flutter previews and playback.</li>
+<li>A common <code>StreamSession</code> lifecycle across supported platforms.</li>
+</ul>
+<h2 id="-installation">📦 Installation</h2>
+<p>Add the published package to your app's <code>pubspec.yaml</code>:</p>
+<pre class="language-yaml"><code class="language-yaml">dependencies:
+  haishin_kit: ^0.19.1
+</code></pre>
+<pre class="language-sh"><code class="language-sh">flutter pub get
+</code></pre>
+<p>Use <strong>Flutter 3.44+</strong> and <strong>Dart 3.12+</strong>. Platform requirements:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Minimum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Android</td>
+<td>Android 7 / API 24 with Flutter 3.44; compile SDK 37+</td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>iOS 15; Xcode 26+</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td>macOS 12; Xcode 26+</td>
+</tr>
+</tbody>
+</table>
+<p>The Android app minimum follows Flutter's SDK minimum; the native bridge declares
+API 23. Android WHIP audio publishing requires an Opus encoder, provided by
+Android 10+.</p>
+<p>Apple builds use Swift Package Manager. Enable it before building:</p>
+<pre class="language-sh"><code class="language-sh">flutter config --enable-swift-package-manager
+</code></pre>
+<p>See the <a href="https://github.com/HaishinKit/HaishinKit.dart/blob/main/lib/haishin_kit.dart">integration guide in the library documentation</a>
+for permissions, Android build properties, Apple setup, and session lifecycle.</p>
+<h2 id="-documentation">📚 Documentation</h2>
+<p>Use the generated <a href="https://docs.haishinkit.com/dart/latest/">dartdoc reference</a>
+for capture, composition, stream sessions, and protocol integration.</p>
+<p>The install example targets <strong>0.19.1</strong>. The <code>main</code> branch contains the
+refreshed example and may include changes ahead of the published package or API
+reference; use a matching release tag when working with a published version.</p>
+<h2 id="-examples">🐾 Examples</h2>
+<p>The <a href="example/README.md">Flutter sample</a> demonstrates camera publishing, playback,
+text/image overlays, optional picture-in-picture camera capture, and touch editing.
+Its studio interface keeps the preview clear, with camera tools in a bottom sheet.</p>
+<p>Flutter example running on Android (English, Pixel 5a):</p>
+<p>
+<img src="example/design/screenshots/publish.png" width="240" alt="Flutter sample publishing screen with a live camera preview in English on a Pixel 5a">
+<img src="example/design/screenshots/settings.png" width="240" alt="Flutter sample connection settings in English on a Pixel 5a">
+<img src="example/design/screenshots/playback.png" width="240" alt="Flutter sample playback waiting screen in English on a Pixel 5a">
+</p>
+<p>From a repository checkout:</p>
+<pre class="language-sh"><code class="language-sh">cd example
+flutter pub get
+flutter run
+</code></pre>
+<p>A reachable streaming server is required for publishing/playback. See the
+<a href="example/README.md">example guide</a> for endpoint settings and platform setup.</p>
+<h2 id="-native-projects">🌏 Native projects</h2>
+<ul>
+<li><a href="https://github.com/HaishinKit/HaishinKit.swift">HaishinKit.swift</a> — Apple platforms.</li>
+<li><a href="https://github.com/HaishinKit/HaishinKit.kt">HaishinKit.kt</a> — Android.</li>
+</ul>
+<h2 id="-support">💖 Support</h2>
+<p>Community discussion is open to everyone following the
+<a href="https://github.com/HaishinKit/HaishinKit.dart?tab=coc-ov-file">code of conduct</a>. Technical support is available to
+contributors, academic researchers, and <a href="https://github.com/sponsors/shogo4405">sponsors</a>.
+The $50/month sponsorship tier includes priority support through Issues/Discussions.</p>
+<h2 id="-license">📜 License</h2>
+<p><a href="LICENSE">BSD 3-Clause</a>. Native dependencies carry their own licenses;
+see the native projects for third-party notices.</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="haishin_kit">
+  <span class="name"><a href="haishin_kit/">haishin_kit</a></span> 
+
+</dt>
+<dd>Capture, mix, preview, publish, and play audio and video on native platforms.
+</dd>
+
+        </dl>
+      </section>
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="https://github.com/HaishinKit/HaishinKit.dart">haishin_kit package</a></li>
+</ol>
+
+    <h5 class="hidden-xs"><span class="package-name">haishin_kit</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="haishin_kit/">haishin_kit</a></li>
+</ol>
+
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+</main>
+<footer>
+  <span class="no-break">
+    haishin_kit
+      0.19.1
+  </span>
+  
+</footer>
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

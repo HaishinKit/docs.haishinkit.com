@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="haishin_kit library API docs, for the Dart programming language.">
+  <title>haishin_kit library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">haishin_kit</a></li>
+    <li class="self-crumb">haishin_kit.dart</li>
+  </ol>
+  <div class="self-name">haishin_kit</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar=""
+    data-below-sidebar="haishin_kit&#47;haishin_kit-library-sidebar.html">
+  
+    <div>
+      
+
+      <h1>
+        <span class="kind-library">haishin_kit</span>
+        library 
+ 
+
+      </h1>
+    </div>
+
+    
+<section class="desc markdown">
+  <p>Capture, mix, preview, publish, and play audio and video on native platforms.</p>
+<p>Use <a href="../haishin_kit/MediaMixer-class.html">MediaMixer</a> to attach input sources and compose overlays through its
+<a href="../haishin_kit/Screen-class.html">Screen</a>, <a href="../haishin_kit/StreamSession-class.html">StreamSession</a> for network sessions, and <a href="../haishin_kit/StreamSessionViewTexture-class.html">StreamSessionViewTexture</a>
+for native video previews and playback.</p>
+<h2 id="platform-integration">Platform integration</h2>
+<p>Use Flutter 3.44+, Dart 3.12+, and Xcode 26+ for Apple builds. The native Apple
+bridge uses HaishinKit.swift 2.3.1 through Swift Package Manager, targeting
+iOS 15 and macOS 12. CocoaPods installation of this plugin is not supported.
+Enable Swift Package Manager before resolving the consuming app:</p>
+<pre class="language-sh"><code class="language-sh">flutter config --enable-swift-package-manager
+flutter clean
+flutter pub get
+</code></pre>
+<p>Add camera/microphone usage descriptions to the app's iOS/macOS Info.plist:</p>
+<pre class="language-xml"><code class="language-xml">&lt;key&gt;NSCameraUsageDescription&lt;/key&gt;
+&lt;string&gt;Use the camera for publishing.&lt;/string&gt;
+&lt;key&gt;NSMicrophoneUsageDescription&lt;/key&gt;
+&lt;string&gt;Use the microphone for publishing.&lt;/string&gt;
+</code></pre>
+<p>On macOS, enable <code>com.apple.security.device.audio-input</code> and
+<code>com.apple.security.device.camera</code> in the app's Debug and Release entitlements.</p>
+<p>Android uses HaishinKit.kt 0.20.5 modules from JitPack and OpenGL composition.
+Use compile SDK 37+. The native bridge declares API 23, while Flutter 3.44
+requires an Android app minimum of API 24. With the repository's current
+Kotlin plugin configuration, set these Android Gradle properties:</p>
+<pre class="language-properties"><code class="language-properties">android.builtInKotlin=false
+android.newDsl=false
+</code></pre>
+<p>Request camera and microphone permissions before capture. Android WHIP audio
+publishing needs an Opus encoder (available on Android 10+) and 48 kHz PCM.
+Plain HTTP requires the consuming app to allow cleartext traffic in its
+Android network-security configuration.</p>
+<h2 id="publishing-and-session-lifecycle">Publishing and session lifecycle</h2>
+<p>The transport comes from the URL. Include the RTMP stream name in the full
+RTMP/RTMPS URL; pass complete SRT URLs with their query options. WHIP publishes
+and WHEP plays back using their respective complete HTTP(S) endpoints.</p>
+<pre class="language-dart"><code class="language-dart">final mixer = await MediaMixer.create();
+await mixer.attachAudio(0, AudioSource(sampleRate: 48000));
+final cameras = await HaishinKitPlatformInterface.instance.videoSources;
+if (cameras.isEmpty) throw StateError('No camera is available.');
+await mixer.attachVideo(0, cameras.first);
+final session = await StreamSession.create(
+  'https://example.com/whip',
+  StreamSessionMode.publish,
+);
+await mixer.startRunning();
+await session.connect();
+// When finished, including after failure or cancellation:
+await session.close();
+await session.dispose();
+await mixer.dispose();
+</code></pre>
+<p>Observe <a href="../haishin_kit/StreamSession/readyState.html">StreamSession.readyState</a> and handle <a href="../haishin_kit/StreamSessionException-class.html">StreamSessionException</a> from
+connection attempts. The 48 kHz capture option in this example applies to
+Android; native capture behavior on Apple platforms is managed by the bridge.
+Android WHIP uses Opus and H.264 Baseline level 3.1, so keep custom video
+settings within those capabilities.</p>
+<h2 id="playback">Playback</h2>
+<pre class="language-dart"><code class="language-dart">final session = await StreamSession.create(
+  'https://example.com/whep',
+  StreamSessionMode.playback,
+);
+</code></pre>
+<p>Put <a href="../haishin_kit/StreamSessionViewTexture-class.html">StreamSessionViewTexture</a> in the widget tree before calling
+<a href="../haishin_kit/StreamSession/connect.html">StreamSession.connect</a>. Close and dispose the session when playback finishes.
+SRT and HTTP(S) endpoints preserve paths/query parameters and do not use a
+separate RTMP stream-name field. The Dart API currently uses native default
+ICE/authentication settings, without parameters for bearer tokens or STUN/TURN.</p>
+<h2 id="developing-the-plugin">Developing the plugin</h2>
+<p>Regenerate data classes after editing their source definitions:</p>
+<pre class="language-sh"><code class="language-sh">dart run build_runner build --delete-conflicting-outputs
+</code></pre>
+</section>
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+      <dl>
+          <dt id="AudioCodecSettings">
+  <span class="name "><a href="../haishin_kit/AudioCodecSettings-class.html">AudioCodecSettings</a></span> 
+
+</dt>
+<dd>
+  Settings for the session's audio encoder.
+</dd>
+
+          <dt id="AudioMixerSettings">
+  <span class="name "><a href="../haishin_kit/AudioMixerSettings-class.html">AudioMixerSettings</a></span> 
+
+</dt>
+<dd>
+  Settings for mixing captured audio.
+</dd>
+
+          <dt id="AudioSource">
+  <span class="name "><a href="../haishin_kit/AudioSource-class.html">AudioSource</a></span> 
+
+</dt>
+<dd>
+  Selects the default audio input for capture.
+</dd>
+
+          <dt id="HaishinKitPlatformInterface">
+  <span class="name "><a href="../haishin_kit/HaishinKitPlatformInterface-class.html">HaishinKitPlatformInterface</a></span> 
+
+</dt>
+<dd>
+  The contract that native implementations of HaishinKit must implement.
+</dd>
+
+          <dt id="ImageScreenObject">
+  <span class="name "><a href="../haishin_kit/ImageScreenObject-class.html">ImageScreenObject</a></span> 
+
+</dt>
+<dd>
+  Displays an image overlay on the composition screen.
+</dd>
+
+          <dt id="MediaMixer">
+  <span class="name "><a href="../haishin_kit/MediaMixer-class.html">MediaMixer</a></span> 
+
+</dt>
+<dd>
+  Captures and mixes audio and video for native streaming sessions.
+</dd>
+
+          <dt id="MediaMixerOptions">
+  <span class="name "><a href="../haishin_kit/MediaMixerOptions-class.html">MediaMixerOptions</a></span> 
+
+</dt>
+<dd>
+  Configures native capture and audio mixing on Apple platforms.
+</dd>
+
+          <dt id="Screen">
+  <span class="name "><a href="../haishin_kit/Screen-class.html">Screen</a></span> 
+
+</dt>
+<dd>
+  The root of a mixer's native video composition.
+</dd>
+
+          <dt id="ScreenCoordinateTransform">
+  <span class="name "><a href="../haishin_kit/ScreenCoordinateTransform-class.html">ScreenCoordinateTransform</a></span> 
+
+</dt>
+<dd>
+  Maps composition pixels to preview-local coordinates and back.
+</dd>
+
+          <dt id="ScreenObject">
+  <span class="name "><a href="../haishin_kit/ScreenObject-class.html">ScreenObject</a></span> 
+
+</dt>
+<dd>
+  The <a href="../haishin_kit/ScreenObject-class.html">ScreenObject</a> class is the abstract base class for all objects
+that are rendered on the screen.
+</dd>
+
+          <dt id="ScreenObjectContainer">
+  <span class="name "><a href="../haishin_kit/ScreenObjectContainer-class.html">ScreenObjectContainer</a></span> 
+
+</dt>
+<dd>
+  The <a href="../haishin_kit/ScreenObjectContainer-class.html">ScreenObjectContainer</a> represents a collection of screen objects.
+</dd>
+
+          <dt id="ScreenObjectEdgeInsets">
+  <span class="name "><a href="../haishin_kit/ScreenObjectEdgeInsets-class.html">ScreenObjectEdgeInsets</a></span> 
+
+</dt>
+<dd>
+  Represents edge insets used for layout spacing around a <a href="../haishin_kit/ScreenObject-class.html">ScreenObject</a>.
+</dd>
+
+          <dt id="ScreenObjectEditor">
+  <span class="name "><a href="../haishin_kit/ScreenObjectEditor-class.html">ScreenObjectEditor</a></span> 
+
+</dt>
+<dd>
+  Edits direct children using layout measured by the native renderer.
+</dd>
+
+          <dt id="ScreenObjectSize">
+  <span class="name "><a href="../haishin_kit/ScreenObjectSize-class.html">ScreenObjectSize</a></span> 
+
+</dt>
+<dd>
+  The requested width and height of a screen object.
+</dd>
+
+          <dt id="StreamSession">
+  <span class="name "><a href="../haishin_kit/StreamSession-class.html">StreamSession</a></span> 
+
+</dt>
+<dd>
+  A native streaming session for publishing or playback.
+</dd>
+
+          <dt id="StreamSessionViewTexture">
+  <span class="name "><a href="../haishin_kit/StreamSessionViewTexture-class.html">StreamSessionViewTexture</a></span> 
+
+</dt>
+<dd>
+  Displays a native video texture from a <a href="../haishin_kit/StreamSession-class.html">StreamSession</a>.
+</dd>
+
+          <dt id="TextScreenObject">
+  <span class="name "><a href="../haishin_kit/TextScreenObject-class.html">TextScreenObject</a></span> 
+
+</dt>
+<dd>
+  Displays a text overlay on the composition screen.
+</dd>
+
+          <dt id="VideoCodecSettings">
+  <span class="name "><a href="../haishin_kit/VideoCodecSettings-class.html">VideoCodecSettings</a></span> 
+
+</dt>
+<dd>
+  Settings for the session's video encoder.
+</dd>
+
+          <dt id="VideoMixerSettings">
+  <span class="name "><a href="../haishin_kit/VideoMixerSettings-class.html">VideoMixerSettings</a></span> 
+
+</dt>
+<dd>
+  Constraints on the video mixer settings.
+</dd>
+
+          <dt id="VideoScreenObject">
+  <span class="name "><a href="../haishin_kit/VideoScreenObject-class.html">VideoScreenObject</a></span> 
+
+</dt>
+<dd>
+  Displays a video track on the composition screen.
+</dd>
+
+          <dt id="VideoSource">
+  <span class="name "><a href="../haishin_kit/VideoSource-class.html">VideoSource</a></span> 
+
+</dt>
+<dd>
+  Represents a video input source.
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="enums">
+      <h2>Enums</h2>
+      <dl>
+          <dt id="CameraPosition">
+  <span class="name "><a href="../haishin_kit/CameraPosition.html">CameraPosition</a></span> 
+
+</dt>
+<dd>
+  Represents the position of the camera.
+</dd>
+
+          <dt id="CaptureSessionMode">
+  <span class="name "><a href="../haishin_kit/CaptureSessionMode.html">CaptureSessionMode</a></span> 
+
+</dt>
+<dd>
+  Determines how the native mixer manages capture on Apple platforms.
+</dd>
+
+          <dt id="HorizontalAlignment">
+  <span class="name "><a href="../haishin_kit/HorizontalAlignment.html">HorizontalAlignment</a></span> 
+
+</dt>
+<dd>
+  Defines horizontal alignment options.
+</dd>
+
+          <dt id="ImageScreenObjectFormat">
+  <span class="name "><a href="../haishin_kit/ImageScreenObjectFormat.html">ImageScreenObjectFormat</a></span> 
+
+</dt>
+<dd>
+  Supported image formats for <a href="../haishin_kit/ImageScreenObject-class.html">ImageScreenObject</a>.
+</dd>
+
+          <dt id="ProfileLevel">
+  <span class="name "><a href="../haishin_kit/ProfileLevel.html">ProfileLevel</a></span> 
+
+</dt>
+<dd>
+  The H.264 profile and level requested for video encoding.
+</dd>
+
+          <dt id="StreamSessionMode">
+  <span class="name "><a href="../haishin_kit/StreamSessionMode.html">StreamSessionMode</a></span> 
+
+</dt>
+<dd>
+  Determines the direction of media transfer.
+</dd>
+
+          <dt id="StreamSessionReadyState">
+  <span class="name "><a href="../haishin_kit/StreamSessionReadyState.html">StreamSessionReadyState</a></span> 
+
+</dt>
+<dd>
+  Represents the current connection state of a session.
+</dd>
+
+          <dt id="VerticalAlignment">
+  <span class="name "><a href="../haishin_kit/VerticalAlignment.html">VerticalAlignment</a></span> 
+
+</dt>
+<dd>
+  Defines vertical alignment options.
+</dd>
+
+          <dt id="VideoGravity">
+  <span class="name "><a href="../haishin_kit/VideoGravity.html">VideoGravity</a></span> 
+
+</dt>
+<dd>
+  Specifies how a video should be resized or scaled to fit within its container.
+</dd>
+
+          <dt id="VideoRenderingMode">
+  <span class="name "><a href="../haishin_kit/VideoRenderingMode.html">VideoRenderingMode</a></span> 
+
+</dt>
+<dd>
+  The type of image rendering mode.
+</dd>
+
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="extensions">
+      <h2>Extensions</h2>
+      <dl>
+          <dt id="AudioMixerSettingsPatterns">
+  <span class="name "><a href="../haishin_kit/AudioMixerSettingsPatterns.html">AudioMixerSettingsPatterns</a></span>
+  on <a href="../haishin_kit/AudioMixerSettings-class.html">AudioMixerSettings</a>
+  
+
+</dt>
+<dd>
+  Adds pattern-matching-related methods to <a href="../haishin_kit/AudioMixerSettings-class.html">AudioMixerSettings</a>.
+</dd>
+
+          <dt id="MediaMixerOptionsPatterns">
+  <span class="name "><a href="../haishin_kit/MediaMixerOptionsPatterns.html">MediaMixerOptionsPatterns</a></span>
+  on <a href="../haishin_kit/MediaMixerOptions-class.html">MediaMixerOptions</a>
+  
+
+</dt>
+<dd>
+  Adds pattern-matching-related methods to <a href="../haishin_kit/MediaMixerOptions-class.html">MediaMixerOptions</a>.
+</dd>
+
+          <dt id="ScreenObjectEdgeInsetsPatterns">
+  <span class="name "><a href="../haishin_kit/ScreenObjectEdgeInsetsPatterns.html">ScreenObjectEdgeInsetsPatterns</a></span>
+  on <a href="../haishin_kit/ScreenObjectEdgeInsets-class.html">ScreenObjectEdgeInsets</a>
+  
+
+</dt>
+<dd>
+  Adds pattern-matching-related methods to <a href="../haishin_kit/ScreenObjectEdgeInsets-class.html">ScreenObjectEdgeInsets</a>.
+</dd>
+
+          <dt id="ScreenObjectSizePatterns">
+  <span class="name "><a href="../haishin_kit/ScreenObjectSizePatterns.html">ScreenObjectSizePatterns</a></span>
+  on <a href="../haishin_kit/ScreenObjectSize-class.html">ScreenObjectSize</a>
+  
+
+</dt>
+<dd>
+  Adds pattern-matching-related methods to <a href="../haishin_kit/ScreenObjectSize-class.html">ScreenObjectSize</a>.
+</dd>
+
+          <dt id="VideoMixerSettingsPatterns">
+  <span class="name "><a href="../haishin_kit/VideoMixerSettingsPatterns.html">VideoMixerSettingsPatterns</a></span>
+  on <a href="../haishin_kit/VideoMixerSettings-class.html">VideoMixerSettings</a>
+  
+
+</dt>
+<dd>
+  Adds pattern-matching-related methods to <a href="../haishin_kit/VideoMixerSettings-class.html">VideoMixerSettings</a>.
+</dd>
+
+          <dt id="VideoSourcePatterns">
+  <span class="name "><a href="../haishin_kit/VideoSourcePatterns.html">VideoSourcePatterns</a></span>
+  on <a href="../haishin_kit/VideoSource-class.html">VideoSource</a>
+  
+
+</dt>
+<dd>
+  Adds pattern-matching-related methods to <a href="../haishin_kit/VideoSource-class.html">VideoSource</a>.
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+
+    <section class="summary offset-anchor" id="exceptions">
+      <h2>Exceptions / Errors</h2>
+      <dl>
+          <dt id="MediaMixerException">
+  <span class="name "><a href="../haishin_kit/MediaMixerException-class.html">MediaMixerException</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="MediaMixerFailedToAttachException">
+  <span class="name "><a href="../haishin_kit/MediaMixerFailedToAttachException-class.html">MediaMixerFailedToAttachException</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="MediaMixerUnknownException">
+  <span class="name "><a href="../haishin_kit/MediaMixerUnknownException-class.html">MediaMixerUnknownException</a></span> 
+
+</dt>
+<dd>
+  
+</dd>
+
+          <dt id="StreamSessionConnectFailedException">
+  <span class="name "><a href="../haishin_kit/StreamSessionConnectFailedException-class.html">StreamSessionConnectFailedException</a></span> 
+
+</dt>
+<dd>
+  Thrown when establishing a session connection fails.
+</dd>
+
+          <dt id="StreamSessionException">
+  <span class="name "><a href="../haishin_kit/StreamSessionException-class.html">StreamSessionException</a></span> 
+
+</dt>
+<dd>
+  Base exception type for all session-related errors.
+</dd>
+
+          <dt id="StreamSessionUnknownException">
+  <span class="name "><a href="../haishin_kit/StreamSessionUnknownException-class.html">StreamSessionUnknownException</a></span> 
+
+</dt>
+<dd>
+  Thrown when an unexpected error occurs while handling a session.
+</dd>
+
+      </dl>
+    </section>
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">haishin_kit</a></li>
+    <li class="self-crumb">haishin_kit.dart</li>
+</ol>
+
+    <h5><span class="package-name">haishin_kit</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="../haishin_kit/">haishin_kit</a></li>
+</ol>
+
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <h5>haishin_kit library</h5>
+  </div><!--/sidebar-offcanvas-right-->
+</main>
+<footer>
+  <span class="no-break">
+    haishin_kit
+      0.19.1
+  </span>
+  
+</footer>
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+
