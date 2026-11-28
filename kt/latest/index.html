@@ -91,7 +91,7 @@
           <p class="paragraph">Experimental SRT publishing and playback with MPEG-TS, H.264/H.265, AAC, and encryption.</p>
         </li>
         <li>
-          <p class="paragraph">Experimental WHIP publishing and WHEP playback with H.264/Opus over WebRTC.</p>
+          <p class="paragraph">Experimental WHIP publishing and WHEP playback with H.264/VP8/VP9 video and Opus over WebRTC.</p>
         </li>
         <li>
           <p class="paragraph">A common <code class="lang-kotlin">StreamSession</code> interface for protocol-specific publishing and playback.</p>
@@ -131,37 +131,42 @@
           </thead>
           <tbody>
             <tr>
-              <td><code class="org.jetbrains.dokka.pages.commenttable@6d1744b3 lang-kotlin">haishinkit</code></td>
+              <td><code class="org.jetbrains.dokka.pages.commenttable@5165a5f6 lang-kotlin">haishinkit</code></td>
               <td>6.0 / API 23</td>
               <td>Required core: capture, composition, codecs, and recording</td>
             </tr>
             <tr>
-              <td><code class="org.jetbrains.dokka.pages.commenttable@6d1744b3 lang-kotlin">rtmp</code></td>
+              <td><code class="org.jetbrains.dokka.pages.commenttable@5165a5f6 lang-kotlin">rtmp</code></td>
               <td>6.0 / API 23</td>
               <td>RTMP/RTMPS transport</td>
             </tr>
             <tr>
-              <td><code class="org.jetbrains.dokka.pages.commenttable@6d1744b3 lang-kotlin">srt</code></td>
+              <td><code class="org.jetbrains.dokka.pages.commenttable@5165a5f6 lang-kotlin">srt</code></td>
               <td>6.0 / API 23</td>
               <td>Experimental SRT transport</td>
             </tr>
             <tr>
-              <td><code class="org.jetbrains.dokka.pages.commenttable@6d1744b3 lang-kotlin">rtc</code></td>
+              <td><code class="org.jetbrains.dokka.pages.commenttable@5165a5f6 lang-kotlin">rtc</code></td>
               <td>6.0 / API 23</td>
               <td>Experimental WHIP/WHEP transport</td>
             </tr>
             <tr>
-              <td><code class="org.jetbrains.dokka.pages.commenttable@6d1744b3 lang-kotlin">compose</code></td>
+              <td><code class="org.jetbrains.dokka.pages.commenttable@5165a5f6 lang-kotlin">mcp</code></td>
+              <td>8.0 / API 26</td>
+              <td>Optional authenticated MCP server and application-owned tools (new; not in older releases)</td>
+            </tr>
+            <tr>
+              <td><code class="org.jetbrains.dokka.pages.commenttable@5165a5f6 lang-kotlin">compose</code></td>
               <td>6.0 / API 23</td>
               <td>Jetpack Compose views</td>
             </tr>
             <tr>
-              <td><code class="org.jetbrains.dokka.pages.commenttable@6d1744b3 lang-kotlin">lottie</code></td>
+              <td><code class="org.jetbrains.dokka.pages.commenttable@5165a5f6 lang-kotlin">lottie</code></td>
               <td>6.0 / API 23</td>
               <td>Lottie animations in compositions</td>
             </tr>
             <tr>
-              <td><code class="org.jetbrains.dokka.pages.commenttable@6d1744b3 lang-kotlin">vulkan</code></td>
+              <td><code class="org.jetbrains.dokka.pages.commenttable@5165a5f6 lang-kotlin">vulkan</code></td>
               <td>9.0 / API 28</td>
               <td>Experimental Vulkan output</td>
             </tr>
@@ -183,6 +188,9 @@
         </li>
         <li>
           <p class="paragraph">rtc/module-docs.md</p>
+        </li>
+        <li>
+          <p class="paragraph">mcp/module-docs.md</p>
         </li>
         <li>
           <p class="paragraph">vulkan/module-docs.md</p>
@@ -256,6 +264,19 @@
             </span></div>
         </div>
       </div>
+<a data-name="-1121197261%2FMain%2F0" anchor-label="mcp" id="-1121197261%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="mcp/index.html">mcp</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1121197261%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment">
+              <p class="paragraph">HaishinKit MCP is an optional Android API 26+ library exposing application-approved composition tools through MCP Streamable HTTP. It uses the official MCP Kotlin SDK 0.8.4 and Ktor Netty 3.2.3. Neither dependency is added to the core media library. Netty uses API 26 method-handle APIs during initialization; only this optional module requires API 26. The core library retains API 23 support.</p>
+            </span></div>
+        </div>
+      </div>
 <a data-name="664398924%2FMain%2F0" anchor-label="rtc" id="664398924%2FMain%2F0" data-filterable-set=""></a>
       <div class="table-row table-row_multimodule">
         <div class="main-subrow ">
@@ -265,7 +286,7 @@
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div><span class="brief-comment">
-              <p class="paragraph">Android 6.0+ WHIP publishing and WHEP playback using libdatachannel, H.264 and Opus.</p>
+              <p class="paragraph">Android 6.0+ WHIP publishing and WHEP playback using libdatachannel, H.264/VP8/VP9 and Opus.</p>
             </span></div>
         </div>
       </div>
@@ -303,7 +324,9 @@
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-525516662%2FMain%2F0"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
-          <div><span class="brief-comment"></span></div>
+          <div><span class="brief-comment">
+              <p class="paragraph">Experimental native Vulkan rendering for HaishinKit on Android 9 (API 28) and later. Use this optional backend for screen composition, camera/decoder inputs, video effects, previews, recording, and encoded stream output. OpenGL is the default backend.</p>
+            </span></div>
         </div>
       </div>
     </div>

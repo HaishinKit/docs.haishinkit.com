@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>vulkan</title>
+<link href="../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../scripts/sourceset_dependencies.js" async></script>
+<link href="../styles/style.css" rel="Stylesheet">
+<link href="../styles/main.css" rel="Stylesheet">
+<link href="../styles/prism.css" rel="Stylesheet">
+<link href="../styles/logo-styles.css" rel="Stylesheet">
+<link href="../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../scripts/main.js" defer></script>
+<script type="text/javascript" src="../scripts/prism.js" async></script>
+<script type="text/javascript" src="../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../index.html" tabindex="1">
+                    HaishinKit
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":vulkan/release">release</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":vulkan/release" data-filter=":vulkan/release">
+                                <span class="checkbox--icon"></span>
+                                release
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    HaishinKit
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content" pageids="vulkan::////PointingToDeclaration//1311066541">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>vulkan</span></span></h1>
+    <div class="platform-hinted UnderCoverText" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":vulkan/release"><p class="paragraph">Experimental native Vulkan rendering for HaishinKit on Android 9 (API 28) and later. Use this optional backend for screen composition, camera/decoder inputs, video effects, previews, recording, and encoded stream output. OpenGL is the default backend.</p><h2 class="">Installation</h2><p class="paragraph">Add the Vulkan module alongside your existing core and transport dependencies, using JitPack and the <strong>same release version for every HaishinKit module</strong>:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">dependencies {<br>    val haishinkitVersion = "0.20.6"<br>    implementation("com.github.HaishinKit.HaishinKit~kt:vulkan:$haishinkitVersion")<br>}</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><p class="paragraph">The module requires API 28, Vulkan 1.1, Android HardwareBuffer import, foreign queue ownership, sampler YCbCr conversion, swapchain support, and <code class="lang-kotlin">VK_GOOGLE_display_timing</code>. Android's API level alone does not establish Vulkan support. Check the device at runtime with <code class="lang-kotlin">VkPixelTransform.isSupported()</code>.</p><h2 class="">Select both factories</h2><p class="paragraph">Configure <strong>both</strong> factories in application startup, before creating any <code class="lang-kotlin">MediaMixer</code>, stream, recorder, or preview view:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">import android.os.Build<br>import com.haishinkit.graphics.PixelTransform<br>import com.haishinkit.screen.Screen<br>import com.haishinkit.vulkan.VkPixelTransform<br>import com.haishinkit.vulkan.VkScreen<br><br>fun configureVideoRenderer() {<br>    if (Build.VERSION.SDK_INT &gt;= 28 &amp;&amp; VkPixelTransform.isSupported()) {<br>        Screen.factory = VkScreen::create<br>        PixelTransform.factory = VkPixelTransform::create<br>    } else {<br>        Screen.factory = Screen::createOpenGL<br>        PixelTransform.factory = PixelTransform::createOpenGL<br>    }<br>}</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><p class="paragraph"><code class="lang-kotlin">Screen.factory</code> chooses composition; <code class="lang-kotlin">PixelTransform.factory</code> chooses the output renderer used by video codecs and preview views. Selecting only one creates a mixed backend: <code class="lang-kotlin">VkPixelTransform</code> rejects an OpenGL <code class="lang-kotlin">Screen</code>.</p><p class="paragraph">Existing objects keep their backend. To switch, stop publishing/playback/recording and screen sharing, dispose the old mixers/screens/outputs, set both factories, and create the objects again. Restore OpenGL with the two <code class="lang-kotlin">createOpenGL</code> factories above. <code class="lang-kotlin">VkPixelTransform.create()</code> does <strong>not</strong> choose OpenGL automatically when Vulkan is unsupported; the application makes that choice before constructing objects.</p><h2 class="">Rendering and lifetime</h2><p class="paragraph">Camera, decoder, and MediaProjection surfaces feed an NDK ImageReader. Vulkan imports their HardwareBuffers, applies YCbCr conversion and cropping, and composes video, images, text, effects, and background color into an RGBA image. A second Vulkan pass resamples that image into the preview or MediaCodec input surface. This path does not use an OpenGL/EGL bridge or CPU video readback. Text still uses Android CPU bitmap rasterization, and <code class="lang-kotlin">Screen.readPixels</code> explicitly transfers the composition to CPU memory for snapshots.</p><p class="paragraph">The default output filter is bicubic. <code class="lang-kotlin">videoGravity</code>, <code class="lang-kotlin">backgroundColor</code>, <code class="lang-kotlin">frameRate</code>, and <code class="lang-kotlin">videoEffect</code> remain available through <code class="lang-kotlin">PixelTransform</code>. Each output currently has its own Vulkan device and composition target; preview and encoding therefore repeat composition. Measure performance, thermal behavior, and A/V synchronization on the intended devices rather than assuming this backend is faster than OpenGL.</p><p class="paragraph">Close directly owned transforms and dispose screens when finished. Detaching a transform's <code class="lang-kotlin">surface</code> releases its output renderer; detaching its <code class="lang-kotlin">screen</code> unregisters it from that composition. You can attach them again before closing the transform. <code class="lang-kotlin">VkScreen.onError</code> reports asynchronous frame failures; its default handler logs them. A device passing <code class="lang-kotlin">isSupported()</code> can still reject a particular destination Surface or encoder input surface, so test both preview and the intended encoding output.</p><h2 class="">Effects and custom shaders</h2><p class="paragraph">Default, bilinear, bicubic, monochrome, sepia, mosaic, and Lanczos effects have Vulkan implementations. An OpenGL GLSL shader is not converted automatically. Register a SPIR-V implementation of a custom <code class="lang-kotlin">VideoEffect</code> with <code class="lang-kotlin">VulkanEffectRegistry</code>:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">import com.haishinkit.graphics.effect.VideoEffect<br>import com.haishinkit.vulkan.VulkanEffectRegistry<br>import com.haishinkit.vulkan.VulkanShader<br><br>class TintEffect(var red: Float = 1f) : VideoEffect {<br>    override val name = "tint"<br>}<br><br>fun registerTintEffect() {<br>    VulkanEffectRegistry.register(TintEffect::class.java) { effect -&gt;<br>        VulkanShader(<br>            fragmentAsset = "shaders/example-tint.frag.spv",<br>            parameters = floatArrayOf(effect.red, 1f, 1f),<br>        )<br>    }<br>}</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><p class="paragraph">Call <code class="lang-kotlin">registerTintEffect()</code> before assigning <code class="lang-kotlin">TintEffect(0.5f)</code> to a screen object's or transform's <code class="lang-kotlin">videoEffect</code>. The factory runs each frame, allowing parameters to change. The module includes the tint shader asset shown above. For your own shader, compile GLSL 450 with the NDK's <code class="lang-kotlin">glslc</code> and package the SPIR-V file as an Android asset. Unregistered effects, missing assets, and invalid shaders fail explicitly rather than silently falling back to OpenGL.</p><p class="paragraph"><code class="lang-kotlin">VulkanShader</code> accepts up to twelve finite float parameters. The shader interface uses one combined sampler at set 0/binding 0 and a 128-byte push-constant block: the MVP matrix, source crop rectangle, and three <code class="lang-kotlin">vec4</code> parameter slots. Sampling must respect the source crop, including every filter tap. See the module's shader sources and <a href="https://github.com/HaishinKit/HaishinKit.kt/blob/0.20.6/vulkan/README.md#custom-effects">the shader contract</a> for the full interface and sampling helper.</p><h2 class="">Device diagnostics</h2><p class="paragraph"><code class="lang-kotlin">inspectDevices()</code> enumerates device information without creating a renderer or output surface:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val deviceInfoJson = VkPixelTransform.inspectDevices()</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><p class="paragraph">The JSON <code class="lang-kotlin">devices</code> array contains device names/types, API and driver versions, vendor and device IDs, and extensions. An absent native library or Vulkan loader yields an empty array; Vulkan initialization/enumeration errors throw <code class="lang-kotlin">IllegalStateException</code>. Enumeration is diagnostic information, not the backend compatibility check: use <code class="lang-kotlin">isSupported()</code> to select the backend.</p><h2 class="">Example and development checks</h2><p class="paragraph">The example app requires Android 10 (API 29) or later. In <strong>Settings → Renderer</strong>, select <strong>OpenGL</strong> or <strong>Vulkan</strong>, then <strong>Apply renderer</strong>. The action stops existing outputs and rebuilds the screens. Vulkan is disabled when the device check fails.</p><p class="paragraph">For a source checkout, initialize the pinned native dependencies before building:</p><div class="sample-container"><pre><code class="block lang-shell" theme="idea">git submodule update --init --recursive<br>./gradlew :vulkan:assembleRelease :vulkan:lintDebug<br>./gradlew :vulkan:connectedDebugAndroidTest</code></pre><span class="copy-tooltip"><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div><span class="copy-icon"></span></span></div><p class="paragraph">Native host tests cover frame pacing, dispatch ownership, surface transforms, and render synchronization. Device tests cover composition, effects, HardwareBuffer inputs, cropping, surface reattachment, and encoder presentation timestamps. Building an instrumentation APK does not run those checks. Also verify real capture/playback, repeated start/stop, output resize/rotation, and A/V synchronization on target devices.</p></div></div>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="-626340542%2FPackages%2F1311066541" anchor-label="com.haishinkit.vulkan" id="-626340542%2FPackages%2F1311066541" data-filterable-set=":vulkan/release"></a>
+    <div class="table-row table-row_platform-tagged" data-filterable-current=":vulkan/release" data-filterable-set=":vulkan/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.haishinkit.vulkan/index.html">com.haishinkit.vulkan</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-626340542%2FPackages%2F1311066541"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right platform-tags--wrapper">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">release</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
